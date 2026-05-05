@@ -1,0 +1,42 @@
+2026-05-05 13:34:04,103 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-05 13:34:04,103 [explain_mode] DEBUG: Mouse tracking started
+2026-05-05 13:34:04,103 [main] DEBUG: NavMate started — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-05 13:34:04,237 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-05 13:34:04,237 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-05 13:36:36,030 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 13:36:36,030 [overlay] DEBUG: Overlay cleared
+2026-05-05 13:36:56,359 [main] DEBUG: Query: 'I want to zoom into the screen more'
+2026-05-05 13:36:56,359 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 13:36:56,359 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 13:36:56,535 [screenshot] DEBUG: Captured screen: (1920, 1200)
+2026-05-05 13:36:57,122 [ai_client] DEBUG: AI request: mode=guide app=chrome query='I want to zoom into the screen more'
+2026-05-05 13:37:01,451 [ai_client] DEBUG: Raw AI response (581 chars): {
+  "elements": [
+    {
+      "label": "Chrome Settings Menu (three-dot menu)",
+      "bounding_box": { "x": 1371, "y": 57, "width": 18, "height": 18 },
+      "explanation": "Click the three-dot menu, then go to Settings > Appearance > Page zoom to increase the zoom level for the browser."
+    },
+  
+2026-05-05 13:37:01,451 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 13:37:01,483 [overlay] DEBUG: Overlay showing 2 elements
+2026-05-05 13:37:35,883 [overlay] DEBUG: Overlay cleared
+2026-05-05 13:38:14,964 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 13:38:14,964 [overlay] DEBUG: Overlay cleared
+2026-05-05 13:38:23,658 [main] DEBUG: Query: 'Where do I search things up?'
+2026-05-05 13:38:23,658 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 13:38:23,658 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 13:38:23,751 [screenshot] DEBUG: Captured screen: (1920, 1200)
+2026-05-05 13:38:23,847 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search things up?'
+2026-05-05 13:38:28,761 [ai_client] DEBUG: Raw AI response (504 chars): {
+  "elements": [
+    {
+      "label": "Address bar / Search box",
+      "bounding_box": { "x": 362, "y": 355, "width": 666, "height": 40 },
+      "explanation": "Click on the 'Ask Google' search box in the center of the page to type your search query."
+    },
+    {
+      "label": "Omnibox / Address
+2026-05-05 13:38:28,762 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 13:38:28,775 [overlay] DEBUG: Overlay showing 2 elements
+2026-05-05 13:38:59,445 [overlay] DEBUG: Overlay cleared
