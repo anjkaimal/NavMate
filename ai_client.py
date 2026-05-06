@@ -74,11 +74,19 @@ def query_ai(
         ],
     )
 
-    # extracts raw text response
-    raw = message.content[0].text
+    raw = message.content[0].text.strip()
     log.debug(f"Raw AI response ({len(raw)} chars): {raw[:300]}")
 
-    # parse JSON output from model
+    # The AI sometimes returns an empty string instead of {"elements":[]} when a
+    # tile contains nothing relevant.  Treat that as a valid empty result rather
+    # than raising an error that pollutes the log with warnings.
+    if not raw:
+        log.debug("AI returned empty response — treating as no elements for this tile")
+        if mode == "guide":
+            return []
+        if mode == "explain":
+            return {"explanation": ""}
+
     try:
         parsed = json.loads(raw)
     except json.JSONDecodeError as exc:

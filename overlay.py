@@ -157,10 +157,10 @@ class OverlayWindow(QWidget):
 
         for el in self._elements:
             bb = el["bounding_box"]
-            x  = int(bb["x"]      * scale_x)
-            y  = int(bb["y"]      * scale_y)
-            w  = int(bb["width"]  * scale_x)
-            h  = int(bb["height"] * scale_y)
+            x  = round(bb["x"]      * scale_x)
+            y  = round(bb["y"]      * scale_y)
+            w  = round(bb["width"]  * scale_x)
+            h  = round(bb["height"] * scale_y)
 
             self._draw_box(painter, x, y, w, h, box_color, corner_color)
             self._draw_label(painter, x, y, el.get("label", ""), label_font)
@@ -287,10 +287,10 @@ class OverlayWindow(QWidget):
         for el in self._elements:
             bb = el["bounding_box"]
             rect = QRect(
-                int(bb["x"]      * scale_x),
-                int(bb["y"]      * scale_y),
-                int(bb["width"]  * scale_x),
-                int(bb["height"] * scale_y),
+                round(bb["x"]      * scale_x),
+                round(bb["y"]      * scale_y),
+                round(bb["width"]  * scale_x),
+                round(bb["height"] * scale_y),
             )
             if rect.contains(pos):
                 return  # click inside a labelled box — keep overlay open

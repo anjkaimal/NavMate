@@ -97,7 +97,7 @@ StatusCallback = Callable[[int], None]
 def analyze_grid(
     user_query: str,
     app_key: str,
-    n_cols: int = 2,
+    n_cols: int = 3,
     n_rows: int = 2,
     overlap_pct: float = 0.15,
     status_cb: StatusCallback | None = None,
@@ -118,7 +118,7 @@ def analyze_grid(
 
     raw: list[dict] = []
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=n_cols * n_rows) as pool:
         futures = {pool.submit(_query_tile, t, user_query, app_key): t for t in tiles}
         for future in concurrent.futures.as_completed(futures):
             tile  = futures[future]
@@ -164,10 +164,10 @@ def _query_tile(tile: dict, user_query: str, app_key: str) -> list[dict]:
     for el in elements:
         bb = el["bounding_box"]
         remapped = {
-            "x":      int(bb["x"]      * ts + ox),
-            "y":      int(bb["y"]      * ts + oy),
-            "width":  int(bb["width"]  * ts),
-            "height": int(bb["height"] * ts),
+            "x":      round(bb["x"]      * ts + ox),
+            "y":      round(bb["y"]      * ts + oy),
+            "width":  round(bb["width"]  * ts),
+            "height": round(bb["height"] * ts),
         }
         el = {**el, "bounding_box": remapped}
 
