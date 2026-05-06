@@ -3,12 +3,17 @@ from typing import Union
 
 import anthropic
 
+# config values for Anthropic API access and model behavior
 from config import ANTHROPIC_API_KEY, AI_MODEL, AI_MAX_TOKENS
+# builds system prompts tailored to the app and mode
 from prompts import get_system_prompt
+# centralized logger for debugging and observability
 from logger import get_logger
 
 log = get_logger(__name__)
 
+
+# cached singleton client to avoid re-instantiating Anthropic client repeatedly
 _client: anthropic.Anthropic | None = None
 
 
@@ -44,6 +49,7 @@ def query_ai(
 
     log.debug(f"AI request: mode={mode} app={app_key} query='{user_query[:80]}'")
 
+    # send multimodal request of image and text
     message = client.messages.create(
         model=AI_MODEL,
         max_tokens=AI_MAX_TOKENS,
@@ -52,6 +58,7 @@ def query_ai(
             {
                 "role": "user",
                 "content": [
+                    # screenshot input
                     {
                         "type": "image",
                         "source": {
@@ -60,15 +67,18 @@ def query_ai(
                             "data": screenshot_b64,
                         },
                     },
+                    # user query
                     {"type": "text", "text": user_query},
                 ],
             }
         ],
     )
 
+    # extracts raw text response
     raw = message.content[0].text
     log.debug(f"Raw AI response ({len(raw)} chars): {raw[:300]}")
 
+    # parse JSON output from model
     try:
         parsed = json.loads(raw)
     except json.JSONDecodeError as exc:
@@ -91,6 +101,7 @@ def query_ai(
     raise AIResponseError(f"Unknown mode: {mode!r}")
 
 
+# validates structure of a single UI element returned by the AI
 def _validate_element(el: dict) -> None:
     for field in ("label", "bounding_box", "explanation"):
         if field not in el:

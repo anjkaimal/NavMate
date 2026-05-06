@@ -40,3 +40,731 @@
 2026-05-05 13:38:28,762 [ai_client] DEBUG: Parsed 2 elements
 2026-05-05 13:38:28,775 [overlay] DEBUG: Overlay showing 2 elements
 2026-05-05 13:38:59,445 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:10:55,459 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-05 14:10:55,459 [explain_mode] DEBUG: Mouse tracking started
+2026-05-05 14:10:55,459 [main] DEBUG: NavMate started — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-05 14:10:55,559 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-05 14:10:55,559 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-05 14:11:27,569 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 14:11:27,577 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:11:40,266 [main] DEBUG: Query: 'How do I search up something here?'
+2026-05-05 14:11:40,266 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 14:11:40,266 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 14:11:40,337 [screenshot] DEBUG: Captured screen: (1920, 1200)
+2026-05-05 14:11:40,438 [main] DEBUG: Coord scale: 0.800x 0.800y  (screen 1536×960, ai-img 1920×1200)
+2026-05-05 14:11:40,777 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I search up something here?'
+2026-05-05 14:11:44,098 [ai_client] DEBUG: Raw AI response (506 chars): {
+  "elements": [
+    {
+      "label": "Google Search Bar",
+      "bounding_box": { "x": 363, "y": 349, "width": 667, "height": 44 },
+      "explanation": "Click on this search bar and type your query, then press Enter to search."
+    },
+    {
+      "label": "Address Bar / Omnibox",
+      "bounding_
+2026-05-05 14:11:44,098 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 14:11:44,129 [overlay] DEBUG: Overlay: 2 elements, scale (0.800, 0.800)
+2026-05-05 14:13:00,896 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:19:21,557 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 14:19:21,572 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:19:34,329 [main] DEBUG: Query: 'Where do I search up something?'
+2026-05-05 14:19:34,329 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 14:19:34,329 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 14:19:34,448 [screenshot] DEBUG: Captured screen: (1920, 1200)
+2026-05-05 14:19:34,553 [main] DEBUG: Coord scale: 0.800x 0.800y  (screen 1536×960, ai-img 1920×1200)
+2026-05-05 14:19:34,553 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search up something?'
+2026-05-05 14:19:38,336 [ai_client] DEBUG: Raw AI response (460 chars): {
+  "elements": [
+    {
+      "label": "Google Search Bar",
+      "bounding_box": {"x": 363, "y": 352, "width": 661, "height": 40},
+      "explanation": "Click here and type your search query to search on Google."
+    },
+    {
+      "label": "Address Bar / Omnibox",
+      "bounding_box": {"x": 133, 
+2026-05-05 14:19:38,337 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 14:19:38,350 [overlay] DEBUG: Overlay: 2 elements, scale (0.800, 0.800)
+2026-05-05 14:20:13,849 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-05 14:20:13,849 [explain_mode] DEBUG: Mouse tracking started
+2026-05-05 14:20:13,849 [main] DEBUG: NavMate started — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-05 14:20:13,982 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-05 14:20:13,982 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-05 14:20:17,653 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 14:20:17,653 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:20:29,442 [main] DEBUG: Query: 'Where do I search up something?'
+2026-05-05 14:20:29,442 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 14:20:29,442 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 14:20:29,513 [screenshot] DEBUG: Captured screen: (1920, 1200)
+2026-05-05 14:20:29,624 [main] DEBUG: AI image dimensions: 1920×1200
+2026-05-05 14:20:29,946 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search up something?'
+2026-05-05 14:20:32,915 [ai_client] DEBUG: Raw AI response (264 chars): {
+  "elements": [
+    {
+      "label": "Google Search input field",
+      "bounding_box": { "x": 363, "y": 352, "width": 666, "height": 40 },
+      "explanation": "Click this 'Ask Google' search box in the center of the page to type your search query."
+    }
+  ]
+}
+2026-05-05 14:20:32,915 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 14:20:32,962 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 14:20:32,969 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:20:33,239 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:20:45,599 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:48:44,754 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-05 14:48:44,755 [explain_mode] DEBUG: Mouse tracking started
+2026-05-05 14:48:44,756 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-05 14:48:44,850 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-05 14:48:44,850 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-05 14:48:51,952 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 14:48:51,955 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:49:21,566 [main] DEBUG: Query: 'Where do I search something up?'
+2026-05-05 14:49:21,566 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 14:49:21,568 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 14:49:21,626 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 14:49:21,716 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 14:49:21,767 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 14:49:21,795 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 14:49:21,819 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 14:49:21,844 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 14:49:21,846 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 14:49:22,526 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:49:22,533 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:49:22,542 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:49:22,545 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:49:25,328 [ai_client] DEBUG: Raw AI response (271 chars): {
+  "elements": [
+    {
+      "label": "Ask Google search box",
+      "bounding_box": { "x": 497, "y": 0, "width": 607, "height": 30 },
+      "explanation": "Click this 'Ask Google' search input field at the top of the New Tab page to type your search query."
+    }
+  ]
+}
+2026-05-05 14:49:25,328 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 14:49:25,328 [grid_analyzer] DEBUG: Tile (0,510): 1 elements found
+2026-05-05 14:49:25,385 [ai_client] DEBUG: Raw AI response (263 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Omnibox / Address Bar",
+      "bounding_box": { "x": 200, "y": 0, "width": 400, "height": 20 },
+      "explanation": "Click the address bar at the top of Chrome to type a search query or URL."
+    }
+  ]
+}
+```
+2026-05-05 14:49:25,386 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Omnibox / Address Bar",
+      "bounding_box": { "x": 200, "y": 0, "width": 400, "height": 20 },
+      "explanation": "Click the address bar at the top of Chrome to type a search query or URL."
+    }
+  ]
+}
+```
+2026-05-05 14:49:25,388 [grid_analyzer] WARNING: Tile (816,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 14:49:26,136 [ai_client] DEBUG: Raw AI response (489 chars): {
+  "elements": [
+    {
+      "label": "Address bar / Omnibox",
+      "bounding_box": { "x": 0, "y": 62, "width": 680, "height": 32 },
+      "explanation": "Click on this address bar at the top of the browser to type a search query or URL."
+    },
+    {
+      "label": "Google Search input field",
+  
+2026-05-05 14:49:26,139 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 14:49:26,140 [grid_analyzer] DEBUG: Tile (816,0): 2 elements found
+2026-05-05 14:49:26,476 [ai_client] DEBUG: Raw AI response (501 chars): {
+  "elements": [
+    {
+      "label": "Ask Google search box",
+      "bounding_box": { "x": 497, "y": 495, "width": 607, "height": 50 },
+      "explanation": "Click this 'Ask Google' search input field on the New Tab page to type your search query."
+    },
+    {
+      "label": "Address bar / Omnibo
+2026-05-05 14:49:26,478 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 14:49:26,481 [grid_analyzer] DEBUG: Tile (0,0): 2 elements found
+2026-05-05 14:49:26,492 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 14:49:26,532 [overlay] DEBUG: Overlay: 4 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 14:49:26,540 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:49:27,027 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:49:58,470 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:50:01,581 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:50:02,154 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:54:03,757 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-05 14:54:03,758 [explain_mode] DEBUG: Mouse tracking started
+2026-05-05 14:54:03,759 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-05 14:54:03,945 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-05 14:54:03,945 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-05 14:54:08,414 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 14:54:08,417 [overlay] DEBUG: Overlay cleared
+2026-05-05 14:54:15,803 [main] DEBUG: Query: 'Where do I search something up?'
+2026-05-05 14:54:15,804 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 14:54:15,804 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 14:54:15,850 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 14:54:15,909 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 14:54:15,956 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 14:54:15,989 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 14:54:16,013 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 14:54:16,038 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 14:54:16,040 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 14:54:16,665 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:54:16,674 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:54:16,681 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:54:16,687 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 14:54:19,250 [ai_client] DEBUG: Raw AI response (251 chars): {
+  "elements": [
+    {
+      "label": "Ask Google search box",
+      "bounding_box": { "x": 497, "y": 0, "width": 607, "height": 30 },
+      "explanation": "Click this 'Ask Google' search input field at the top to type your search query."
+    }
+  ]
+}
+2026-05-05 14:54:19,252 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 14:54:19,253 [grid_analyzer] DEBUG: Tile (0,510): 1 elements found
+2026-05-05 14:54:19,278 [ai_client] DEBUG: Raw AI response (245 chars): {
+  "elements": [
+    {
+      "label": "Search input / Omnibox",
+      "bounding_box": { "x": 150, "y": 0, "width": 460, "height": 28 },
+      "explanation": "Click the address bar at the top of Chrome to type a search query or URL."
+    }
+  ]
+}
+2026-05-05 14:54:19,278 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 14:54:19,279 [grid_analyzer] DEBUG: Tile (816,510): 1 elements found
+2026-05-05 14:54:20,138 [ai_client] DEBUG: Raw AI response (527 chars): {
+  "elements": [
+    {
+      "label": "Address bar / Omnibox",
+      "bounding_box": { "x": 0, "y": 63, "width": 675, "height": 32 },
+      "explanation": "Click on this address bar at the top of the browser to type a search query or URL to search something up."
+    },
+    {
+      "label": "Google 
+2026-05-05 14:54:20,139 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 14:54:20,140 [grid_analyzer] DEBUG: Tile (816,0): 2 elements found
+2026-05-05 14:54:20,246 [ai_client] DEBUG: Raw AI response (497 chars): {
+  "elements": [
+    {
+      "label": "Google Search input field",
+      "bounding_box": { "x": 499, "y": 495, "width": 605, "height": 50 },
+      "explanation": "Click this 'Ask Google' search box on the new tab page to type your search query."
+    },
+    {
+      "label": "Address bar / Omnibox",
+
+2026-05-05 14:54:20,246 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 14:54:20,247 [grid_analyzer] DEBUG: Tile (0,0): 2 elements found
+2026-05-05 14:54:20,248 [grid_analyzer] DEBUG: Merged element 0 ('Ask Google search box') with 4 ('Google Search input field')
+2026-05-05 14:54:20,251 [grid_analyzer] DEBUG: Merged element 1 ('Search input / Omnibox') with 3 ('Google Search input field')
+2026-05-05 14:54:20,251 [grid_analyzer] DEBUG: Merged element 3 ('Google Search input field') with 4 ('Google Search input field')
+2026-05-05 14:54:20,257 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 14:54:20,296 [overlay] DEBUG: Overlay: 3 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 14:54:20,300 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:54:20,711 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:54:48,686 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 14:55:36,123 [overlay] DEBUG: Overlay cleared
+2026-05-05 16:57:38,389 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-05 16:57:38,391 [explain_mode] DEBUG: Mouse tracking started
+2026-05-05 16:57:38,391 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-05 16:57:38,524 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-05 16:57:38,539 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-05 16:57:44,718 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 16:57:44,718 [overlay] DEBUG: Overlay cleared
+2026-05-05 16:57:54,650 [main] DEBUG: Query: 'Where do I search something up?'
+2026-05-05 16:57:54,650 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 16:57:54,651 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 16:57:54,686 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 16:57:54,765 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 16:57:54,826 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 16:57:54,858 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 16:57:54,884 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 16:57:54,908 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 16:57:54,908 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 16:57:55,582 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 16:57:55,585 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 16:57:55,585 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 16:57:55,585 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search something up?'
+2026-05-05 16:57:58,212 [ai_client] DEBUG: Raw AI response (278 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Search input / Omnibox",
+      "bounding_box": { "x": 200, "y": 0, "width": 400, "height": 25 },
+      "explanation": "Click the address bar at the top of Chrome and type your search query or URL to search Google."
+    }
+  ]
+}
+```
+2026-05-05 16:57:58,213 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Search input / Omnibox",
+      "bounding_box": { "x": 200, "y": 0, "width": 400, "height": 25 },
+      "explanation": "Click the address bar at the top of Chrome and type your search query or URL to search Google."
+    }
+  ]
+}
+```
+2026-05-05 16:57:58,213 [grid_analyzer] WARNING: Tile (816,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 16:57:58,522 [ai_client] DEBUG: Raw AI response (239 chars): {
+  "elements": [
+    {
+      "label": "Google Search input field",
+      "bounding_box": { "x": 197, "y": 494, "width": 406, "height": 52 },
+      "explanation": "Click on this search box to type your query and search Google."
+    }
+  ]
+}
+2026-05-05 16:57:58,522 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 16:57:58,523 [grid_analyzer] DEBUG: Tile (816,0): 1 elements after core filter
+2026-05-05 16:57:58,696 [ai_client] DEBUG: Raw AI response (251 chars): {
+  "elements": [
+    {
+      "label": "Ask Google search box",
+      "bounding_box": { "x": 497, "y": 0, "width": 607, "height": 30 },
+      "explanation": "Click this 'Ask Google' search input field at the top to type your search query."
+    }
+  ]
+}
+2026-05-05 16:57:58,696 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 16:57:58,696 [grid_analyzer] DEBUG:   core-filtered 'Ask Google search box' centre (800,525) not in core (0,600)–(960,1200)
+2026-05-05 16:57:58,712 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-05 16:57:58,938 [ai_client] DEBUG: Raw AI response (489 chars): {
+  "elements": [
+    {
+      "label": "Ask Google search box",
+      "bounding_box": { "x": 499, "y": 495, "width": 605, "height": 50 },
+      "explanation": "Click this 'Ask Google' search box to type and search for anything on Google."
+    },
+    {
+      "label": "Address bar / Omnibox",
+      "b
+2026-05-05 16:57:58,938 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 16:57:58,938 [grid_analyzer] DEBUG: Tile (0,0): 2 elements after core filter
+2026-05-05 16:57:58,959 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 16:57:59,015 [overlay] DEBUG: Overlay: 3 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 16:57:59,022 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 16:57:59,554 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 16:59:13,332 [overlay] DEBUG: Overlay cleared
+2026-05-05 16:59:15,342 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 16:59:15,342 [overlay] DEBUG: Overlay cleared
+2026-05-05 16:59:23,508 [main] DEBUG: Query: 'Where is my inbox bookmark'
+2026-05-05 16:59:23,508 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 16:59:23,508 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 16:59:23,524 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 16:59:23,581 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 16:59:23,623 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 16:59:23,661 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 16:59:23,692 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 16:59:23,724 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 16:59:23,726 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 16:59:23,728 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is my inbox bookmark'
+2026-05-05 16:59:23,730 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is my inbox bookmark'
+2026-05-05 16:59:23,732 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is my inbox bookmark'
+2026-05-05 16:59:23,735 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is my inbox bookmark'
+2026-05-05 16:59:24,832 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 16:59:24,832 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 16:59:24,847 [grid_analyzer] DEBUG: Tile (816,510): 0 elements after core filter
+2026-05-05 16:59:26,200 [ai_client] DEBUG: Raw AI response (179 chars): {"elements":[{"label":"Inbox (1) - anjalikai... bookmark","bounding_box":{"x":152,"y":124,"width":180,"height":30},"explanation":"Click this bookmark to open your Gmail inbox."}]}
+2026-05-05 16:59:26,201 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 16:59:26,202 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-05 16:59:26,557 [ai_client] DEBUG: Raw AI response (212 chars): {"elements":[{"label":"(22) LinkedIn","bounding_box":{"x":641,"y":130,"width":"120","height":"110"},"explanation":"Click this LinkedIn shortcut to access your LinkedIn inbox/notifications (showing 22 unread)."}]}
+2026-05-05 16:59:26,557 [grid_analyzer] WARNING: Tile (0,510) AIResponseError: bounding_box missing/invalid 'width': {'x': 641, 'y': 130, 'width': '120', 'height': '110'}
+2026-05-05 16:59:33,818 [ai_client] DEBUG: Raw AI response (986 chars): Looking at your bookmarks bar, I can see several bookmarks but none explicitly labeled "inbox." However, the **Feed** bookmark (LinkedIn icon area) could be related. Let me highlight the most likely candidates:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Bookmarks overflow menu",
+      "boundin
+2026-05-05 16:59:33,819 [ai_client] ERROR: JSON parse failed. Raw: Looking at your bookmarks bar, I can see several bookmarks but none explicitly labeled "inbox." However, the **Feed** bookmark (LinkedIn icon area) could be related. Let me highlight the most likely candidates:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Bookmarks overflow menu",
+      "bounding_box": { "x": 911, "y": 112, "width": 30, "height": 30 },
+      "explanation": "Click the '>>' chevron to see more bookmarks that may include your inbox bookmark hidden from the visible bar."
+    },
+    {
+      "label": "All Bookmarks",
+      "bounding_box": { "x": 1020, "y": 112, "width": 70, "height": 30 },
+      "explanation": "Click 'All Bookmarks' to browse your full bookmarks collection and locate your inbox bookmark."
+    },
+    {
+      "label": "Feed bookmark (LinkedIn)",
+      "bounding_box": { "x": 536, "y": 112, "width": 80, "height": 30 },
+      "explanation": "This 'Feed' bookmark with the LinkedIn icon may be related to a messaging or inbox page."
+    }
+  ]
+}
+```
+2026-05-05 16:59:33,820 [grid_analyzer] WARNING: Tile (816,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 16:59:33,837 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 16:59:33,878 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 16:59:33,884 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 16:59:33,924 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 16:59:42,297 [overlay] DEBUG: Overlay cleared
+2026-05-05 16:59:54,958 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 16:59:54,958 [overlay] DEBUG: Overlay cleared
+2026-05-05 17:00:00,806 [main] DEBUG: Query: 'Where is the gmail button'
+2026-05-05 17:00:00,806 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 17:00:00,806 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 17:00:00,821 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 17:00:00,890 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 17:00:00,933 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:00,960 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:00,998 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:01,059 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:01,061 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 17:00:01,063 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-05 17:00:01,067 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-05 17:00:01,069 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-05 17:00:01,072 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-05 17:00:02,286 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 17:00:02,286 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 17:00:02,286 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-05 17:00:02,626 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 17:00:02,626 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 17:00:02,626 [grid_analyzer] DEBUG: Tile (816,510): 0 elements after core filter
+2026-05-05 17:00:03,299 [ai_client] DEBUG: Raw AI response (257 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Gmail button",
+      "bounding_box": { "x": 863, "y": 181, "width": 45, "height": 22 },
+      "explanation": "Click the 'Gmail' link in the top-right area of the Google homepage to open Gmail."
+    }
+  ]
+}
+```
+2026-05-05 17:00:03,299 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Gmail button",
+      "bounding_box": { "x": 863, "y": 181, "width": 45, "height": 22 },
+      "explanation": "Click the 'Gmail' link in the top-right area of the Google homepage to open Gmail."
+    }
+  ]
+}
+```
+2026-05-05 17:00:03,299 [grid_analyzer] WARNING: Tile (816,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 17:00:04,151 [ai_client] DEBUG: Raw AI response (416 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Gmail tab (Inbox)",
+      "bounding_box": { "x": 128, "y": 14, "width": 145, "height": 30 },
+      "explanation": "Click this tab to open your Gmail Inbox."
+    },
+    {
+      "label": "Gmail bookmark",
+      "bounding_box": { "x": 140, "y": 124, "widt
+2026-05-05 17:00:04,151 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Gmail tab (Inbox)",
+      "bounding_box": { "x": 128, "y": 14, "width": 145, "height": 30 },
+      "explanation": "Click this tab to open your Gmail Inbox."
+    },
+    {
+      "label": "Gmail bookmark",
+      "bounding_box": { "x": 140, "y": 124, "width": 155, "height": 30 },
+      "explanation": "Click this bookmark to navigate to your Gmail Inbox."
+    }
+  ]
+}
+```
+2026-05-05 17:00:04,151 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 17:00:04,166 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 17:00:04,210 [overlay] DEBUG: Overlay: 0 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 17:00:09,351 [main] DEBUG: Try Again: re-running grid analysis with same query
+2026-05-05 17:00:09,351 [app_detector] DEBUG: Active window: 'python3'
+2026-05-05 17:00:09,366 [overlay] DEBUG: Overlay cleared
+2026-05-05 17:00:09,391 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 17:00:09,491 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 17:00:09,542 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:09,583 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:09,609 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:09,639 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:09,639 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 17:00:09,639 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where is the gmail button'
+2026-05-05 17:00:09,645 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where is the gmail button'
+2026-05-05 17:00:09,645 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where is the gmail button'
+2026-05-05 17:00:09,645 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where is the gmail button'
+2026-05-05 17:00:10,765 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 17:00:10,765 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 17:00:10,765 [grid_analyzer] DEBUG: Tile (816,510): 0 elements after core filter
+2026-05-05 17:00:11,080 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 17:00:11,080 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 17:00:11,081 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-05 17:00:11,840 [ai_client] DEBUG: Raw AI response (221 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Gmail button",
+      "bounding_box": { "x": 851, "y": 178, "width": 51, "height": 25 },
+      "explanation": "Click this link to open Gmail in your browser."
+    }
+  ]
+}
+```
+2026-05-05 17:00:11,840 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Gmail button",
+      "bounding_box": { "x": 851, "y": 178, "width": 51, "height": 25 },
+      "explanation": "Click this link to open Gmail in your browser."
+    }
+  ]
+}
+```
+2026-05-05 17:00:11,840 [grid_analyzer] WARNING: Tile (816,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 17:00:13,077 [ai_client] DEBUG: Raw AI response (432 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Gmail Inbox Tab",
+      "bounding_box": { "x": 614, "y": 14, "width": 74, "height": 26 },
+      "explanation": "Click this tab to open your Gmail inbox."
+    },
+    {
+      "label": "Gmail Bookmark",
+      "bounding_box": { "x": 83, "y": 124, "width": 
+2026-05-05 17:00:13,078 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Gmail Inbox Tab",
+      "bounding_box": { "x": 614, "y": 14, "width": 74, "height": 26 },
+      "explanation": "Click this tab to open your Gmail inbox."
+    },
+    {
+      "label": "Gmail Bookmark",
+      "bounding_box": { "x": 83, "y": 124, "width": 160, "height": 26 },
+      "explanation": "Click this bookmark to open your Gmail inbox (Inbox (1) - anjalikal...)."
+    }
+  ]
+}
+```
+2026-05-05 17:00:13,079 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 17:00:13,087 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 17:00:13,105 [overlay] DEBUG: Overlay: 0 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 17:00:13,950 [overlay] DEBUG: Overlay cleared
+2026-05-05 17:00:15,944 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 17:00:15,947 [overlay] DEBUG: Overlay cleared
+2026-05-05 17:00:19,859 [main] DEBUG: Query: 'Wheres my Gmail'
+2026-05-05 17:00:19,859 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 17:00:19,860 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 17:00:19,866 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 17:00:19,920 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 17:00:19,973 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:20,000 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:20,015 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:20,047 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 17:00:20,047 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 17:00:20,047 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my Gmail'
+2026-05-05 17:00:20,047 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my Gmail'
+2026-05-05 17:00:20,047 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my Gmail'
+2026-05-05 17:00:20,047 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my Gmail'
+2026-05-05 17:00:21,417 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 17:00:21,417 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 17:00:21,417 [grid_analyzer] DEBUG: Tile (816,510): 0 elements after core filter
+2026-05-05 17:00:21,713 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 17:00:21,713 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 17:00:21,714 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-05 17:00:23,612 [ai_client] DEBUG: Raw AI response (248 chars): {
+  "elements": [
+    {
+      "label": "Gmail link",
+      "bounding_box": { "x": 863, "y": 191, "width": 45, "height": 20 },
+      "explanation": "Click the 'Gmail' link in the top-right area of the Google homepage to open your Gmail."
+    }
+  ]
+}
+2026-05-05 17:00:23,612 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 17:00:23,612 [ai_client] DEBUG: Raw AI response (334 chars): {"elements": [{"label": "Gmail Inbox tab", "bounding_box": {"x": 152, "y": 15, "width": 155, "height": 30}, "explanation": "Click this tab to open your Gmail Inbox."}, {"label": "Gmail bookmark", "bounding_box": {"x": 140, "y": 124, "width": 155, "height": 30}, "explanation": "Click this bookmark to
+2026-05-05 17:00:23,612 [grid_analyzer] DEBUG: Tile (816,0): 1 elements after core filter
+2026-05-05 17:00:23,612 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 17:00:23,612 [grid_analyzer] DEBUG: Tile (0,0): 2 elements after core filter
+2026-05-05 17:00:23,630 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 17:00:23,644 [overlay] DEBUG: Overlay: 3 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 17:00:23,647 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 17:00:23,674 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 17:00:30,381 [overlay] DEBUG: Overlay cleared
+2026-05-05 22:17:10,252 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 1
+2026-05-05 22:18:56,362 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-05 22:18:56,368 [explain_mode] DEBUG: Mouse tracking started
+2026-05-05 22:18:56,369 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-05 22:18:56,593 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-05 22:18:56,593 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-05 22:18:58,569 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 22:18:58,569 [overlay] DEBUG: Overlay cleared
+2026-05-05 22:19:06,878 [main] DEBUG: Query: 'Where do I search things up?'
+2026-05-05 22:19:06,878 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 22:19:06,878 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 22:19:06,942 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 22:19:07,091 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 22:19:07,536 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:07,603 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:07,633 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:07,657 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:07,657 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 22:19:08,567 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search things up?'
+2026-05-05 22:19:08,575 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search things up?'
+2026-05-05 22:19:08,586 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search things up?'
+2026-05-05 22:19:08,608 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do I search things up?'
+2026-05-05 22:19:11,369 [ai_client] DEBUG: Raw AI response (243 chars): {
+  "elements": [
+    {
+      "label": "Ask Google search box",
+      "bounding_box": { "x": 497, "y": 0, "width": 607, "height": 30 },
+      "explanation": "Click this 'Ask Google' search input field at the top to search the web."
+    }
+  ]
+}
+2026-05-05 22:19:11,369 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 22:19:11,369 [grid_analyzer] DEBUG:   core-filtered 'Ask Google search box' centre (800,525) not in core (0,600)–(960,1200)
+2026-05-05 22:19:11,369 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-05 22:19:11,657 [ai_client] DEBUG: Raw AI response (316 chars): ```json
+{
+  "elements": [
+    {
+      "label": "AI Mode / Search button",
+      "bounding_box": { "x": 489, "y": 0, "width": 110, "height": 20 },
+      "explanation": "Click the search/omnibox at the top of Chrome (not visible here, scroll up) or use the AI Mode button visible at the top to search."
+2026-05-05 22:19:11,672 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "AI Mode / Search button",
+      "bounding_box": { "x": 489, "y": 0, "width": 110, "height": 20 },
+      "explanation": "Click the search/omnibox at the top of Chrome (not visible here, scroll up) or use the AI Mode button visible at the top to search."
+    }
+  ]
+}
+```
+2026-05-05 22:19:11,672 [grid_analyzer] WARNING: Tile (816,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-05 22:19:11,790 [ai_client] DEBUG: Raw AI response (473 chars): {
+  "elements": [
+    {
+      "label": "Google Search input field",
+      "bounding_box": { "x": 0, "y": 488, "width": 614, "height": 58 },
+      "explanation": "Click on this search box to type your search query into Google."
+    },
+    {
+      "label": "Address bar / Omnibox",
+      "bounding_box"
+2026-05-05 22:19:11,790 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 22:19:11,791 [grid_analyzer] DEBUG: Tile (816,0): 2 elements after core filter
+2026-05-05 22:19:12,358 [ai_client] DEBUG: Raw AI response (493 chars): {
+  "elements": [
+    {
+      "label": "Ask Google search box",
+      "bounding_box": { "x": 497, "y": 495, "width": 607, "height": 50 },
+      "explanation": "Click this 'Ask Google' search box on the new tab page to type your search query."
+    },
+    {
+      "label": "Address bar / Omnibox",
+    
+2026-05-05 22:19:12,358 [ai_client] DEBUG: Parsed 2 elements
+2026-05-05 22:19:12,358 [grid_analyzer] DEBUG: Tile (0,0): 2 elements after core filter
+2026-05-05 22:19:12,358 [grid_analyzer] DEBUG: Label-merge: 4 -> 3
+2026-05-05 22:19:12,358 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 2
+2026-05-05 22:19:12,373 [grid_analyzer] DEBUG: Grid done: 4 raw -> 2 final
+2026-05-05 22:19:12,374 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 22:19:12,429 [overlay] DEBUG: Overlay: 2 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 22:19:12,436 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:12,930 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:28,560 [overlay] DEBUG: Overlay cleared
+2026-05-05 22:19:33,833 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-05 22:19:33,833 [overlay] DEBUG: Overlay cleared
+2026-05-05 22:19:40,107 [main] DEBUG: Query: 'Where's my gmail bookmark'
+2026-05-05 22:19:40,107 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-05 22:19:40,107 [app_detector] DEBUG: Matched app: chrome
+2026-05-05 22:19:40,123 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 22:19:40,226 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 22:19:40,290 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:40,322 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:40,338 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:40,370 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:40,370 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 22:19:40,370 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's my gmail bookmark'
+2026-05-05 22:19:40,370 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's my gmail bookmark'
+2026-05-05 22:19:40,386 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's my gmail bookmark'
+2026-05-05 22:19:40,386 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's my gmail bookmark'
+2026-05-05 22:19:41,789 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 22:19:41,789 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 22:19:41,789 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-05 22:19:42,106 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 22:19:42,106 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 22:19:42,106 [grid_analyzer] DEBUG: Tile (816,510): 0 elements after core filter
+2026-05-05 22:19:42,771 [ai_client] DEBUG: Raw AI response (173 chars): {"elements": [{"label": "Gmail bookmark", "bounding_box": {"x": 139, "y": 124, "width": 110, "height": 30}, "explanation": "Click this bookmark to open your Gmail inbox."}]}
+2026-05-05 22:19:42,771 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 22:19:42,771 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-05 22:19:42,787 [ai_client] DEBUG: Raw AI response (190 chars): {"elements":[{"label":"Gmail link","bounding_box":{"x":851,"y":183,"width":50,"height":26},"explanation":"Click 'Gmail' in the top-right area of the Google homepage to access your Gmail."}]}
+2026-05-05 22:19:42,787 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 22:19:42,787 [grid_analyzer] DEBUG: Tile (816,0): 1 elements after core filter
+2026-05-05 22:19:42,787 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-05 22:19:42,787 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-05 22:19:42,787 [grid_analyzer] DEBUG: Grid done: 2 raw -> 2 final
+2026-05-05 22:19:42,787 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 22:19:42,826 [overlay] DEBUG: Overlay: 2 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 22:19:42,829 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:42,852 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:55,226 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:55,384 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:55,527 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:55,527 [main] DEBUG: Try Again: re-running grid analysis with same query
+2026-05-05 22:19:55,527 [app_detector] DEBUG: Active window: 'python3'
+2026-05-05 22:19:55,543 [overlay] DEBUG: Overlay cleared
+2026-05-05 22:19:55,559 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-05 22:19:55,670 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-05 22:19:55,718 [screenshot] DEBUG: Tile [0,0] (0,0)–(1104,690)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:55,766 [screenshot] DEBUG: Tile [0,1] (816,0)–(1920,690)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:55,798 [screenshot] DEBUG: Tile [1,0] (0,510)–(1104,1200)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:55,830 [screenshot] DEBUG: Tile [1,1] (816,510)–(1920,1200)  phys 1104×690  ai 1104×690
+2026-05-05 22:19:55,830 [grid_analyzer] DEBUG: Grid 2×2: 4 tiles, full 1920×1200
+2026-05-05 22:19:55,830 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where's my gmail bookmark'
+2026-05-05 22:19:55,830 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where's my gmail bookmark'
+2026-05-05 22:19:55,830 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where's my gmail bookmark'
+2026-05-05 22:19:55,830 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where's my gmail bookmark'
+2026-05-05 22:19:57,007 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 22:19:57,007 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 22:19:57,007 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-05 22:19:57,928 [ai_client] DEBUG: Raw AI response (208 chars): {"elements": [{"label": "Gmail link", "bounding_box": {"x": 857, "y": 191, "width": 50, "height": 20}, "explanation": "Click this Gmail link to access your Gmail account directly from the Google homepage."}]}
+2026-05-05 22:19:57,928 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 22:19:57,928 [grid_analyzer] DEBUG: Tile (816,0): 1 elements after core filter
+2026-05-05 22:19:58,135 [ai_client] DEBUG: Raw AI response (201 chars): {"elements":[{"label":"Gmail Inbox bookmark","bounding_box":{"x":141,"y":124,"width":155,"height":30},"explanation":"Click this bookmark labeled 'Inbox (1) - anjalikai...' to open your Gmail inbox."}]}
+2026-05-05 22:19:58,135 [ai_client] DEBUG: Parsed 1 elements
+2026-05-05 22:19:58,135 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-05 22:19:58,325 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-05 22:19:58,325 [ai_client] DEBUG: Parsed 0 elements
+2026-05-05 22:19:58,325 [grid_analyzer] DEBUG: Tile (816,510): 0 elements after core filter
+2026-05-05 22:19:58,325 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-05 22:19:58,325 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-05 22:19:58,325 [grid_analyzer] DEBUG: Grid done: 2 raw -> 2 final
+2026-05-05 22:19:58,325 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-05 22:19:58,345 [overlay] DEBUG: Overlay: 2 elements, ai-img 1920×1200, window 1536×960
+2026-05-05 22:19:58,348 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:58,372 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:19:58,411 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:20:10,365 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:20:10,586 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-05 22:20:10,602 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)

@@ -7,10 +7,15 @@ _APP_CONTEXTS: dict[str, str] = {
         "bottom of the Zoom window during an active meeting."
     ),
     "chrome": (
-        "The user is in Google Chrome. Common UI elements: address bar / omnibox (top center), "
-        "back button (top-left arrow), forward button, reload button, bookmark star icon, "
-        "bookmarks bar, tab strip at top, new tab '+' button, extensions toolbar (puzzle icon), "
-        "three-dot menu (top-right corner)."
+        "The user is in Google Chrome. Common UI elements: address bar / omnibox (top center, "
+        "a long white input bar spanning most of the width), back button (top-left arrow), "
+        "forward button, reload button, bookmark star icon, bookmarks bar, tab strip at top, "
+        "new tab '+' button, extensions toolbar (puzzle icon), three-dot menu (top-right corner). "
+        "IMPORTANT: On the Chrome New Tab page the Google Search input field is a text box "
+        "labeled 'Search Google or type a URL' or 'Ask Google' — it sits BELOW the Google "
+        "logo/doodle image and is visually distinct from the decorative logo. Do NOT confuse "
+        "the Google logo, doodle image, or decorative artwork with the actual search input field. "
+        "The search input is always a rectangular text box you can click and type into."
     ),
     "vscode": (
         "The user is in Visual Studio Code. Common UI elements: activity bar (far-left icons for "
@@ -33,8 +38,9 @@ The JSON must match this exact schema:
     }
   ]
 }
-Bounding box coordinates are pixels relative to the top-left corner of the screenshot.
-Return only the elements most relevant to the user's query. Maximum 6 elements."""
+Bounding box coordinates are pixels relative to the top-left corner of the screenshot image you received.
+Return only the elements most relevant to the user's query. Maximum 6 elements.
+If the image region shown does not contain any UI elements relevant to the query, return: { "elements": [] }"""
 
 _EXPLAIN_SCHEMA = """\
 You must respond with ONLY valid JSON — no markdown fences, no commentary, nothing else.
