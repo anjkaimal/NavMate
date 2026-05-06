@@ -32,15 +32,29 @@ The JSON must match this exact schema:
 {
   "elements": [
     {
-      "label": "<short name for the UI element>",
-      "bounding_box": { "x": <int>, "y": <int>, "width": <int>, "height": <int> },
-      "explanation": "<one sentence instruction for the user>"
+      "bbox": { "x_min": <int>, "y_min": <int>, "x_max": <int>, "y_max": <int> },
+      "label": "<2-4 word name for the UI element>",
+      "voice_instruction": "<direct spoken command, 5-10 words, e.g. 'Click the plus button to zoom in'>"
     }
   ]
 }
 Bounding box coordinates are pixels relative to the top-left corner of the screenshot image you received.
-Return only the elements most relevant to the user's query. Maximum 6 elements.
-If the image region shown does not contain any UI elements relevant to the query, return: { "elements": [] }"""
+
+Return the ONE element the user should click to IMMEDIATELY perform the requested action.
+
+Strict selection rules:
+- The element must directly and immediately perform the action when clicked.
+- Do NOT return a menu or dropdown that merely CONTAINS the action (e.g. a hamburger/three-dot menu). Return the direct button instead.
+- Do NOT return adjacent, unrelated, or container elements.
+- Do NOT suggest keyboard shortcuts or workarounds — only a visible, clickable control.
+- If the exact direct control is NOT visible in this image tile, return { "elements": [] }. Do not guess or substitute a nearby control.
+- Do NOT return multiple elements.
+
+Geometry rules:
+- The bounding box must tightly fit the visible icon or control only.
+- Aim for 90-110% of the target element's visible area — no padding beyond a few pixels.
+
+If no direct control for the query is visible here, return: { "elements": [] }"""
 
 _EXPLAIN_SCHEMA = """\
 You must respond with ONLY valid JSON — no markdown fences, no commentary, nothing else.

@@ -136,6 +136,7 @@ def analyze_grid(
         status_cb(2)
 
     result = _postprocess(raw, full_w, full_h)
+    result = _elect_best(result)
     log.debug(f"Grid done: {len(raw)} raw -> {len(result)} final")
     return result, full_w, full_h
 
@@ -193,6 +194,38 @@ def _query_tile(tile: dict, user_query: str, app_key: str) -> list[dict]:
             )
 
     return kept
+
+
+# ======================================================================
+# Final election: keep exactly one element
+# ======================================================================
+
+def _elect_best(elements: list[dict]) -> list[dict]:
+    """
+    After merge + dedup, enforce the single-element contract.
+
+    When multiple distinct candidates survive (each tile returned a different
+    "most relevant" element), pick the one that is most likely to be a direct
+    action button:
+      1. Prefer elements whose bounding box is close to square (aspect ratio
+         nearest 1:1) — buttons and icons are square; scrollbars, address bars,
+         and toolbars are highly elongated.
+      2. Among elements with the same squareness tier, prefer the smaller one
+         (more specific control).
+    """
+    if len(elements) <= 1:
+        return elements
+
+    def _score(el: dict) -> tuple:
+        bb = el["bounding_box"]
+        w, h = max(bb["width"], 1), max(bb["height"], 1)
+        elongation = max(w / h, h / w)   # 1.0 = perfect square; higher = elongated
+        area = w * h
+        return (elongation, area)
+
+    best = min(elements, key=_score)
+    log.debug(f"Elected '{best['label']}' from {len(elements)} candidates")
+    return [best]
 
 
 # ======================================================================
@@ -297,12 +330,14 @@ def _union_elements(group: list[dict]) -> dict:
     y1  = min(bb["y"]              for bb in bbs)
     x2  = max(bb["x"] + bb["width"]  for bb in bbs)
     y2  = max(bb["y"] + bb["height"] for bb in bbs)
-    # Keep the label/explanation from the largest detection (most context)
+    # Keep the label/instruction from the largest detection (most context)
     best = max(group, key=lambda el: el["bounding_box"]["width"] * el["bounding_box"]["height"])
     return {
-        "label":       best["label"],
-        "bounding_box": {"x": x1, "y": y1, "width": x2 - x1, "height": y2 - y1},
-        "explanation": best["explanation"],
+        "label":            best["label"],
+        "bounding_box":     {"x": x1, "y": y1, "width": x2 - x1, "height": y2 - y1},
+        "voice_instruction": best.get("voice_instruction")
+                             or best.get("instruction")
+                             or best.get("explanation", ""),
     }
 
 

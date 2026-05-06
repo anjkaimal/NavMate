@@ -151,10 +151,10 @@ class OverlayWindow(QWidget):
                   f"ai-img {self._ai_img_w}×{self._ai_img_h})")
 
         label_font = QFont("Segoe UI", config.OVERLAY_LABEL_FONT_SIZE, QFont.Weight.Bold)
-        expl_font  = QFont("Segoe UI", config.OVERLAY_EXPL_FONT_SIZE)
         box_color    = QColor(config.OVERLAY_BOX_COLOR)
         corner_color = QColor(config.OVERLAY_CORNER_COLOR)
 
+        instruction = ""
         for el in self._elements:
             bb = el["bounding_box"]
             x  = round(bb["x"]      * scale_x)
@@ -163,9 +163,14 @@ class OverlayWindow(QWidget):
             h  = round(bb["height"] * scale_y)
 
             self._draw_box(painter, x, y, w, h, box_color, corner_color)
-            self._draw_label(painter, x, y, el.get("label", ""), label_font)
-            if el.get("explanation"):
-                self._draw_explanation(painter, x, y, w, h, el["explanation"], expl_font)
+            self._draw_label(painter, x, y, w, el.get("label", ""), label_font)
+            if not instruction:
+                instruction = (el.get("voice_instruction")
+                               or el.get("instruction")
+                               or el.get("explanation", ""))
+
+        if instruction:
+            self._draw_instruction_bar(painter, instruction)
 
         painter.end()
 
@@ -197,7 +202,7 @@ class OverlayWindow(QWidget):
     def _draw_label(
         self,
         p: QPainter,
-        x: int, y: int,
+        x: int, y: int, box_w: int,
         text: str,
         font: QFont,
     ) -> None:
@@ -206,12 +211,14 @@ class OverlayWindow(QWidget):
         p.setFont(font)
         fm = QFontMetrics(font)
 
-        pad_h, pad_v = 8, 4
+        pad_h, pad_v = 10, 5
         badge_w = fm.horizontalAdvance(text) + pad_h * 2
         badge_h = fm.height() + pad_v * 2
 
-        badge_x = x
-        badge_y = max(0, y - badge_h - 6)
+        # Centre the label horizontally over the box; keep it on screen.
+        badge_x = x + (box_w - badge_w) // 2
+        badge_x = max(0, min(self.width() - badge_w, badge_x))
+        badge_y = max(0, y - badge_h - 8)
 
         r, g, b = _hex_to_rgb(config.OVERLAY_LABEL_BG)
         p.setPen(Qt.PenStyle.NoPen)
@@ -225,46 +232,39 @@ class OverlayWindow(QWidget):
         p.setBrush(Qt.BrushStyle.NoBrush)
         p.drawText(badge_x + pad_h, badge_y + pad_v + fm.ascent(), text)
 
-    def _draw_explanation(
-        self,
-        p: QPainter,
-        x: int, y: int, w: int, h: int,
-        text: str,
-        font: QFont,
-    ) -> None:
+    def _draw_instruction_bar(self, p: QPainter, text: str) -> None:
+        """Render a centered voice-instruction caption near the bottom of the screen."""
+        font = QFont("Segoe UI", config.OVERLAY_INSTR_FONT_SIZE)
         p.setFont(font)
         fm = QFontMetrics(font)
 
-        max_text_w = max(w, 320)
+        sw, sh = self.width(), self.height()
+        max_text_w = int(sw * 0.75)
         lines = _wrap_text(text, fm, max_text_w)
         if not lines:
             return
 
-        pad_h, pad_v = 10, 6
-        line_h = fm.height() + 2
-        badge_w = max(fm.horizontalAdvance(ln) for ln in lines) + pad_h * 2
-        badge_h = len(lines) * line_h + pad_v * 2
+        pad_h, pad_v = 20, 10
+        line_h = fm.height() + 3
+        text_w = max(fm.horizontalAdvance(ln) for ln in lines)
+        bar_w = text_w + pad_h * 2
+        bar_h = len(lines) * line_h + pad_v * 2
 
-        badge_x = x
-        badge_y = y + h + 8
-
-        screen_w = self.width()
-        if badge_x + badge_w > screen_w - 4:
-            badge_x = screen_w - badge_w - 4
+        # Sits above the Esc hint (30px) with an 18px gap, horizontally centered.
+        bar_x = (sw - bar_w) // 2
+        bar_y = sh - 30 - 18 - bar_h
 
         r, g, b, a = config.OVERLAY_EXPL_BG
         p.setPen(QPen(QColor(config.OVERLAY_EXPL_BORDER), 1))
         p.setBrush(QBrush(QColor(r, g, b, a)))
-        p.drawRoundedRect(
-            badge_x, badge_y, badge_w, badge_h,
-            config.OVERLAY_BADGE_RADIUS, config.OVERLAY_BADGE_RADIUS,
-        )
+        p.drawRoundedRect(bar_x, bar_y, bar_w, bar_h, 10, 10)
 
         p.setPen(QColor(config.OVERLAY_EXPL_COLOR))
         p.setBrush(Qt.BrushStyle.NoBrush)
-        ty = badge_y + pad_v + fm.ascent()
+        ty = bar_y + pad_v + fm.ascent()
         for line in lines:
-            p.drawText(badge_x + pad_h, ty, line)
+            lx = bar_x + (bar_w - fm.horizontalAdvance(line)) // 2
+            p.drawText(lx, ty, line)
             ty += line_h
 
     # ------------------------------------------------------------------

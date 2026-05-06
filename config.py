@@ -28,7 +28,8 @@ OVERLAY_LABEL_FONT_SIZE  = 15          # +25 % over original 12 pt
 OVERLAY_EXPL_BG          = (15, 15, 40, 218)   # near-opaque dark navy pill
 OVERLAY_EXPL_BORDER      = "#1E6FEB"
 OVERLAY_EXPL_COLOR       = "#FFFFFF"
-OVERLAY_EXPL_FONT_SIZE   = 14          # +27 % over original 11 pt
+OVERLAY_EXPL_FONT_SIZE   = 14          # kept for backwards compat
+OVERLAY_INSTR_FONT_SIZE  = 16          # voice instruction bar
 
 OVERLAY_CORNER_COLOR     = "#5AABFF"   # lighter blue accent dots
 OVERLAY_BADGE_RADIUS     = 5           # px, rounded corners on badges

@@ -1838,3 +1838,2266 @@
 2026-05-06 10:54:10,050 [hotkey] DEBUG: Hotkey fired: explain toggle
 2026-05-06 10:54:10,050 [explain_mode] DEBUG: Explain mode ON
 2026-05-06 10:54:10,050 [main] DEBUG: Explain mode: ON
+2026-05-06 11:11:22,895 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:22,898 [explain_mode] DEBUG: Explain at cursor (721,542), region (571,392,300,300)
+2026-05-06 11:11:22,913 [screenshot] DEBUG: Captured region (571,392,300,300): (300, 300)
+2026-05-06 11:11:22,931 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:22,931 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:23,379 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:25,633 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:25,633 [explain_mode] DEBUG: Explain at cursor (721,542), region (571,392,300,300)
+2026-05-06 11:11:25,662 [screenshot] DEBUG: Captured region (571,392,300,300): (300, 300)
+2026-05-06 11:11:25,669 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:25,671 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:25,673 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:26,846 [ai_client] DEBUG: Raw AI response (292 chars): {"explanation": "This appears to be a list of email subject lines or newsletter names in an inbox or email client, showing partial text of multiple email entries (such as 'Women in STEM', 'Google', 'Medium Daily Digest', etc.). Clicking on any row would open that specific email or message."}
+2026-05-06 11:11:26,895 [explain_mode] DEBUG: Tooltip shown at (739,560)
+2026-05-06 11:11:28,138 [ai_client] DEBUG: Raw AI response (231 chars): {"explanation": "This appears to be a list of email subject lines or newsletter names displayed in an email inbox or digest view. Each row represents a separate email or subscription item that the user can click to open and read."}
+2026-05-06 11:11:28,201 [explain_mode] DEBUG: Tooltip shown at (739,560)
+2026-05-06 11:11:32,524 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:32,536 [explain_mode] DEBUG: Explain at cursor (277,905), region (127,755,300,300)
+2026-05-06 11:11:32,564 [screenshot] DEBUG: Captured region (127,755,300,300): (300, 300)
+2026-05-06 11:11:32,570 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:32,572 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:32,574 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:32,903 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:32,912 [explain_mode] DEBUG: Explain at cursor (277,905), region (127,755,300,300)
+2026-05-06 11:11:32,926 [screenshot] DEBUG: Captured region (127,755,300,300): (300, 300)
+2026-05-06 11:11:32,926 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:32,926 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:32,936 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:33,182 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:33,188 [explain_mode] DEBUG: Explain at cursor (277,905), region (127,755,300,300)
+2026-05-06 11:11:33,212 [screenshot] DEBUG: Captured region (127,755,300,300): (300, 300)
+2026-05-06 11:11:33,216 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:33,218 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:33,220 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:39,333 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:39,341 [explain_mode] DEBUG: Explain at cursor (230,980), region (80,830,300,300)
+2026-05-06 11:11:39,361 [screenshot] DEBUG: Captured region (80,830,300,300): (300, 300)
+2026-05-06 11:11:39,368 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:39,368 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:39,368 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:39,674 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:39,679 [explain_mode] DEBUG: Explain at cursor (230,980), region (80,830,300,300)
+2026-05-06 11:11:39,696 [screenshot] DEBUG: Captured region (80,830,300,300): (300, 300)
+2026-05-06 11:11:39,700 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:39,700 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:39,702 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:39,931 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:39,932 [explain_mode] DEBUG: Explain at cursor (230,980), region (80,830,300,300)
+2026-05-06 11:11:39,946 [screenshot] DEBUG: Captured region (80,830,300,300): (300, 300)
+2026-05-06 11:11:39,951 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:39,952 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:39,955 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:40,135 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:40,135 [explain_mode] DEBUG: Explain at cursor (230,980), region (80,830,300,300)
+2026-05-06 11:11:40,160 [screenshot] DEBUG: Captured region (80,830,300,300): (300, 300)
+2026-05-06 11:11:40,166 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:40,166 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:40,168 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:40,349 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:40,351 [explain_mode] DEBUG: Explain at cursor (230,980), region (80,830,300,300)
+2026-05-06 11:11:40,359 [screenshot] DEBUG: Captured region (80,830,300,300): (300, 300)
+2026-05-06 11:11:40,361 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:40,361 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:40,363 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:40,524 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:40,526 [explain_mode] DEBUG: Explain at cursor (230,980), region (80,830,300,300)
+2026-05-06 11:11:40,559 [screenshot] DEBUG: Captured region (80,830,300,300): (300, 300)
+2026-05-06 11:11:40,559 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:40,559 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:40,567 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:40,676 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:11:40,681 [explain_mode] DEBUG: Explain at cursor (230,980), region (80,830,300,300)
+2026-05-06 11:11:40,695 [screenshot] DEBUG: Captured region (80,830,300,300): (300, 300)
+2026-05-06 11:11:40,695 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:11:40,695 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:11:40,695 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:11:41,446 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcG5K92ui3KjRn8m1HK'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcG5K92ui3KjRn8m1HK'}
+2026-05-06 11:11:41,542 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:44,110 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGGKRYkGFf25BTZjJj'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGGKRYkGFf25BTZjJj'}
+2026-05-06 11:11:44,110 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:44,490 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGHGUR5p4AZRV9p47L'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGHGUR5p4AZRV9p47L'}
+2026-05-06 11:11:44,492 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:46,409 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGUe5w3jRreGyNbGB5'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGUe5w3jRreGyNbGB5'}
+2026-05-06 11:11:46,409 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:47,157 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGY4ijmZXatXxiRCUd'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGY4ijmZXatXxiRCUd'}
+2026-05-06 11:11:47,160 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:47,244 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGWDqib24y1brP4n7C'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGWDqib24y1brP4n7C'}
+2026-05-06 11:11:47,249 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:47,620 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGXuHs92Z9uqX1Gs7N'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGXuHs92Z9uqX1Gs7N'}
+2026-05-06 11:11:47,620 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:47,666 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGZFQkL7kAdLZg2qb1'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGZFQkL7kAdLZg2qb1'}
+2026-05-06 11:11:47,702 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:48,060 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGZiw6CvBSAENkkrmh'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGZiw6CvBSAENkkrmh'}
+2026-05-06 11:11:48,060 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:11:48,263 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGYhuxaWoqu3tpVBhn'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcGYhuxaWoqu3tpVBhn'}
+2026-05-06 11:11:48,267 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:12:21,304 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:12:21,310 [explain_mode] DEBUG: Explain at cursor (258,924), region (108,774,300,300)
+2026-05-06 11:12:21,325 [screenshot] DEBUG: Captured region (108,774,300,300): (300, 300)
+2026-05-06 11:12:21,329 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:12:21,331 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:12:21,332 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:12:33,704 [main] ERROR: Explain error: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcKskEHjhpvkbQEPbgx'}
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 158, in worker
+    result = query_ai(b64, "What does this UI element do?", app_key, mode="explain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\ai_client.py", line 53, in query_ai
+    message = client.messages.create(
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_utils\_utils.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\resources\messages\messages.py", line 1003, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1373, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\anthropic\_base_client.py", line 1146, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic._exceptions.OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcKskEHjhpvkbQEPbgx'}
+2026-05-06 11:12:33,709 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:12:35,159 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:12:35,165 [explain_mode] DEBUG: Explain at cursor (148,547), region (0,397,300,300)
+2026-05-06 11:12:35,196 [screenshot] DEBUG: Captured region (0,397,300,300): (300, 300)
+2026-05-06 11:12:35,201 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-06 11:12:35,202 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:12:35,202 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-06 11:12:38,062 [ai_client] DEBUG: Raw AI response (249 chars): {"explanation": "This appears to be a plain light green colored background or panel element. It likely serves as a decorative background, a color swatch, or a highlighted/selected region within the UI, but contains no interactive controls or text."}
+2026-05-06 11:12:38,121 [explain_mode] DEBUG: Tooltip shown at (166,565)
+2026-05-06 11:12:55,696 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 11:12:55,696 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 11:12:55,696 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 11:12:55,792 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 11:12:55,792 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 11:13:06,331 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:13:06,336 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:13:15,914 [main] DEBUG: Query: 'How to create a new email'
+2026-05-06 11:13:15,915 [app_detector] DEBUG: Active window: 'inbox (5,747) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 11:13:15,915 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:13:16,039 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 11:13:16,114 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 11:13:16,133 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 11:13:16,164 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 11:13:16,180 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 11:13:16,196 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 11:13:16,228 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 11:13:16,246 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 11:13:16,246 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 11:13:17,081 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to create a new email'
+2026-05-06 11:13:17,081 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to create a new email'
+2026-05-06 11:13:17,097 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to create a new email'
+2026-05-06 11:13:17,097 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to create a new email'
+2026-05-06 11:13:17,097 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to create a new email'
+2026-05-06 11:13:17,119 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to create a new email'
+2026-05-06 11:13:19,713 [ai_client] DEBUG: Raw AI response (244 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Compose / New Email Button",
+      "bounding_box": { "x": 697, "y": 62, "width": 30, "height": 30 },
+      "explanation": "Click this '+' button to compose and create a new email."
+    }
+  ]
+}
+```
+2026-05-06 11:13:19,713 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Compose / New Email Button",
+      "bounding_box": { "x": 697, "y": 62, "width": 30, "height": 30 },
+      "explanation": "Click this '+' button to compose and create a new email."
+    }
+  ]
+}
+```
+2026-05-06 11:13:19,713 [grid_analyzer] WARNING: Tile (1184,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:13:19,919 [ai_client] DEBUG: Raw AI response (250 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 724, "y": 588, "width": 28, "height": 28 },
+      "explanation": "Click this '+' (Compose) button to create and write a new email in Gmail."
+    }
+  ]
+}
+```
+2026-05-06 11:13:19,919 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 724, "y": 588, "width": 28, "height": 28 },
+      "explanation": "Click this '+' (Compose) button to create and write a new email in Gmail."
+    }
+  ]
+}
+```
+2026-05-06 11:13:19,919 [grid_analyzer] WARNING: Tile (1184,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:13:20,383 [ai_client] DEBUG: Raw AI response (312 chars): { "elements": [ { "label": "Labels + (New Label/Compose area)", "bounding_box": { "x": 399, "y": 100, "width": 20, "height": 25 }, "explanation": "In Gmail, to compose a new email, look for the 'Compose' button — scroll up in the left sidebar to find the large '+ Compose' button near the top of the 
+2026-05-06 11:13:20,383 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 11:13:20,383 [grid_analyzer] DEBUG: Tile (0,510): 1 elements after core filter
+2026-05-06 11:13:21,971 [ai_client] DEBUG: Raw AI response (241 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 131, "y": 196, "width": 174, "height": 52 },
+      "explanation": "Click the 'Compose' button to open a new email drafting window."
+    }
+  ]
+}
+```
+2026-05-06 11:13:21,971 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 131, "y": 196, "width": 174, "height": 52 },
+      "explanation": "Click the 'Compose' button to open a new email drafting window."
+    }
+  ]
+}
+```
+2026-05-06 11:13:21,971 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:13:23,255 [ai_client] DEBUG: Raw AI response (389 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 0, "y": 60, "width": 150, "height": 40 },
+      "explanation": "Look for the 'Compose' button (usually a pencil/edit icon or a button labeled 'Compose') typically located in the top-left area of Gmail — scr
+2026-05-06 11:13:23,255 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 0, "y": 60, "width": 150, "height": 40 },
+      "explanation": "Look for the 'Compose' button (usually a pencil/edit icon or a button labeled 'Compose') typically located in the top-left area of Gmail — scroll left or look for it just above the inbox label to start a new email."
+    }
+  ]
+}
+```
+2026-05-06 11:13:23,255 [grid_analyzer] WARNING: Tile (544,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:13:24,836 [grid_analyzer] WARNING: Tile (544,510) failed: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcPjRXowH6uVffbhGCm'}
+2026-05-06 11:13:24,836 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 11:13:24,836 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 11:13:24,836 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:13:24,932 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 11:13:24,937 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:13:25,366 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:13:34,592 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:13:34,784 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:13:34,950 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:13:34,950 [main] DEBUG: Try Again: re-running grid analysis with same query
+2026-05-06 11:13:34,962 [app_detector] DEBUG: Active window: 'python3'
+2026-05-06 11:13:34,981 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:13:35,013 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 11:13:35,125 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 11:13:35,151 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 11:13:35,197 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 11:13:35,229 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 11:13:35,245 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 11:13:35,277 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 11:13:35,292 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 11:13:35,292 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 11:13:35,292 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to create a new email'
+2026-05-06 11:13:35,292 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to create a new email'
+2026-05-06 11:13:35,308 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to create a new email'
+2026-05-06 11:13:35,308 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to create a new email'
+2026-05-06 11:13:35,308 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to create a new email'
+2026-05-06 11:13:35,308 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to create a new email'
+2026-05-06 11:13:36,548 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 11:13:36,548 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 11:13:36,548 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 11:13:37,597 [ai_client] DEBUG: Raw AI response (178 chars): {"elements":[{"label":"Compose Button","bounding_box":{"x":112,"y":" 196","width":193,"height":52},"explanation":"Click the 'Compose' button to open a new email draft window."}]}
+2026-05-06 11:13:37,597 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: bounding_box missing/invalid 'y': {'x': 112, 'y': ' 196', 'width': 193, 'height': 52}
+2026-05-06 11:13:37,686 [ai_client] DEBUG: Raw AI response (232 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 697, "y": 574, "width": 30, "height": 30 },
+      "explanation": "Click the '+' button to compose and create a new email."
+    }
+  ]
+}
+```
+2026-05-06 11:13:37,686 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 697, "y": 574, "width": 30, "height": 30 },
+      "explanation": "Click the '+' button to compose and create a new email."
+    }
+  ]
+}
+```
+2026-05-06 11:13:37,686 [grid_analyzer] WARNING: Tile (1184,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:13:38,753 [ai_client] DEBUG: Raw AI response (349 chars): {
+  "elements": [
+    {
+      "label": "Compose / New Email Button",
+      "bounding_box": { "x": 399, "y": 100, "width": 20, "height": 20 },
+      "explanation": "This '+' button near Labels can sometimes be used for creating new items, but look for a dedicated 'Compose' button (usually at the top-
+2026-05-06 11:13:38,753 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 11:13:38,753 [grid_analyzer] DEBUG: Tile (0,510): 1 elements after core filter
+2026-05-06 11:13:41,577 [ai_client] DEBUG: Raw AI response (323 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 0, "y": 60, "width": 200, "height": 40 },
+      "explanation": "Look for the 'Compose' button typically located in the left sidebar of Gmail (likely above the inbox label shown at top-left) to create a new 
+2026-05-06 11:13:41,577 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Compose Button",
+      "bounding_box": { "x": 0, "y": 60, "width": 200, "height": 40 },
+      "explanation": "Look for the 'Compose' button typically located in the left sidebar of Gmail (likely above the inbox label shown at top-left) to create a new email."
+    }
+  ]
+}
+```
+2026-05-06 11:13:41,577 [grid_analyzer] WARNING: Tile (544,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:13:44,301 [grid_analyzer] WARNING: Tile (1184,510) failed: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CamcR9nX6zRAUH4bLu9Ds'}
+2026-05-06 11:13:44,317 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 11:13:44,320 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 11:13:44,323 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:13:44,345 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 11:13:44,349 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:13:44,391 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:13:50,547 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:45:38,785 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:45:38,790 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:45:43,912 [main] DEBUG: Query: 'Why are the words small'
+2026-05-06 11:45:43,913 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 11:45:43,914 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:45:43,940 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 11:45:44,066 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 11:45:44,095 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 11:45:44,125 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 11:45:44,147 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 11:45:44,169 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 11:45:44,202 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 11:45:44,225 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 11:45:44,226 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 11:45:44,228 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Why are the words small'
+2026-05-06 11:45:44,229 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Why are the words small'
+2026-05-06 11:45:44,238 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Why are the words small'
+2026-05-06 11:45:44,241 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Why are the words small'
+2026-05-06 11:45:44,248 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Why are the words small'
+2026-05-06 11:45:44,252 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Why are the words small'
+2026-05-06 11:45:47,425 [ai_client] DEBUG: Raw AI response (348 chars): { "elements": [] }
+
+The screenshot shows a document with text content, but there are no browser UI controls visible (like zoom controls, accessibility settings, or font size options) in this cropped view that would directly address making text larger. The relevant Chrome controls (zoom, settings) ar
+2026-05-06 11:45:47,426 [ai_client] ERROR: JSON parse failed. Raw: { "elements": [] }
+
+The screenshot shows a document with text content, but there are no browser UI controls visible (like zoom controls, accessibility settings, or font size options) in this cropped view that would directly address making text larger. The relevant Chrome controls (zoom, settings) are not present in this portion of the screenshot.
+2026-05-06 11:45:47,429 [grid_analyzer] WARNING: Tile (1184,510) AIResponseError: AI returned non-JSON output: Extra data: line 3 column 1 (char 20)
+2026-05-06 11:45:48,257 [ai_client] DEBUG: Raw AI response (596 chars): The page appears to be zoomed out. Here are the relevant controls to zoom in:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Three-dot menu (PDF toolbar)",
+      "bounding_box": { "x": 697, "y": 131, "width": 30, "height": 30 },
+      "explanation": "Click this menu in the PDF toolbar to access zo
+2026-05-06 11:45:48,258 [ai_client] ERROR: JSON parse failed. Raw: The page appears to be zoomed out. Here are the relevant controls to zoom in:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Three-dot menu (PDF toolbar)",
+      "bounding_box": { "x": 697, "y": 131, "width": 30, "height": 30 },
+      "explanation": "Click this menu in the PDF toolbar to access zoom controls to increase the text size."
+    },
+    {
+      "label": "Three-dot menu (Chrome)",
+      "bounding_box": { "x": 706, "y": 65, "width": 25, "height": 25 },
+      "explanation": "Click Chrome's three-dot menu and use the Zoom '+' button to zoom in and make text larger."
+    }
+  ]
+}
+```
+2026-05-06 11:45:48,259 [grid_analyzer] WARNING: Tile (1184,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:45:48,527 [ai_client] DEBUG: Raw AI response (663 chars): The PDF is currently zoomed to **99%**. You can increase the zoom level by clicking the **"+" button** to make the text larger.
+
+```json
+{
+  "elements": [
+    {
+      "label": "Zoom In Button",
+      "bounding_box": { "x": 385, "y": 130, "width": 30, "height": 30 },
+      "explanation": "Click the '
+2026-05-06 11:45:48,528 [ai_client] ERROR: JSON parse failed. Raw: The PDF is currently zoomed to **99%**. You can increase the zoom level by clicking the **"+" button** to make the text larger.
+
+```json
+{
+  "elements": [
+    {
+      "label": "Zoom In Button",
+      "bounding_box": { "x": 385, "y": 130, "width": 30, "height": 30 },
+      "explanation": "Click the '+' button to increase the zoom level and make the text appear larger."
+    },
+    {
+      "label": "Zoom Level Display",
+      "bounding_box": { "x": 310, "y": 130, "width": 55, "height": 30 },
+      "explanation": "This shows the current zoom level at 99%; click it to manually type a higher zoom percentage (e.g., 150%) to make the text bigger."
+    }
+  ]
+}
+```
+2026-05-06 11:45:48,529 [grid_analyzer] WARNING: Tile (544,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:45:49,588 [ai_client] DEBUG: Raw AI response (492 chars): { "elements": [] }
+
+The screenshot shows a "Capturing screen..." dialog overlay on top of a webpage with text content. This is not a Chrome UI question about specific UI elements — it's about text size on a webpage. There are no relevant Chrome UI elements to highlight for making text larger in the 
+2026-05-06 11:45:49,589 [ai_client] ERROR: JSON parse failed. Raw: { "elements": [] }
+
+The screenshot shows a "Capturing screen..." dialog overlay on top of a webpage with text content. This is not a Chrome UI question about specific UI elements — it's about text size on a webpage. There are no relevant Chrome UI elements to highlight for making text larger in the currently visible interface.
+
+However, to help: you can use **Ctrl + +** to zoom in, or access zoom settings via the Chrome three-dot menu (not visible in this screenshot).
+
+{ "elements": [] }
+2026-05-06 11:45:49,589 [grid_analyzer] WARNING: Tile (544,510) AIResponseError: AI returned non-JSON output: Extra data: line 3 column 1 (char 20)
+2026-05-06 11:45:50,068 [ai_client] DEBUG: Raw AI response (895 chars): The PDF viewer is displaying a thumbnail/zoomed-out view. Here are the relevant UI elements to increase the text size:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Hamburger/Settings Menu",
+      "bounding_box": { "x": 22, "y": 130, "width": 40, "height": 40 },
+      "explanation": "Click this m
+2026-05-06 11:45:50,070 [ai_client] ERROR: JSON parse failed. Raw: The PDF viewer is displaying a thumbnail/zoomed-out view. Here are the relevant UI elements to increase the text size:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Hamburger/Settings Menu",
+      "bounding_box": { "x": 22, "y": 130, "width": 40, "height": 40 },
+      "explanation": "Click this menu icon to access zoom and view options to make the text larger."
+    },
+    {
+      "label": "Address Bar",
+      "bounding_box": { "x": 155, "y": 62, "width": 520, "height": 34 },
+      "explanation": "The PDF is zoomed out showing thumbnail views — you can use Ctrl+= (zoom in) or Ctrl+Scroll to increase the zoom level and make text larger."
+    },
+    {
+      "label": "Page 1 Thumbnail",
+      "bounding_box": { "x": 113, "y": 205, "width": 155, "height": 195 },
+      "explanation": "Click directly on this page thumbnail to zoom into it and make the text more readable."
+    }
+  ]
+}
+```
+2026-05-06 11:45:50,072 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:45:50,670 [ai_client] DEBUG: Raw AI response (1085 chars): The thumbnail panel on the left is showing **miniature previews** of the document pages, which makes the text appear very small. These are just navigation thumbnails, not the actual reading view.
+
+Here are the relevant UI elements:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Page 2 Thumbnail",
+
+2026-05-06 11:45:50,670 [ai_client] ERROR: JSON parse failed. Raw: The thumbnail panel on the left is showing **miniature previews** of the document pages, which makes the text appear very small. These are just navigation thumbnails, not the actual reading view.
+
+Here are the relevant UI elements:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Page 2 Thumbnail",
+      "bounding_box": {"x": 118, "y": 0, "width": 260, "height": 145},
+      "explanation": "This is a small thumbnail preview of page 2 — click directly on it to navigate to and zoom into that page in the main reading view."
+    },
+    {
+      "label": "Page 3 Thumbnail",
+      "bounding_box": {"x": 118, "y": 168, "width": 260, "height": 210},
+      "explanation": "This is a small thumbnail preview of page 3 — click on it to jump to that page in the main reading area where text will be full size."
+    },
+    {
+      "label": "Main Document Reading Area",
+      "bounding_box": {"x": 375, "y": 0, "width": 265, "height": 630},
+      "explanation": "This is the actual full-size reading view of the document — scroll or click here to read the text at normal size."
+    }
+  ]
+}
+```
+2026-05-06 11:45:50,671 [grid_analyzer] WARNING: Tile (0,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:45:50,673 [grid_analyzer] DEBUG: Grid done: 0 raw -> 0 final
+2026-05-06 11:45:50,680 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:45:50,726 [overlay] DEBUG: Overlay: 0 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 11:45:54,923 [main] DEBUG: Try Again: re-running grid analysis with same query
+2026-05-06 11:45:54,923 [app_detector] DEBUG: Active window: 'python3'
+2026-05-06 11:45:54,987 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:45:55,018 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 11:45:55,091 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 11:45:55,128 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 11:45:55,167 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 11:45:55,187 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 11:45:55,210 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 11:45:55,242 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 11:45:55,259 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 11:45:55,261 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 11:45:55,261 [ai_client] DEBUG: AI request: mode=guide app=generic query='Why are the words small'
+2026-05-06 11:45:55,261 [ai_client] DEBUG: AI request: mode=guide app=generic query='Why are the words small'
+2026-05-06 11:45:55,265 [ai_client] DEBUG: AI request: mode=guide app=generic query='Why are the words small'
+2026-05-06 11:45:55,265 [ai_client] DEBUG: AI request: mode=guide app=generic query='Why are the words small'
+2026-05-06 11:45:55,265 [ai_client] DEBUG: AI request: mode=guide app=generic query='Why are the words small'
+2026-05-06 11:45:55,265 [ai_client] DEBUG: AI request: mode=guide app=generic query='Why are the words small'
+2026-05-06 11:45:57,714 [ai_client] DEBUG: Raw AI response (246 chars): { "elements": [ { "label": "Analyzing UI elements overlay", "bounding_box": { "x": 281, "y": 375, "width": 262, "height": 245 }, "explanation": "An overlay is currently analyzing UI elements, which may be obscuring zoom/text size controls." } ] }
+2026-05-06 11:45:57,714 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 11:45:57,714 [grid_analyzer] DEBUG: Tile (544,510): 1 elements after core filter
+2026-05-06 11:45:58,709 [ai_client] DEBUG: Raw AI response (438 chars): { "elements": [ { "label": "PDF Viewer Menu (three dots)", "bounding_box": { "x": 697, "y": 143, "width": 25, "height": 25 }, "explanation": "Click the three-dot menu in the PDF viewer toolbar to access zoom/view options to make the text larger." }, { "label": "Print button", "bounding_box": { "x": 
+2026-05-06 11:45:58,709 [ai_client] DEBUG: Parsed 2 elements
+2026-05-06 11:45:58,709 [grid_analyzer] DEBUG: Tile (1184,0): 2 elements after core filter
+2026-05-06 11:45:59,830 [ai_client] DEBUG: Raw AI response (702 chars): The PDF is currently displayed at **99% zoom**, which is nearly full size. If the text appears small, you can **increase the zoom level** using the **"+" button** in the toolbar.
+
+```json
+{
+  "elements": [
+    {
+      "label": "Zoom In Button",
+      "bounding_box": { "x": 384, "y": 130, "width": 30
+2026-05-06 11:45:59,830 [ai_client] ERROR: JSON parse failed. Raw: The PDF is currently displayed at **99% zoom**, which is nearly full size. If the text appears small, you can **increase the zoom level** using the **"+" button** in the toolbar.
+
+```json
+{
+  "elements": [
+    {
+      "label": "Zoom In Button",
+      "bounding_box": { "x": 384, "y": 130, "width": 30, "height": 30 },
+      "explanation": "Click the '+' button to increase the zoom level and make the text appear larger."
+    },
+    {
+      "label": "Zoom Percentage Display",
+      "bounding_box": { "x": 310, "y": 130, "width": 55, "height": 30 },
+      "explanation": "The current zoom is set to 99% — you can click here and type a higher value (e.g., 150%) to make the text bigger."
+    }
+  ]
+}
+```
+2026-05-06 11:45:59,830 [grid_analyzer] WARNING: Tile (544,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:46:00,171 [ai_client] DEBUG: Raw AI response (710 chars): The text appears small because you're viewing the document in a **thumbnail/panel view** on the left side, which shows miniature previews of the pages.
+
+```json
+{
+  "elements": [
+    {
+      "label": "Page 2 thumbnail",
+      "bounding_box": {"x": 118, "y": 0, "width": 258, "height": 145},
+      "ex
+2026-05-06 11:46:00,171 [ai_client] ERROR: JSON parse failed. Raw: The text appears small because you're viewing the document in a **thumbnail/panel view** on the left side, which shows miniature previews of the pages.
+
+```json
+{
+  "elements": [
+    {
+      "label": "Page 2 thumbnail",
+      "bounding_box": {"x": 118, "y": 0, "width": 258, "height": 145},
+      "explanation": "This is a small thumbnail preview of page 2 — click on it to navigate to and zoom into the full-size page."
+    },
+    {
+      "label": "Page 3 thumbnail",
+      "bounding_box": {"x": 118, "y": 165, "width": 258, "height": 215},
+      "explanation": "This is a small thumbnail preview of page 3 — click on it to open the full-size view where text will be much larger and readable."
+    }
+  ]
+}
+```
+2026-05-06 11:46:00,171 [grid_analyzer] WARNING: Tile (0,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:46:02,901 [ai_client] DEBUG: Raw AI response (1085 chars): The text appears small likely due to the **zoom level** of the document/application being set too low. Here are the relevant UI elements you can use to increase the text size:
+
+```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scrollbar / Zoom Area",
+      "bounding_box": { "x": 720, "y": 0, 
+2026-05-06 11:46:02,919 [grid_analyzer] WARNING: Tile (1184,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:46:03,532 [ai_client] DEBUG: Raw AI response (1243 chars): The text appears small because you are viewing the PDF in **thumbnail/sidebar view** with the document zoomed out. Here are the relevant UI elements to help you fix this:
+
+```json
+{
+  "elements": [
+    {
+      "label": "PDF Page Thumbnail 1",
+      "bounding_box": {"x": 113, "y": 200, "width": 155, 
+2026-05-06 11:46:03,532 [ai_client] ERROR: JSON parse failed. Raw: The text appears small because you are viewing the PDF in **thumbnail/sidebar view** with the document zoomed out. Here are the relevant UI elements to help you fix this:
+
+```json
+{
+  "elements": [
+    {
+      "label": "PDF Page Thumbnail 1",
+      "bounding_box": {"x": 113, "y": 200, "width": 155, "height": 220},
+      "explanation": "Click directly on this page thumbnail to navigate to and zoom into the full-size page view."
+    },
+    {
+      "label": "Menu Button",
+      "bounding_box": {"x": 25, "y": 133, "width": 40, "height": 30},
+      "explanation": "Click the hamburger menu to access zoom and view options to increase the text size."
+    },
+    {
+      "label": "Address Bar",
+      "bounding_box": {"x": 155, "y": 65, "width": 530, "height": 30},
+      "explanation": "The PDF is being viewed in-browser; consider downloading it and opening in a dedicated PDF reader for better zoom control."
+    }
+  ]
+}
+```
+
+**Main reasons the text looks small:**
+1. You're in **thumbnail panel view** — the pages shown are miniature previews
+2. The **zoom level is low** in the browser's PDF viewer
+3. The **full document view** is cut off to the right side of the screen
+
+**Fix:** Click on a page thumbnail or use **Ctrl + +** to zoom in.
+2026-05-06 11:46:03,532 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:46:03,532 [grid_analyzer] DEBUG: Label-merge: 3 -> 3
+2026-05-06 11:46:03,532 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 3
+2026-05-06 11:46:03,547 [grid_analyzer] DEBUG: Grid done: 3 raw -> 3 final
+2026-05-06 11:46:03,554 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:46:03,593 [overlay] DEBUG: Overlay: 3 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 11:46:03,597 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:46:03,680 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:46:03,713 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:46:13,267 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:46:13,748 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:47:20,846 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:47:20,846 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:47:27,339 [main] DEBUG: Query: 'Show me how to make the text bigger'
+2026-05-06 11:47:27,339 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 11:47:27,339 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:47:27,355 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 11:47:27,475 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 11:47:27,520 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 11:47:27,538 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 11:47:27,567 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 11:47:27,583 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 11:47:27,625 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 11:47:27,656 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 11:47:27,656 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 11:47:27,661 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Show me how to make the text bigger'
+2026-05-06 11:47:27,661 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Show me how to make the text bigger'
+2026-05-06 11:47:27,669 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Show me how to make the text bigger'
+2026-05-06 11:47:27,669 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Show me how to make the text bigger'
+2026-05-06 11:47:27,669 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Show me how to make the text bigger'
+2026-05-06 11:47:27,677 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Show me how to make the text bigger'
+2026-05-06 11:47:30,757 [ai_client] DEBUG: Raw AI response (293 chars): ```json
+{
+  "elements": [
+    {
+      "label": "PDF Viewer More Options Menu",
+      "bounding_box": { "x": 697, "y": 143, "width": 24, "height": 24 },
+      "explanation": "Click this three-dot menu icon in the PDF viewer toolbar to access zoom/text size options for the PDF."
+    }
+  ]
+}
+```
+2026-05-06 11:47:30,757 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "PDF Viewer More Options Menu",
+      "bounding_box": { "x": 697, "y": 143, "width": 24, "height": 24 },
+      "explanation": "Click this three-dot menu icon in the PDF viewer toolbar to access zoom/text size options for the PDF."
+    }
+  ]
+}
+```
+2026-05-06 11:47:30,757 [grid_analyzer] WARNING: Tile (1184,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:47:30,773 [ai_client] DEBUG: Raw AI response (330 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Chrome address bar / omnibox",
+      "bounding_box": { "x": 200, "y": 0, "width": 400, "height": 30 },
+      "explanation": "Click the address bar at the top of Chrome, then use Ctrl+Plus (+) keyboard shortcut to zoom in and make the text appear larger
+2026-05-06 11:47:30,773 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Chrome address bar / omnibox",
+      "bounding_box": { "x": 200, "y": 0, "width": 400, "height": 30 },
+      "explanation": "Click the address bar at the top of Chrome, then use Ctrl+Plus (+) keyboard shortcut to zoom in and make the text appear larger on the page."
+    }
+  ]
+}
+```
+2026-05-06 11:47:30,773 [grid_analyzer] WARNING: Tile (1184,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:47:30,804 [ai_client] DEBUG: Raw AI response (398 chars): {"elements":[{"label":"Zoom In button","bounding_box":{"x":385,"y":132,"width":30,"height":30},"explanation":"Click the '+' button to increase the zoom level and make the text appear bigger."},{"label":"Zoom level input","bounding_box":{"x":313,"y":132,"width":52,"height":30},"explanation":"Click on
+2026-05-06 11:47:30,804 [ai_client] DEBUG: Parsed 2 elements
+2026-05-06 11:47:30,805 [grid_analyzer] DEBUG: Tile (544,0): 2 elements after core filter
+2026-05-06 11:47:30,956 [ai_client] DEBUG: Raw AI response (294 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Windows Search Bar",
+      "bounding_box": { "x": 614, "y": 641, "width": 122, "height": 38 },
+      "explanation": "This appears to be a PDF viewer (not Chrome) — use Ctrl+= or Ctrl+scroll up to zoom in and make the text bigger."
+    }
+  ]
+}
+```
+2026-05-06 11:47:30,957 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Windows Search Bar",
+      "bounding_box": { "x": 614, "y": 641, "width": 122, "height": 38 },
+      "explanation": "This appears to be a PDF viewer (not Chrome) — use Ctrl+= or Ctrl+scroll up to zoom in and make the text bigger."
+    }
+  ]
+}
+```
+2026-05-06 11:47:30,958 [grid_analyzer] WARNING: Tile (0,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:47:31,560 [ai_client] DEBUG: Raw AI response (551 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Address bar / Omnibox",
+      "bounding_box": { "x": 300, "y": 0, "width": 400, "height": 30 },
+      "explanation": "Click the address bar at the top of Chrome to access browser settings for zooming in on the page."
+    },
+    {
+      "label": "Three-
+2026-05-06 11:47:31,560 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Address bar / Omnibox",
+      "bounding_box": { "x": 300, "y": 0, "width": 400, "height": 30 },
+      "explanation": "Click the address bar at the top of Chrome to access browser settings for zooming in on the page."
+    },
+    {
+      "label": "Three-dot menu",
+      "bounding_box": { "x": 820, "y": 5, "width": 30, "height": 30 },
+      "explanation": "Click the three-dot menu in the top-right corner of Chrome, then use the '+' button next to 'Zoom' to increase the text/page size."
+    }
+  ]
+}
+```
+2026-05-06 11:47:31,560 [grid_analyzer] WARNING: Tile (544,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:47:34,429 [ai_client] DEBUG: Raw AI response (532 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Address Bar",
+      "bounding_box": { "x": 155, "y": 62, "width": 555, "height": 34 },
+      "explanation": "Click the address bar and add '?zoom=150' (or similar) to the URL, or use Chrome's zoom feature via the menu."
+    },
+    {
+      "label": "Thr
+2026-05-06 11:47:34,429 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Address Bar",
+      "bounding_box": { "x": 155, "y": 62, "width": 555, "height": 34 },
+      "explanation": "Click the address bar and add '?zoom=150' (or similar) to the URL, or use Chrome's zoom feature via the menu."
+    },
+    {
+      "label": "Three-dot Menu",
+      "bounding_box": { "x": 714, "y": 62, "width": 28, "height": 34 },
+      "explanation": "Click the three-dot menu (top-right) and use the 'Zoom' controls (+ button) to increase the text/page size."
+    }
+  ]
+}
+```
+2026-05-06 11:47:34,429 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:47:34,445 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-06 11:47:34,445 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-06 11:47:34,445 [grid_analyzer] DEBUG: Grid done: 2 raw -> 2 final
+2026-05-06 11:47:34,449 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:47:34,466 [overlay] DEBUG: Overlay: 2 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 11:47:34,469 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:47:34,491 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:47:48,674 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:47:50,907 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:47:51,367 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:53:39,725 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 11:53:39,726 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 11:53:39,727 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 11:53:39,907 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 11:53:39,907 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 11:53:44,792 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 11:53:44,792 [overlay] DEBUG: Overlay cleared
+2026-05-06 11:53:55,345 [main] DEBUG: Query: 'How to zoom in the text is super small'
+2026-05-06 11:53:55,345 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 11:53:55,345 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 11:53:55,471 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 11:53:55,562 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 11:53:55,598 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 11:53:55,641 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 11:53:55,678 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 11:53:55,720 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 11:53:55,736 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 11:53:55,767 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 11:53:55,767 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 11:53:56,649 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in the text is super small'
+2026-05-06 11:53:56,657 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in the text is super small'
+2026-05-06 11:53:56,657 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in the text is super small'
+2026-05-06 11:53:56,657 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in the text is super small'
+2026-05-06 11:53:56,665 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in the text is super small'
+2026-05-06 11:53:56,665 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in the text is super small'
+2026-05-06 11:53:59,119 [ai_client] DEBUG: Raw AI response (240 chars): {
+  "elements": [
+    {
+      "label": "Zoom in button",
+      "bounding_box": { "x": 384, "y": 132, "width": 28, "height": 28 },
+      "explanation": "Click the '+' button to zoom in and make the text larger in the PDF viewer."
+    }
+  ]
+}
+2026-05-06 11:53:59,119 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 11:53:59,119 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 11:53:59,297 [ai_client] DEBUG: Raw AI response (273 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Address Bar",
+      "bounding_box": { "x": 300, "y": 655, "width": 200, "height": 35 },
+      "explanation": "Press Ctrl + '+' (plus key) on your keyboard to zoom in and make the text larger in Chrome."
+    }
+  ]
+}
+```
+2026-05-06 11:53:59,297 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Address Bar",
+      "bounding_box": { "x": 300, "y": 655, "width": 200, "height": 35 },
+      "explanation": "Press Ctrl + '+' (plus key) on your keyboard to zoom in and make the text larger in Chrome."
+    }
+  ]
+}
+```
+2026-05-06 11:53:59,299 [grid_analyzer] WARNING: Tile (544,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:53:59,681 [ai_client] DEBUG: Raw AI response (312 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Address Bar",
+      "bounding_box": { "x": 155, "y": 63, "width": 530, "height": 30 },
+      "explanation": "Click the address bar and add '?zoom=150' or increase the zoom by pressing Ctrl+'+' on your keyboard to zoom in on the PDF content."
+   
+2026-05-06 11:53:59,681 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Address Bar",
+      "bounding_box": { "x": 155, "y": 63, "width": 530, "height": 30 },
+      "explanation": "Click the address bar and add '?zoom=150' or increase the zoom by pressing Ctrl+'+' on your keyboard to zoom in on the PDF content."
+    }
+  ]
+}
+```
+2026-05-06 11:53:59,692 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:53:59,910 [ai_client] DEBUG: Raw AI response (353 chars): {
+  "elements": [
+    {
+      "label": "Search input field",
+      "bounding_box": { "x": 559, "y": 645, "width": 177, "height": 36 },
+      "explanation": "This is the Windows search bar — but to zoom in on the PDF, look for a zoom control (usually a +/- button or percentage dropdown) in the PDF vi
+2026-05-06 11:53:59,910 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 11:53:59,910 [grid_analyzer] DEBUG:   core-filtered 'Search input field' centre (648,1173) not in core (0,600)–(640,1200)
+2026-05-06 11:53:59,910 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 11:54:00,842 [ai_client] DEBUG: Raw AI response (293 chars): ```json
+{
+  "elements": [
+    {
+      "label": "PDF More Options",
+      "bounding_box": { "x": 697, "y": 132, "width": 28, "height": 28 },
+      "explanation": "Click this three-dot menu button in the PDF toolbar to access zoom options like 'Zoom In' to make the text larger."
+    }
+  ]
+}
+```
+2026-05-06 11:54:00,850 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "PDF More Options",
+      "bounding_box": { "x": 697, "y": 132, "width": 28, "height": 28 },
+      "explanation": "Click this three-dot menu button in the PDF toolbar to access zoom options like 'Zoom In' to make the text larger."
+    }
+  ]
+}
+```
+2026-05-06 11:54:00,851 [grid_analyzer] WARNING: Tile (1184,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:54:01,065 [ai_client] DEBUG: Raw AI response (396 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scrollbar",
+      "bounding_box": { "x": 723, "y": 0, "width": 13, "height": 635 },
+      "explanation": "To zoom in, press Ctrl + Plus (+) on your keyboard, or go to Chrome's three-dot menu (top-right) and increase the Zoom level — the scroll
+2026-05-06 11:54:01,065 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scrollbar",
+      "bounding_box": { "x": 723, "y": 0, "width": 13, "height": 635 },
+      "explanation": "To zoom in, press Ctrl + Plus (+) on your keyboard, or go to Chrome's three-dot menu (top-right) and increase the Zoom level — the scrollbar here just indicates you're viewing a document, not the zoom control itself."
+    }
+  ]
+}
+```
+2026-05-06 11:54:01,065 [grid_analyzer] WARNING: Tile (1184,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 11:54:01,065 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 11:54:01,071 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 11:54:01,080 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 11:54:01,166 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 11:54:01,170 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:54:01,602 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 11:54:06,527 [overlay] DEBUG: Overlay cleared
+2026-05-06 13:54:10,140 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 13:54:10,140 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 13:54:10,140 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 13:54:10,406 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 13:54:10,407 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 13:54:37,714 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 13:54:37,714 [overlay] DEBUG: Overlay cleared
+2026-05-06 13:54:46,266 [main] DEBUG: Query: 'How to zoom in on this document?'
+2026-05-06 13:54:46,266 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 13:54:46,270 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 13:54:46,374 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 13:54:46,446 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 13:54:46,478 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 13:54:46,510 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 13:54:46,542 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 13:54:46,574 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 13:54:46,606 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 13:54:46,622 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 13:54:46,622 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 13:54:47,458 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in on this document?'
+2026-05-06 13:54:47,458 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in on this document?'
+2026-05-06 13:54:47,458 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in on this document?'
+2026-05-06 13:54:47,474 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in on this document?'
+2026-05-06 13:54:47,474 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in on this document?'
+2026-05-06 13:54:47,482 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in on this document?'
+2026-05-06 13:54:49,701 [ai_client] DEBUG: Raw AI response (236 chars): {
+  "elements": [
+    {
+      "label": "Zoom In Button",
+      "bounding_box": { "x": 385, "y": 132, "width": 28, "height": 28 },
+      "explanation": "Click the '+' button to zoom in and increase the document's zoom level."
+    }
+  ]
+}
+2026-05-06 13:54:49,701 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 13:54:49,701 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 13:54:50,034 [ai_client] DEBUG: Raw AI response (283 chars): {
+  "elements": [
+    {
+      "label": "Document page view",
+      "bounding_box": {"x": 632, "y": 0, "width": 104, "height": 630},
+      "explanation": "Use Ctrl+= (or Ctrl+scroll up) to zoom in on the document currently displayed in the main viewing area on the right."
+    }
+  ]
+}
+2026-05-06 13:54:50,034 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 13:54:50,034 [grid_analyzer] DEBUG:   core-filtered 'Document page view' centre (684,825) not in core (0,600)–(640,1200)
+2026-05-06 13:54:50,034 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 13:54:50,783 [ai_client] DEBUG: Raw AI response (358 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scroll Bar",
+      "bounding_box": { "x": 723, "y": 80, "width": 12, "height": 540 },
+      "explanation": "To zoom in on the document, use Ctrl+'+' keyboard shortcut in Chrome, or right-click the PDF and look for zoom options in the toolbar t
+2026-05-06 13:54:50,783 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scroll Bar",
+      "bounding_box": { "x": 723, "y": 80, "width": 12, "height": 540 },
+      "explanation": "To zoom in on the document, use Ctrl+'+' keyboard shortcut in Chrome, or right-click the PDF and look for zoom options in the toolbar that appears at the top of the PDF viewer."
+    }
+  ]
+}
+```
+2026-05-06 13:54:50,783 [grid_analyzer] WARNING: Tile (1184,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 13:54:51,001 [ai_client] DEBUG: Raw AI response (272 chars): {
+  "elements": [
+    {
+      "label": "PDF more options",
+      "bounding_box": { "x": 697, "y": 132, "width": 28, "height": 28 },
+      "explanation": "Click this three-dot menu icon in the PDF toolbar to access zoom options like 'Zoom In' for the document."
+    }
+  ]
+}
+2026-05-06 13:54:51,015 [ai_client] DEBUG: Raw AI response (334 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Cancel Button",
+      "bounding_box": { "x": 284, "y": 385, "width": 265, "height": 235 },
+      "explanation": "First cancel the current analysis, then use Ctrl+'+' keyboard shortcut or look for a zoom option in the browser's three-dot menu to zoom in
+2026-05-06 13:54:51,015 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 13:54:51,015 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Cancel Button",
+      "bounding_box": { "x": 284, "y": 385, "width": 265, "height": 235 },
+      "explanation": "First cancel the current analysis, then use Ctrl+'+' keyboard shortcut or look for a zoom option in the browser's three-dot menu to zoom in on the document."
+    }
+  ]
+}
+```
+2026-05-06 13:54:51,017 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-06 13:54:51,017 [grid_analyzer] WARNING: Tile (544,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 13:54:52,687 [ai_client] DEBUG: Raw AI response (316 chars): {
+  "elements": [
+    {
+      "label": "Address Bar",
+      "bounding_box": { "x": 155, "y": 63, "width": 560, "height": 30 },
+      "explanation": "Click the address bar and note that in Chrome's PDF viewer, you can use Ctrl+'+' to zoom in, or look for a zoom control by right-clicking on the PDF pa
+2026-05-06 13:54:52,687 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 13:54:52,687 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-06 13:54:52,687 [grid_analyzer] DEBUG: Label-merge: 3 -> 3
+2026-05-06 13:54:52,687 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 3
+2026-05-06 13:54:52,687 [grid_analyzer] DEBUG: Grid done: 3 raw -> 3 final
+2026-05-06 13:54:52,687 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 13:54:52,762 [overlay] DEBUG: Overlay: 3 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 13:54:52,765 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 13:54:52,962 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 13:55:06,004 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:00:00,153 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 14:00:00,168 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 14:00:00,169 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 14:00:00,454 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 14:00:00,454 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 14:00:04,580 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:00:04,580 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:00:13,860 [main] DEBUG: Query: 'How do I zoom in the text is too small'
+2026-05-06 14:00:13,860 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 14:00:13,873 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 14:00:13,976 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:00:14,028 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:00:14,075 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:00:14,091 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:00:14,107 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:00:14,123 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:00:14,154 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:00:14,170 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:00:14,170 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:00:14,973 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:00:14,988 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:00:14,988 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:00:14,988 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:00:15,004 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:00:15,004 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:00:16,796 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:00:16,796 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:00:16,796 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:00:17,377 [ai_client] DEBUG: Raw AI response (222 chars): {
+  "elements": [
+    {
+      "label": "Zoom in button",
+      "bounding_box": { "x": 384, "y": 130, "width": 30, "height": 30 },
+      "instruction": "Click the '+' button to zoom in and make the text larger."
+    }
+  ]
+}
+2026-05-06 14:00:17,377 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:00:17,377 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 14:00:17,488 [ai_client] DEBUG: Raw AI response (251 chars): ```json
+{
+  "elements": [
+    {
+      "label": "PDF More Options",
+      "bounding_box": { "x": 697, "y": 133, "width": 28, "height": 28 },
+      "instruction": "Click the three-dot menu icon to access zoom options for the PDF viewer."
+    }
+  ]
+}
+```
+2026-05-06 14:00:17,488 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "PDF More Options",
+      "bounding_box": { "x": 697, "y": 133, "width": 28, "height": 28 },
+      "instruction": "Click the three-dot menu icon to access zoom options for the PDF viewer."
+    }
+  ]
+}
+```
+2026-05-06 14:00:17,488 [grid_analyzer] WARNING: Tile (1184,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 14:00:17,858 [ai_client] DEBUG: Raw AI response (268 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Address Bar",
+      "bounding_box": { "x": 155, "y": 63, "width": 560, "height": 30 },
+      "instruction": "Click the address bar, then use Ctrl+Plus (Ctrl++) to zoom in and make the text larger."
+    }
+  ]
+}
+```
+2026-05-06 14:00:17,864 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Chrome Address Bar",
+      "bounding_box": { "x": 155, "y": 63, "width": 560, "height": 30 },
+      "instruction": "Click the address bar, then use Ctrl+Plus (Ctrl++) to zoom in and make the text larger."
+    }
+  ]
+}
+```
+2026-05-06 14:00:17,864 [grid_analyzer] WARNING: Tile (0,0) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 14:00:18,429 [ai_client] DEBUG: Raw AI response (384 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Windows Search Bar",
+      "bounding_box": { "x": 559, "y": 645, "width": 175, "height": 40 },
+      "instruction": "This appears to be a PDF viewer — look for a zoom/magnification control (usually a '+' button or percentage dropdown) in the viewer's t
+2026-05-06 14:00:18,429 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Windows Search Bar",
+      "bounding_box": { "x": 559, "y": 645, "width": 175, "height": 40 },
+      "instruction": "This appears to be a PDF viewer — look for a zoom/magnification control (usually a '+' button or percentage dropdown) in the viewer's toolbar at the top of the screen, which may be scrolled out of view."
+    }
+  ]
+}
+```
+2026-05-06 14:00:18,429 [grid_analyzer] WARNING: Tile (0,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 14:00:19,244 [ai_client] DEBUG: Raw AI response (338 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scrollbar",
+      "bounding_box": { "x": 723, "y": 75, "width": 14, "height": 570 },
+      "instruction": "To zoom in, press Ctrl and + keys together on your keyboard (or use Chrome's three-dot menu > Zoom) to increase the page zoom level and 
+2026-05-06 14:00:19,245 [ai_client] ERROR: JSON parse failed. Raw: ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scrollbar",
+      "bounding_box": { "x": 723, "y": 75, "width": 14, "height": 570 },
+      "instruction": "To zoom in, press Ctrl and + keys together on your keyboard (or use Chrome's three-dot menu > Zoom) to increase the page zoom level and make the text larger."
+    }
+  ]
+}
+```
+2026-05-06 14:00:19,245 [grid_analyzer] WARNING: Tile (1184,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-06 14:00:19,248 [main] ERROR: Unexpected error: 'explanation'
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\main.py", line 108, in worker
+    elements, full_w, full_h = analyze_grid(
+                               ^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\grid_analyzer.py", line 138, in analyze_grid
+    result = _postprocess(raw, full_w, full_h)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\grid_analyzer.py", line 205, in _postprocess
+    elements = _geometric_dedup(elements)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\grid_analyzer.py", line 348, in _geometric_dedup
+    result = [_union_elements([elements[i] for i in idxs])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\grid_analyzer.py", line 348, in <listcomp>
+    result = [_union_elements([elements[i] for i in idxs])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\grid_analyzer.py", line 305, in _union_elements
+    "explanation": best["explanation"],
+                   ~~~~^^^^^^^^^^^^^^^
+KeyError: 'explanation'
+2026-05-06 14:00:19,255 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:05:55,428 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 14:05:55,429 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 14:05:55,430 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 14:05:55,700 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 14:05:55,700 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 14:05:56,621 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:05:56,623 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:06:04,830 [main] DEBUG: Query: 'How to zoom in to this pdf i can't see'
+2026-05-06 14:06:04,830 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 14:06:04,830 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 14:06:04,927 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:06:04,991 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:06:05,041 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:06:05,057 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:06:05,071 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:06:05,087 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:06:05,118 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:06:05,134 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:06:05,134 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:06:05,932 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:05,938 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:05,953 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:05,960 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:05,964 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:05,974 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:07,606 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:06:07,606 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:06:07,606 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:06:08,047 [ai_client] DEBUG: Raw AI response (229 chars): {
+  "elements": [
+    {
+      "label": "Zoom in button",
+      "bounding_box": { "x": 384, "y": 132, "width": 30, "height": 30 },
+      "instruction": "Click the '+' button to zoom in and make the PDF content larger."
+    }
+  ]
+}
+2026-05-06 14:06:08,047 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:08,047 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 14:06:08,710 [ai_client] DEBUG: Raw AI response (250 chars): ```json
+{
+  "elements": [
+    {
+      "label": "PDF More Options",
+      "bounding_box": { "x": 697, "y": 132, "width": 28, "height": 28 },
+      "instruction": "Click the three-dot menu icon to access zoom options for the PDF viewer"
+    }
+  ]
+}
+```
+2026-05-06 14:06:08,710 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:08,712 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-06 14:06:08,807 [ai_client] DEBUG: Raw AI response (286 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scrollbar",
+      "bounding_box": { "x": 722, "y": 80, "width": 14, "height": 540 },
+      "instruction": "Right-click on the PDF page and select 'Zoom In', or press Ctrl+'+' on your keyboard to zoom into the PDF"
+    }
+  ]
+}
+```
+2026-05-06 14:06:08,809 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:08,809 [grid_analyzer] DEBUG: Tile (1184,510): 1 elements after core filter
+2026-05-06 14:06:09,211 [ai_client] DEBUG: Raw AI response (265 chars): {"elements":[{"label":"Chrome Address Bar","bounding_box":{"x":155,"y":63,"width":560,"height":30},"instruction":"Click the address bar and type the same URL, then add '?zoom=150' or increase the zoom by pressing Ctrl + '+' on your keyboard to zoom into the PDF"}]}
+2026-05-06 14:06:09,220 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:09,220 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-06 14:06:09,675 [ai_client] DEBUG: Raw AI response (315 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Windows Search Bar",
+      "bounding_box": { "x": 556, "y": 645, "width": 175, "height": 40 },
+      "instruction": "Use Ctrl+'+' keyboard shortcut to zoom in on the PDF, or look for a zoom control in the PDF viewer's toolbar at the top of the screen"
+
+2026-05-06 14:06:09,675 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:09,675 [grid_analyzer] DEBUG:   core-filtered 'Windows Search Bar' centre (644,1175) not in core (0,600)–(640,1200)
+2026-05-06 14:06:09,675 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:06:09,675 [grid_analyzer] DEBUG: Label-merge: 4 -> 4
+2026-05-06 14:06:09,690 [grid_analyzer] DEBUG: Geometric-dedup: 4 -> 4
+2026-05-06 14:06:09,690 [grid_analyzer] DEBUG: Grid done: 4 raw -> 4 final
+2026-05-06 14:06:09,690 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:06:09,775 [overlay] DEBUG: Overlay: 4 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:06:09,783 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:10,048 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:26,035 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:26,147 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:26,370 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:26,643 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:26,755 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:26,755 [main] DEBUG: Try Again: re-running grid analysis with same query
+2026-05-06 14:06:26,755 [app_detector] DEBUG: Active window: 'python3'
+2026-05-06 14:06:26,776 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:06:26,787 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:06:26,907 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:06:26,954 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:06:26,987 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:06:27,002 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:06:27,018 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:06:27,050 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:06:27,066 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:06:27,066 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:06:27,066 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:27,066 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:27,082 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:27,082 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:27,082 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:27,082 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in to this pdf i can't see'
+2026-05-06 14:06:28,307 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:06:28,307 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:06:28,323 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:06:29,130 [ai_client] DEBUG: Raw AI response (229 chars): {
+  "elements": [
+    {
+      "label": "Zoom In Button",
+      "bounding_box": { "x": 384, "y": 130, "width": 30, "height": 30 },
+      "instruction": "Click the '+' button to zoom in and make the PDF content larger."
+    }
+  ]
+}
+2026-05-06 14:06:29,139 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:29,141 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 14:06:30,191 [ai_client] DEBUG: Raw AI response (291 chars): {
+  "elements": [
+    {
+      "label": "Search Bar",
+      "bounding_box": { "x": 560, "y": 643, "width": 175, "height": 38 },
+      "instruction": "Use your PDF viewer's zoom controls — look for a '+' zoom button or use Ctrl+= (keyboard shortcut) to zoom in on the PDF content."
+    }
+  ]
+}
+2026-05-06 14:06:30,191 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:30,193 [grid_analyzer] DEBUG:   core-filtered 'Search Bar' centre (648,1172) not in core (0,600)–(640,1200)
+2026-05-06 14:06:30,195 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:06:30,222 [ai_client] DEBUG: Raw AI response (332 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Vertical Scrollbar",
+      "bounding_box": { "x": 723, "y": 80, "width": 14, "height": 540 },
+      "instruction": "Use Ctrl+= (or Ctrl+Scroll Up) keyboard shortcut to zoom in on the PDF, or look for a zoom control in the toolbar at the top of your PDF
+2026-05-06 14:06:30,223 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:30,224 [grid_analyzer] DEBUG: Tile (1184,510): 1 elements after core filter
+2026-05-06 14:06:30,277 [ai_client] DEBUG: Raw AI response (290 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Hamburger Menu",
+      "bounding_box": { "x": 28, "y": 130, "width": 30, "height": 30 },
+      "instruction": "Click the menu (hamburger) icon to access zoom options like 'Zoom In' or set a custom zoom percentage for the PDF."
+    }
+  ]
+}
+```
+2026-05-06 14:06:30,279 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:30,279 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-06 14:06:30,507 [ai_client] DEBUG: Raw AI response (203 chars): {"elements": [{"label": "More options menu", "bounding_box": {"x": 689, "y": 133, "width": 30, "height": 30}, "instruction": "Click the three-dot menu button to access zoom options for the PDF viewer"}]}
+2026-05-06 14:06:30,507 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:06:30,507 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-06 14:06:30,507 [grid_analyzer] DEBUG: Label-merge: 4 -> 4
+2026-05-06 14:06:30,507 [grid_analyzer] DEBUG: Geometric-dedup: 4 -> 4
+2026-05-06 14:06:30,507 [grid_analyzer] DEBUG: Grid done: 4 raw -> 4 final
+2026-05-06 14:06:30,507 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:06:30,533 [overlay] DEBUG: Overlay: 4 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:06:30,535 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:30,568 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:30,580 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:33,760 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:33,776 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:33,983 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:06:54,522 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:08:21,563 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:08:24,254 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:09:30,669 [grid_analyzer] DEBUG: Elected 'Zoom In Button' from 5 candidates
+2026-05-06 14:09:30,669 [grid_analyzer] DEBUG: Elected 'PDF More Options' from 4 candidates
+2026-05-06 14:10:16,101 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 14:10:16,102 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 14:10:16,103 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 14:10:16,283 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 14:10:16,284 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 14:10:25,108 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:10:25,108 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:10:33,022 [main] DEBUG: Query: 'How to make the text bigger it is very small'
+2026-05-06 14:10:33,024 [app_detector] DEBUG: Active window: 'build navmate windows ai… - navmate - visual studio code'
+2026-05-06 14:10:33,026 [app_detector] DEBUG: Matched app: vscode
+2026-05-06 14:10:33,108 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:10:33,196 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:10:33,228 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:10:33,262 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:10:33,281 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:10:33,295 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:10:33,325 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:10:33,343 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:10:33,347 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:10:34,128 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to make the text bigger it is very small'
+2026-05-06 14:10:34,128 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to make the text bigger it is very small'
+2026-05-06 14:10:34,144 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to make the text bigger it is very small'
+2026-05-06 14:10:34,144 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to make the text bigger it is very small'
+2026-05-06 14:10:34,167 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to make the text bigger it is very small'
+2026-05-06 14:10:34,167 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to make the text bigger it is very small'
+2026-05-06 14:10:35,359 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:35,359 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:35,359 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:10:35,612 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:35,612 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:35,612 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:10:35,629 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:35,630 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:35,631 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:10:35,831 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:35,831 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:35,831 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:10:36,461 [ai_client] DEBUG: Raw AI response (221 chars): {
+  "elements": [
+    {
+      "label": "Zoom in button",
+      "bounding_box": { "x": 384, "y": 132, "width": 28, "height": 28 },
+      "instruction": "Click the '+' button to zoom in and make the text larger"
+    }
+  ]
+}
+2026-05-06 14:10:36,461 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:10:36,461 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 14:10:36,541 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:36,541 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:36,541 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:10:36,541 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 14:10:36,541 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 14:10:36,541 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:10:36,624 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:10:36,630 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:10:36,968 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:10:42,301 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:10:46,800 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:10:46,800 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:10:51,472 [main] DEBUG: Query: 'How to scroll through the pdf?'
+2026-05-06 14:10:51,472 [app_detector] DEBUG: Active window: 'build navmate windows ai… - navmate - visual studio code'
+2026-05-06 14:10:51,472 [app_detector] DEBUG: Matched app: vscode
+2026-05-06 14:10:51,500 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:10:51,579 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:10:51,609 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:10:51,641 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:10:51,672 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:10:51,688 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:10:51,735 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:10:51,763 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:10:51,765 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:10:51,767 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to scroll through the pdf?'
+2026-05-06 14:10:51,769 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to scroll through the pdf?'
+2026-05-06 14:10:51,771 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to scroll through the pdf?'
+2026-05-06 14:10:51,772 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to scroll through the pdf?'
+2026-05-06 14:10:51,774 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to scroll through the pdf?'
+2026-05-06 14:10:51,777 [ai_client] DEBUG: AI request: mode=guide app=vscode query='How to scroll through the pdf?'
+2026-05-06 14:10:53,319 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:53,319 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:53,335 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:10:53,443 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:53,443 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:53,445 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:10:53,678 [ai_client] DEBUG: Raw AI response (220 chars): { "elements": [ { "label": "Vertical scrollbar", "bounding_box": { "x": 727, "y": 600, "width": 10, "height": 20 }, "instruction": "Click and drag the vertical scrollbar on the right side to scroll through the PDF" } ] }
+2026-05-06 14:10:53,678 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:10:53,678 [grid_analyzer] DEBUG: Tile (1184,510): 1 elements after core filter
+2026-05-06 14:10:53,805 [ai_client] DEBUG: Raw AI response (233 chars): {
+  "elements": [
+    {
+      "label": "Vertical scrollbar",
+      "bounding_box": {"x": 720, "y": 185, "width": 14, "height": 470},
+      "instruction": "Click and drag the scrollbar up or down to scroll through the PDF"
+    }
+  ]
+}
+2026-05-06 14:10:53,805 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:10:53,805 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-06 14:10:54,091 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:10:54,091 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:10:54,106 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:10:54,243 [ai_client] DEBUG: Raw AI response (276 chars): ```json
+{
+  "elements": [
+    {
+      "label": "Page Number Input",
+      "bounding_box": { "x": 163, "y": 132, "width": 72, "height": 28 },
+      "instruction": "Click the page number field and type a page number to navigate directly to that page in the PDF."
+    }
+  ]
+}
+```
+2026-05-06 14:10:54,243 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:10:54,243 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 14:10:54,258 [grid_analyzer] DEBUG: Label-merge: 3 -> 3
+2026-05-06 14:10:54,258 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 3
+2026-05-06 14:10:54,258 [grid_analyzer] DEBUG: Elected 'Vertical scrollbar' from 3 candidates
+2026-05-06 14:10:54,258 [grid_analyzer] DEBUG: Grid done: 3 raw -> 1 final
+2026-05-06 14:10:54,258 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:10:54,274 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:10:54,278 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:10:54,296 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:20:55,018 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:22:17,989 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:47:05,012 [grid_analyzer] DEBUG: Elected 'Zoom In Button' from 2 candidates
+2026-05-06 14:47:05,014 [grid_analyzer] DEBUG: Elected 'Zoom In' from 2 candidates
+2026-05-06 14:47:05,015 [grid_analyzer] DEBUG: Elected 'Small' from 2 candidates
+2026-05-06 14:47:05,018 [grid_analyzer] DEBUG: Elected 'PDF More Options' from 4 candidates
+2026-05-06 14:47:05,019 [grid_analyzer] DEBUG: Elected 'Zoom In Button' from 4 candidates
+2026-05-06 14:47:05,023 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 1
+2026-05-06 14:47:05,024 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-06 14:47:05,025 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 14:48:02,552 [grid_analyzer] DEBUG: Elected 'Zoom In Button' from 2 candidates
+2026-05-06 14:48:02,553 [grid_analyzer] DEBUG: Elected 'Zoom In' from 2 candidates
+2026-05-06 14:48:02,555 [grid_analyzer] DEBUG: Elected 'Small' from 2 candidates
+2026-05-06 14:48:02,557 [grid_analyzer] DEBUG: Elected 'PDF More Options' from 4 candidates
+2026-05-06 14:48:02,558 [grid_analyzer] DEBUG: Elected 'Zoom In Button' from 4 candidates
+2026-05-06 14:48:02,561 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 1
+2026-05-06 14:48:02,562 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-06 14:48:02,563 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 14:48:38,171 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 14:48:38,172 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 14:48:38,172 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 14:48:38,333 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 14:48:38,333 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 14:48:40,971 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:48:40,975 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:48:50,614 [main] DEBUG: Query: 'How do I zoom in the text is too small'
+2026-05-06 14:48:50,614 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 14:48:50,614 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 14:48:50,699 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:48:50,808 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:48:50,840 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:48:50,853 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:48:50,880 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:48:50,895 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:48:50,929 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:48:50,943 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:48:50,943 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:48:51,738 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:48:51,738 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:48:51,745 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:48:51,750 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:48:51,750 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:48:51,760 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I zoom in the text is too small'
+2026-05-06 14:48:53,132 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:48:53,132 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:48:53,132 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:48:53,404 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:48:53,404 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:48:53,404 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:48:53,452 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:48:53,452 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:48:53,452 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:48:53,516 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:48:53,516 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:48:53,516 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:48:54,283 [ai_client] DEBUG: Raw AI response (204 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 376, "y_min": 131, "x_max": 400, "y_max": 161 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to zoom in"
+    }
+  ]
+}
+2026-05-06 14:48:54,283 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:48:54,283 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 14:48:54,615 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:48:54,615 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:48:54,615 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:48:54,615 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 14:48:54,615 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 14:48:54,631 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:48:54,701 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:48:54,705 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:48:55,019 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:49:04,426 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:49:12,002 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:49:12,007 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:49:17,674 [main] DEBUG: Query: 'How do I scroll down'
+2026-05-06 14:49:17,674 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 14:49:17,674 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 14:49:17,696 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:49:17,777 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:49:17,813 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:49:17,861 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:49:17,897 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:49:17,928 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:49:17,973 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:49:17,991 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:49:17,991 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:49:17,991 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I scroll down'
+2026-05-06 14:49:17,991 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I scroll down'
+2026-05-06 14:49:17,991 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I scroll down'
+2026-05-06 14:49:17,991 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I scroll down'
+2026-05-06 14:49:18,004 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I scroll down'
+2026-05-06 14:49:18,004 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do I scroll down'
+2026-05-06 14:49:19,243 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:49:19,244 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:49:19,245 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:49:19,885 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:49:19,885 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:49:19,887 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:49:19,999 [ai_client] DEBUG: Raw AI response (172 chars): {"elements": [{"bbox": {"x_min": 724, "y_min": 610, "x_max": 735, "y_max": 630}, "label": "Scroll down button", "voice_instruction": "Click the scroll down arrow button"}]}
+2026-05-06 14:49:19,999 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:49:19,999 [grid_analyzer] DEBUG: Tile (1184,510): 1 elements after core filter
+2026-05-06 14:49:20,223 [ai_client] DEBUG: Raw AI response (152 chars): {"elements":[{"bbox":{"x_min":109,"y_min":437,"x_max":271,"y_max":648},"label":"Page 2 thumbnail","voice_instruction":"Click page two to scroll down"}]}
+2026-05-06 14:49:20,223 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:49:20,223 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-06 14:49:20,259 [ai_client] DEBUG: Raw AI response (219 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 718, "y_min": 185, "x_max": 735, "y_max": 420 },
+      "label": "Vertical scrollbar",
+      "voice_instruction": "Click and drag the scrollbar down to scroll"
+    }
+  ]
+}
+2026-05-06 14:49:20,259 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:49:20,259 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-06 14:49:22,694 [ai_client] DEBUG: Raw AI response (666 chars): ```json
+{
+  "elements": [
+    {
+      "bbox": { "x_min": 384, "y_min": 134, "x_max": 404, "y_max": 158 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to scroll down"
+    }
+  ]
+}
+```
+
+Wait, let me reconsider. The user wants to scroll down in the PDF. The correct
+2026-05-06 14:49:22,710 [ai_client] ERROR: JSON parse failed. Raw: {
+  "elements": [
+    {
+      "bbox": { "x_min": 384, "y_min": 134, "x_max": 404, "y_max": 158 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to scroll down"
+    }
+  ]
+}
+
+Wait, let me reconsider. The user wants to scroll down in the PDF. The correct control would be the next page button or the page number field. But actually, scrolling is done via the scroll bar or page navigation.
+
+```json
+{
+  "elements": [
+    {
+      "bbox": { "x_min": 163, "y_min": 134, "x_max": 230, "y_max": 158 },
+      "label": "Page number field",
+      "voice_instruction": "Click page field and type next page number"
+    }
+  ]
+}
+2026-05-06 14:49:22,710 [grid_analyzer] WARNING: Tile (544,0) AIResponseError: AI returned non-JSON output: Extra data: line 11 column 1 (char 210)
+2026-05-06 14:49:22,710 [grid_analyzer] DEBUG: Label-merge: 3 -> 3
+2026-05-06 14:49:22,710 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 3
+2026-05-06 14:49:22,710 [grid_analyzer] DEBUG: Elected 'Page 2 thumbnail' from 3 candidates
+2026-05-06 14:49:22,710 [grid_analyzer] DEBUG: Grid done: 3 raw -> 1 final
+2026-05-06 14:49:22,710 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:49:22,751 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:49:22,756 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:49:22,797 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:49:28,758 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:49:34,227 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:49:34,243 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:49:38,404 [main] DEBUG: Query: 'Where's the scroll bar'
+2026-05-06 14:49:38,404 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-06 14:49:38,404 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 14:49:38,424 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:49:38,513 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:49:38,530 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:49:38,545 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:49:38,561 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:49:38,577 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:49:38,608 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:49:38,624 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:49:38,624 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:49:38,640 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's the scroll bar'
+2026-05-06 14:49:38,640 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's the scroll bar'
+2026-05-06 14:49:38,640 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's the scroll bar'
+2026-05-06 14:49:38,640 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's the scroll bar'
+2026-05-06 14:49:38,640 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's the scroll bar'
+2026-05-06 14:49:38,640 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where's the scroll bar'
+2026-05-06 14:49:39,851 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:49:39,851 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:49:39,851 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-06 14:49:39,899 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:49:39,899 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:49:39,899 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:49:40,139 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:49:40,139 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:49:40,139 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:49:40,187 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:49:40,187 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:49:40,187 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:49:40,649 [ai_client] DEBUG: Raw AI response (215 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 723, "y_min": 598, "x_max": 735, "y_max": 618 },
+      "label": "Vertical scroll bar",
+      "voice_instruction": "Click the scrollbar to scroll the page"
+    }
+  ]
+}
+2026-05-06 14:49:40,649 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:49:40,649 [grid_analyzer] DEBUG: Tile (1184,510): 1 elements after core filter
+2026-05-06 14:49:40,729 [ai_client] DEBUG: Raw AI response (224 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 718, "y_min": 185, "x_max": 735, "y_max": 660 },
+      "label": "Vertical scroll bar",
+      "voice_instruction": "Click and drag the vertical scrollbar to scroll"
+    }
+  ]
+}
+2026-05-06 14:49:40,729 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:49:40,729 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-06 14:49:40,729 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-06 14:49:40,745 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-06 14:49:40,745 [grid_analyzer] DEBUG: Elected 'Vertical scroll bar' from 2 candidates
+2026-05-06 14:49:40,745 [grid_analyzer] DEBUG: Grid done: 2 raw -> 1 final
+2026-05-06 14:49:40,745 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:49:40,777 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:49:40,781 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:49:40,829 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:49:45,005 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:49:56,847 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:49:56,852 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:50:05,223 [main] DEBUG: Query: 'How do i create a new email'
+2026-05-06 14:50:05,223 [app_detector] DEBUG: Active window: 'inbox (5,750) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 14:50:05,223 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 14:50:05,254 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:50:05,354 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:50:05,383 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:50:05,398 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:50:05,433 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:50:05,463 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:50:05,508 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:50:05,532 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:50:05,532 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:50:05,532 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do i create a new email'
+2026-05-06 14:50:05,547 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do i create a new email'
+2026-05-06 14:50:05,547 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do i create a new email'
+2026-05-06 14:50:05,547 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do i create a new email'
+2026-05-06 14:50:05,547 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do i create a new email'
+2026-05-06 14:50:05,563 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How do i create a new email'
+2026-05-06 14:50:06,644 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:50:06,644 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:50:06,644 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:50:07,147 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:50:07,147 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:50:07,147 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-06 14:50:07,307 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:50:07,307 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:50:07,307 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:50:07,547 [ai_client] DEBUG: Raw AI response (181 chars): { "elements": [ { "bbox": { "x_min": 688, "y_min": 62, "x_max": 712, "y_max": 96 }, "label": "Compose new email", "voice_instruction": "Click the plus button to compose email" } ] }
+2026-05-06 14:50:07,548 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:50:07,548 [grid_analyzer] DEBUG:   core-filtered 'Compose new email' centre (1884,589) not in core (1280,600)–(1920,1200)
+2026-05-06 14:50:07,551 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:50:07,792 [ai_client] DEBUG: Raw AI response (219 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 0, "y_min": 131, "x_max": 65, "y_max": 177 },
+      "label": "Compose email button",
+      "voice_instruction": "Click the compose button to create new email"
+    }
+  ]
+}
+2026-05-06 14:50:07,792 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:50:07,799 [grid_analyzer] DEBUG:   core-filtered 'Compose email button' centre (1216,154) not in core (1280,0)–(1920,600)
+2026-05-06 14:50:07,799 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:50:08,062 [ai_client] DEBUG: Raw AI response (212 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 113, "y_min": 200, "x_max": 302, "y_max": 245 },
+      "label": "Compose button",
+      "voice_instruction": "Click the Compose button to create email"
+    }
+  ]
+}
+2026-05-06 14:50:08,062 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:50:08,063 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-06 14:50:08,064 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 14:50:08,068 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 14:50:08,071 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:50:08,091 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:50:08,093 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:50:08,108 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:50:12,138 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:50:20,358 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:50:20,358 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:50:25,820 [main] DEBUG: Query: 'Where does the subject for the email go'
+2026-05-06 14:50:25,820 [app_detector] DEBUG: Active window: 'inbox (5,750) - anjalikaimal@utexas.edu - utmail mail - google chrome'
+2026-05-06 14:50:25,820 [app_detector] DEBUG: Matched app: chrome
+2026-05-06 14:50:25,842 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:50:25,928 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:50:25,976 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:50:26,008 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:50:26,024 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:50:26,057 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:50:26,088 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:50:26,092 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:50:26,092 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:50:26,105 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where does the subject for the email go'
+2026-05-06 14:50:26,106 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where does the subject for the email go'
+2026-05-06 14:50:26,111 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where does the subject for the email go'
+2026-05-06 14:50:26,113 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where does the subject for the email go'
+2026-05-06 14:50:26,115 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where does the subject for the email go'
+2026-05-06 14:50:26,117 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where does the subject for the email go'
+2026-05-06 14:50:27,728 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:50:27,728 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:50:27,728 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:50:28,078 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:50:28,079 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:50:28,081 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:50:28,374 [ai_client] DEBUG: Raw AI response (228 chars): ```json
+{
+  "elements": [
+    {
+      "bbox": { "x_min": 502, "y_min": 520, "x_max": 828, "y_max": 550 },
+      "label": "Email Subject Field",
+      "voice_instruction": "Click the subject field to type subject"
+    }
+  ]
+}
+```
+2026-05-06 14:50:28,374 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:50:28,374 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-06 14:50:28,406 [ai_client] DEBUG: Raw AI response (214 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 503, "y_min": 10, "x_max": 831, "y_max": 40 },
+      "label": "Email subject field",
+      "voice_instruction": "Click the subject field to type subject"
+    }
+  ]
+}
+2026-05-06 14:50:28,406 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:50:28,406 [grid_analyzer] DEBUG:   core-filtered 'Email subject field' centre (1211,535) not in core (640,600)–(1280,1200)
+2026-05-06 14:50:28,406 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:50:28,486 [ai_client] DEBUG: Raw AI response (170 chars): {"elements":[{"bbox":{"x_min":536,"y_min":450,"x_max":630,"y_max":475},"label":"Email subject field","voice_instruction":"Click the subject field to type your subject"}]}
+2026-05-06 14:50:28,486 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:50:28,486 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-06 14:50:29,001 [ai_client] DEBUG: Raw AI response (223 chars): ```json
+{
+  "elements": [
+    {
+      "bbox": { "x_min": 130, "y_min": 195, "x_max": 310, "y_max": 245 },
+      "label": "Compose Email Button",
+      "voice_instruction": "Click Compose to open a new email"
+    }
+  ]
+}
+```
+2026-05-06 14:50:29,001 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:50:29,001 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-06 14:50:29,017 [grid_analyzer] DEBUG: Label-merge: 3 -> 3
+2026-05-06 14:50:29,017 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 3
+2026-05-06 14:50:29,017 [grid_analyzer] DEBUG: Elected 'Compose Email Button' from 3 candidates
+2026-05-06 14:50:29,017 [grid_analyzer] DEBUG: Grid done: 3 raw -> 1 final
+2026-05-06 14:50:29,017 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:50:29,033 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:50:29,033 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:50:29,055 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:50:32,035 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:50:55,617 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:50:55,619 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:01,383 [main] DEBUG: Query: 'Where do I turn on my camera'
+2026-05-06 14:51:01,385 [app_detector] DEBUG: Active window: 'zoom meeting'
+2026-05-06 14:51:01,387 [app_detector] DEBUG: Matched app: zoom
+2026-05-06 14:51:01,415 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:51:01,569 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:51:01,606 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:01,635 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:51:01,657 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:01,674 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:01,698 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:51:01,718 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:01,719 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:51:01,721 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where do I turn on my camera'
+2026-05-06 14:51:01,723 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where do I turn on my camera'
+2026-05-06 14:51:01,726 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where do I turn on my camera'
+2026-05-06 14:51:01,726 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where do I turn on my camera'
+2026-05-06 14:51:01,729 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where do I turn on my camera'
+2026-05-06 14:51:01,734 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where do I turn on my camera'
+2026-05-06 14:51:02,802 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:02,803 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:02,803 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-06 14:51:02,865 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:02,866 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:02,867 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:51:03,232 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:03,233 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:03,233 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:03,234 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:03,236 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:51:03,237 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:51:03,398 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:03,399 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:03,399 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:51:03,627 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:03,628 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:03,629 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:51:03,629 [grid_analyzer] DEBUG: Grid done: 0 raw -> 0 final
+2026-05-06 14:51:03,633 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:51:03,645 [overlay] DEBUG: Overlay: 0 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:51:06,867 [main] DEBUG: Try Again: re-running grid analysis with same query
+2026-05-06 14:51:06,867 [app_detector] DEBUG: Active window: 'python3'
+2026-05-06 14:51:06,897 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:06,917 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:51:07,015 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:51:07,037 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:07,062 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:51:07,079 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:07,097 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:07,135 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:51:07,158 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:07,159 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:51:07,163 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where do I turn on my camera'
+2026-05-06 14:51:07,163 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where do I turn on my camera'
+2026-05-06 14:51:07,166 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where do I turn on my camera'
+2026-05-06 14:51:07,168 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where do I turn on my camera'
+2026-05-06 14:51:07,169 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where do I turn on my camera'
+2026-05-06 14:51:07,173 [ai_client] DEBUG: AI request: mode=guide app=generic query='Where do I turn on my camera'
+2026-05-06 14:51:08,383 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:08,383 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:08,383 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:51:08,478 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:08,479 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:08,481 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:51:08,489 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:08,489 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:08,490 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:51:08,497 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:08,498 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:08,499 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:51:08,705 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:08,705 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:08,707 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-06 14:51:08,864 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:08,865 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:08,865 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:51:08,868 [grid_analyzer] DEBUG: Grid done: 0 raw -> 0 final
+2026-05-06 14:51:08,875 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:51:08,914 [overlay] DEBUG: Overlay: 0 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:51:12,689 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:16,519 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:51:16,521 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:19,304 [main] DEBUG: Query: 'Where is chat button'
+2026-05-06 14:51:19,304 [app_detector] DEBUG: Active window: 'zoom meeting'
+2026-05-06 14:51:19,304 [app_detector] DEBUG: Matched app: zoom
+2026-05-06 14:51:19,312 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:51:19,373 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:51:19,391 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:19,407 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:51:19,418 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:19,429 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:19,452 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:51:19,463 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:19,463 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:51:19,466 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is chat button'
+2026-05-06 14:51:19,467 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is chat button'
+2026-05-06 14:51:19,468 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is chat button'
+2026-05-06 14:51:19,471 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is chat button'
+2026-05-06 14:51:19,473 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is chat button'
+2026-05-06 14:51:19,473 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is chat button'
+2026-05-06 14:51:20,609 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:20,609 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:20,611 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:51:20,757 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:20,758 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:20,758 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:51:20,861 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:20,862 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:20,863 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:51:20,969 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:20,969 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:20,971 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:51:21,337 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:21,337 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:21,338 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-06 14:51:21,647 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:21,647 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:21,648 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-06 14:51:21,653 [grid_analyzer] DEBUG: Grid done: 0 raw -> 0 final
+2026-05-06 14:51:21,665 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:51:21,709 [overlay] DEBUG: Overlay: 0 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:51:25,634 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:32,307 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:51:32,309 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:37,315 [main] DEBUG: Query: 'Where is audio button'
+2026-05-06 14:51:37,315 [app_detector] DEBUG: Active window: 'zoom meeting'
+2026-05-06 14:51:37,316 [app_detector] DEBUG: Matched app: zoom
+2026-05-06 14:51:37,327 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:51:37,419 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:51:37,440 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:37,461 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:51:37,477 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:37,492 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:37,518 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:51:37,533 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:37,534 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:51:37,535 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is audio button'
+2026-05-06 14:51:37,537 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is audio button'
+2026-05-06 14:51:37,538 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is audio button'
+2026-05-06 14:51:37,541 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is audio button'
+2026-05-06 14:51:37,541 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is audio button'
+2026-05-06 14:51:37,541 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is audio button'
+2026-05-06 14:51:38,712 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:38,713 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:38,713 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:51:38,772 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:38,773 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:38,773 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:51:39,008 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:39,009 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:39,010 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-06 14:51:39,051 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:39,052 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:39,053 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:51:39,299 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:39,300 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:39,301 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:51:39,685 [ai_client] DEBUG: Raw AI response (214 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 44, "y_min": 569, "x_max": 92, "y_max": 622 },
+      "label": "Mute/Unmute Audio",
+      "voice_instruction": "Click the audio button to unmute yourself"
+    }
+  ]
+}
+2026-05-06 14:51:39,686 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:51:39,688 [grid_analyzer] DEBUG: Tile (0,510): 1 elements after core filter
+2026-05-06 14:51:39,690 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 14:51:39,693 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 14:51:39,702 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:51:39,733 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:51:39,736 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:51:39,788 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:51:42,674 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:44,439 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-06 14:51:44,440 [overlay] DEBUG: Overlay cleared
+2026-05-06 14:51:49,056 [main] DEBUG: Query: 'Where is video button'
+2026-05-06 14:51:49,056 [app_detector] DEBUG: Active window: 'zoom meeting'
+2026-05-06 14:51:49,056 [app_detector] DEBUG: Matched app: zoom
+2026-05-06 14:51:49,063 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-06 14:51:49,121 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-06 14:51:49,136 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:49,162 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-06 14:51:49,186 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-06 14:51:49,204 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:49,233 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-06 14:51:49,246 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-06 14:51:49,247 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-06 14:51:49,247 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is video button'
+2026-05-06 14:51:49,248 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is video button'
+2026-05-06 14:51:49,250 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is video button'
+2026-05-06 14:51:49,252 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is video button'
+2026-05-06 14:51:49,253 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is video button'
+2026-05-06 14:51:49,255 [ai_client] DEBUG: AI request: mode=guide app=zoom query='Where is video button'
+2026-05-06 14:51:50,440 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:50,441 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:50,442 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-06 14:51:50,690 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:50,690 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:50,691 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-06 14:51:50,733 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:50,734 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:50,735 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-06 14:51:50,798 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:50,799 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:50,801 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-06 14:51:50,909 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-06 14:51:50,909 [ai_client] DEBUG: Parsed 0 elements
+2026-05-06 14:51:50,910 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-06 14:51:51,573 [ai_client] DEBUG: Raw AI response (174 chars): {"elements":[{"bbox":{"x_min":161,"y_min":570,"x_max":205,"y_max":622},"label":"Stop/Start Video Button","voice_instruction":"Click the video button to toggle your camera"}]}
+2026-05-06 14:51:51,573 [ai_client] DEBUG: Parsed 1 elements
+2026-05-06 14:51:51,575 [grid_analyzer] DEBUG: Tile (0,510): 1 elements after core filter
+2026-05-06 14:51:51,577 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-06 14:51:51,578 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-06 14:51:51,587 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-06 14:51:51,621 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-06 14:51:51,624 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:51:51,677 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 14:51:54,503 [overlay] DEBUG: Overlay cleared
