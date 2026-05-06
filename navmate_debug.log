@@ -1817,3 +1817,24 @@
 2026-05-06 10:22:35,366 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
 2026-05-06 10:22:35,370 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
 2026-05-06 10:22:35,401 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-06 10:22:39,686 [overlay] DEBUG: Overlay cleared
+2026-05-06 10:54:02,072 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-06 10:54:02,074 [explain_mode] DEBUG: Mouse tracking started
+2026-05-06 10:54:02,074 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-06 10:54:02,184 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-06 10:54:02,184 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-06 10:54:04,054 [hotkey] DEBUG: Hotkey fired: explain toggle
+2026-05-06 10:54:04,070 [explain_mode] DEBUG: Explain mode ON
+2026-05-06 10:54:04,070 [main] DEBUG: Explain mode: ON
+2026-05-06 10:54:08,410 [hotkey] DEBUG: Hotkey fired: explain toggle
+2026-05-06 10:54:08,410 [explain_mode] DEBUG: Explain mode OFF
+2026-05-06 10:54:08,410 [main] DEBUG: Explain mode: OFF
+2026-05-06 10:54:09,380 [hotkey] DEBUG: Hotkey fired: explain toggle
+2026-05-06 10:54:09,380 [explain_mode] DEBUG: Explain mode ON
+2026-05-06 10:54:09,380 [main] DEBUG: Explain mode: ON
+2026-05-06 10:54:09,795 [hotkey] DEBUG: Hotkey fired: explain toggle
+2026-05-06 10:54:09,811 [explain_mode] DEBUG: Explain mode OFF
+2026-05-06 10:54:09,811 [main] DEBUG: Explain mode: OFF
+2026-05-06 10:54:10,050 [hotkey] DEBUG: Hotkey fired: explain toggle
+2026-05-06 10:54:10,050 [explain_mode] DEBUG: Explain mode ON
+2026-05-06 10:54:10,050 [main] DEBUG: Explain mode: ON
