@@ -4101,3 +4101,765 @@ Wait, let me reconsider. The user wants to scroll down in the PDF. The correct c
 2026-05-06 14:51:51,624 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
 2026-05-06 14:51:51,677 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
 2026-05-06 14:51:54,503 [overlay] DEBUG: Overlay cleared
+2026-05-07 09:54:57,145 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-07 09:54:57,147 [explain_mode] DEBUG: Mouse tracking started
+2026-05-07 09:54:57,148 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode
+2026-05-07 09:54:57,341 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-07 09:54:57,341 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-07 09:55:05,428 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 09:55:05,428 [overlay] DEBUG: Overlay cleared
+2026-05-07 09:55:12,983 [main] DEBUG: Query: 'How to zoom in?'
+2026-05-07 09:55:12,983 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-07 09:55:12,983 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 09:55:13,064 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 09:55:13,151 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 09:55:13,326 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 09:55:13,358 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 09:55:13,374 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 09:55:13,392 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 09:55:13,422 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 09:55:13,437 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 09:55:13,437 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 09:55:14,352 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in?'
+2026-05-07 09:55:14,352 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in?'
+2026-05-07 09:55:14,352 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in?'
+2026-05-07 09:55:14,352 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in?'
+2026-05-07 09:55:14,352 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in?'
+2026-05-07 09:55:14,365 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in?'
+2026-05-07 09:55:16,037 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 09:55:16,037 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 09:55:16,037 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 09:55:16,149 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 09:55:16,149 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 09:55:16,149 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 09:55:16,165 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 09:55:16,165 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 09:55:16,165 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 09:55:16,530 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 09:55:16,530 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 09:55:16,546 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 09:55:16,578 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 09:55:16,578 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 09:55:16,578 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 09:55:16,641 [ai_client] DEBUG: Raw AI response (204 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 377, "y_min": 130, "x_max": 400, "y_max": 160 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to zoom in"
+    }
+  ]
+}
+2026-05-07 09:55:16,641 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 09:55:16,641 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 09:55:16,641 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 09:55:16,657 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 09:55:16,657 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 09:55:16,716 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 09:55:16,719 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 09:55:18,554 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 09:55:36,535 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:12:41,316 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:12:41,318 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:12:45,317 [voice] DEBUG: TTS: pyttsx3 engine ready
+2026-05-07 10:12:45,317 [voice] DEBUG: TTS speak: 'Click the plus button to zoom in'
+2026-05-07 10:13:05,502 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:13:05,502 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:13:10,231 [main] DEBUG: Query: 'How to zoom in'
+2026-05-07 10:13:10,246 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-07 10:13:10,246 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:13:10,260 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:13:10,370 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:13:10,414 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:13:10,441 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:13:10,471 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:13:10,492 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:13:10,524 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:13:10,542 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:13:10,544 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:13:10,544 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:13:10,544 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:13:10,544 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:13:10,544 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:13:10,551 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:13:10,551 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:13:12,014 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:12,014 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:12,014 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:13:12,093 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:12,093 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:12,093 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:13:12,109 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:12,109 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:12,109 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:13:12,347 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:12,347 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:12,347 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:13:12,362 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:12,362 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:12,362 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:13:12,759 [ai_client] DEBUG: Raw AI response (204 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 376, "y_min": 130, "x_max": 400, "y_max": 160 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to zoom in"
+    }
+  ]
+}
+2026-05-07 10:13:12,759 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:13:12,759 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:13:12,759 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 10:13:12,759 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 10:13:12,759 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:13:12,781 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:13:12,785 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:12,802 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:18,474 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:18,585 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:18,695 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:18,695 [main] DEBUG: Try Again: re-running grid analysis with same query
+2026-05-07 10:13:18,695 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 10:13:18,711 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:13:18,743 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:13:18,839 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:13:18,871 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:13:18,918 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:13:18,934 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:13:18,966 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:13:18,981 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:13:19,013 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:13:19,013 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:13:19,013 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in'
+2026-05-07 10:13:19,013 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in'
+2026-05-07 10:13:19,013 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in'
+2026-05-07 10:13:19,013 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in'
+2026-05-07 10:13:19,013 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in'
+2026-05-07 10:13:19,013 [ai_client] DEBUG: AI request: mode=guide app=generic query='How to zoom in'
+2026-05-07 10:13:20,155 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:20,155 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:20,155 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:20,155 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:20,155 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:13:20,155 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:13:20,203 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:20,203 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:20,203 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:13:20,219 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:20,219 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:20,219 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:13:20,526 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:13:20,527 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:13:20,529 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:13:21,422 [ai_client] DEBUG: Raw AI response (204 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 375, "y_min": 130, "x_max": 400, "y_max": 160 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to zoom in"
+    }
+  ]
+}
+2026-05-07 10:13:21,422 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:13:21,422 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:13:21,422 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 10:13:21,438 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 10:13:21,438 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:13:21,468 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:13:21,469 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:21,487 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:21,502 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:33,998 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:13:34,960 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:20:50,524 [voice] DEBUG: TTS: worker thread ready
+2026-05-07 10:20:50,524 [voice] DEBUG: TTS speak: 'Voice test. This should play audio.'
+2026-05-07 10:22:03,846 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:22:03,846 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:22:12,264 [main] DEBUG: Query: 'Where is zoom button? text is too small'
+2026-05-07 10:22:12,264 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-07 10:22:12,264 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:22:12,303 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:22:12,414 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:22:12,460 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:22:12,496 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:22:12,507 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:22:12,539 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:22:12,554 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:22:12,586 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:22:12,586 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:22:12,586 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is zoom button? text is too small'
+2026-05-07 10:22:12,586 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is zoom button? text is too small'
+2026-05-07 10:22:12,586 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is zoom button? text is too small'
+2026-05-07 10:22:12,586 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is zoom button? text is too small'
+2026-05-07 10:22:12,586 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is zoom button? text is too small'
+2026-05-07 10:22:12,586 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is zoom button? text is too small'
+2026-05-07 10:22:14,051 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:22:14,051 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:22:14,052 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:22:14,126 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:22:14,127 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:22:14,129 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:22:14,185 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:22:14,185 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:22:14,185 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:22:14,233 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:22:14,233 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:22:14,233 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:22:14,445 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:22:14,445 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:22:14,445 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:22:16,655 [ai_client] DEBUG: Raw AI response (204 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 376, "y_min": 130, "x_max": 400, "y_max": 160 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to zoom in"
+    }
+  ]
+}
+2026-05-07 10:22:16,655 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:22:16,655 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:22:16,655 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 10:22:16,655 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 10:22:16,655 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:22:16,686 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:22:16,690 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:22:16,714 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:22:33,169 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:29:01,020 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:29:01,033 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:29:05,108 [main] DEBUG: Query: 'Where do i search things up'
+2026-05-07 10:29:05,108 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 10:29:05,108 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:29:05,108 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:29:05,173 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:29:05,188 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:29:05,204 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:29:05,220 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:29:05,235 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:29:05,267 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:29:05,267 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:29:05,267 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:29:05,283 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do i search things up'
+2026-05-07 10:29:05,287 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do i search things up'
+2026-05-07 10:29:05,287 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do i search things up'
+2026-05-07 10:29:05,287 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do i search things up'
+2026-05-07 10:29:05,287 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do i search things up'
+2026-05-07 10:29:05,296 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where do i search things up'
+2026-05-07 10:29:06,963 [ai_client] DEBUG: Raw AI response (154 chars): {"elements":[{"bbox":{"x_min":155,"y_min":62,"x_max":736,"y_max":97},"label":"Address search bar","voice_instruction":"Click the address bar to search"}]}
+2026-05-07 10:29:06,964 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:29:06,965 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-07 10:29:07,055 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:29:07,056 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:29:07,056 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:29:07,186 [ai_client] DEBUG: Raw AI response (152 chars): {"elements":[{"bbox":{"x_min":0,"y_min":62,"x_max":360,"y_max":96},"label":"Chrome address bar","voice_instruction":"Click the address bar to search"}]}
+2026-05-07 10:29:07,186 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:29:07,186 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-07 10:29:07,298 [ai_client] DEBUG: Raw AI response (203 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 497, "y_min": 0, "x_max": 735, "y_max": 30 },
+      "label": "Ask Google search",
+      "voice_instruction": "Click the Ask Google search box"
+    }
+  ]
+}
+2026-05-07 10:29:07,298 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:29:07,298 [grid_analyzer] DEBUG:   core-filtered 'Ask Google search' centre (616,525) not in core (0,600)–(640,1200)
+2026-05-07 10:29:07,307 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:29:07,842 [ai_client] DEBUG: Raw AI response (162 chars): {"elements":[{"bbox":{"x_min":0,"y_min":0,"x_max":620,"y_max":20},"label":"Ask Google search bar","voice_instruction":"Click the search bar to type your query"}]}
+2026-05-07 10:29:07,842 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:29:07,842 [grid_analyzer] DEBUG:   core-filtered 'Ask Google search bar' centre (854,520) not in core (640,600)–(1280,1200)
+2026-05-07 10:29:07,842 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:29:07,936 [ai_client] DEBUG: Raw AI response (212 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 0, "y_min": 497, "x_max": 645, "y_max": 533 },
+      "label": "Google Search Box",
+      "voice_instruction": "Click the Ask Google search box to type"
+    }
+  ]
+}
+2026-05-07 10:29:07,936 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:29:07,952 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:29:07,952 [grid_analyzer] DEBUG: Label-merge: 3 -> 3
+2026-05-07 10:29:07,952 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 3
+2026-05-07 10:29:07,952 [grid_analyzer] DEBUG: Elected 'Chrome address bar' from 3 candidates
+2026-05-07 10:29:07,952 [grid_analyzer] DEBUG: Grid done: 3 raw -> 1 final
+2026-05-07 10:29:07,952 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:29:07,970 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:29:07,970 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:29:08,005 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:29:13,192 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:29:23,096 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:29:23,096 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:29:28,227 [main] DEBUG: Query: 'Wheres my gmail'
+2026-05-07 10:29:28,228 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 10:29:28,228 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:29:28,237 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:29:28,288 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:29:28,326 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:29:28,360 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:29:28,382 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:29:28,391 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:29:28,407 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:29:28,423 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:29:28,423 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:29:28,423 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my gmail'
+2026-05-07 10:29:28,423 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my gmail'
+2026-05-07 10:29:28,443 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my gmail'
+2026-05-07 10:29:28,448 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my gmail'
+2026-05-07 10:29:28,452 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my gmail'
+2026-05-07 10:29:28,453 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Wheres my gmail'
+2026-05-07 10:29:29,818 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:29:29,818 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:29:29,819 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 10:29:29,820 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:29:29,820 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:29:29,820 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:29:29,908 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:29:29,908 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:29:29,908 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:29:29,998 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:29:29,998 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:29:29,998 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:29:30,389 [ai_client] DEBUG: Raw AI response (164 chars): {"elements": [{"bbox": {"x_min": 479, "y_min": 178, "x_max": 514, "y_max": 206}, "label": "Gmail link", "voice_instruction": "Click the Gmail link to open Gmail"}]}
+2026-05-07 10:29:30,389 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:29:30,389 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-07 10:29:30,937 [ai_client] DEBUG: Raw AI response (161 chars): {"elements":[{"bbox":{"x_min":68,"y_min":110,"x_max":205,"y_max":140},"label":"Gmail Inbox bookmark","voice_instruction":"Click the Gmail inbox bookmark link"}]}
+2026-05-07 10:29:30,937 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:29:30,937 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-07 10:29:30,937 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-07 10:29:30,937 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-07 10:29:30,937 [grid_analyzer] DEBUG: Elected 'Gmail link' from 2 candidates
+2026-05-07 10:29:30,937 [grid_analyzer] DEBUG: Grid done: 2 raw -> 1 final
+2026-05-07 10:29:30,950 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:29:30,983 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:29:30,985 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:29:31,006 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:29:36,186 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:33:30,062 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:33:30,065 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:33:37,606 [main] DEBUG: Query: 'Where is gmail button'
+2026-05-07 10:33:37,606 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 10:33:37,607 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:33:37,618 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:33:37,721 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:33:37,743 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:33:37,776 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:33:37,794 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:33:37,806 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:33:37,828 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:33:37,842 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:33:37,843 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:33:37,844 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is gmail button'
+2026-05-07 10:33:37,847 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is gmail button'
+2026-05-07 10:33:37,848 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is gmail button'
+2026-05-07 10:33:37,850 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is gmail button'
+2026-05-07 10:33:37,853 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is gmail button'
+2026-05-07 10:33:37,859 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is gmail button'
+2026-05-07 10:33:39,231 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:33:39,232 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:33:39,233 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:33:39,454 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:33:39,455 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:33:39,456 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:33:39,570 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:33:39,571 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:33:39,572 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 10:33:39,641 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:33:39,641 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:33:39,641 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:33:39,846 [ai_client] DEBUG: Raw AI response (153 chars): {"elements":[{"bbox":{"x_min":477,"y_min":178,"x_max":516,"y_max":205},"label":"Gmail link","voice_instruction":"Click the Gmail button to open Gmail"}]}
+2026-05-07 10:33:39,846 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:33:39,847 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-07 10:33:39,981 [ai_client] DEBUG: Raw AI response (172 chars): {"elements": [{"bbox": {"x_min": 69, "y_min": 112, "x_max": 208, "y_max": 138}, "label": "Gmail Inbox tab", "voice_instruction": "Click the Gmail inbox bookmarks button"}]}
+2026-05-07 10:33:39,981 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:33:39,982 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-07 10:33:39,984 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-07 10:33:39,985 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-07 10:33:39,985 [grid_analyzer] DEBUG: Elected 'Gmail link' from 2 candidates
+2026-05-07 10:33:39,986 [grid_analyzer] DEBUG: Grid done: 2 raw -> 1 final
+2026-05-07 10:33:39,989 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:33:40,001 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:33:40,004 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:33:40,022 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:34:14,169 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:34:25,183 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:34:25,183 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:41:35,155 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-07 10:41:35,155 [explain_mode] DEBUG: Mouse tracking started
+2026-05-07 10:41:35,155 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide
+2026-05-07 10:41:35,273 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-07 10:41:35,273 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-07 10:41:40,486 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:41:40,491 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:41:48,529 [main] DEBUG: Query: 'Where is the gmail button'
+2026-05-07 10:41:48,530 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 10:41:48,531 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:41:48,627 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:41:48,705 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:41:48,724 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:41:48,756 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:41:48,772 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:41:48,791 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:41:48,804 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:41:48,820 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:41:48,820 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:41:49,622 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-07 10:41:49,638 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-07 10:41:49,654 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-07 10:41:49,654 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-07 10:41:49,654 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-07 10:41:49,654 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is the gmail button'
+2026-05-07 10:41:50,875 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:41:50,875 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:41:50,875 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:41:51,036 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:41:51,036 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:41:51,036 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:41:51,265 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:41:51,266 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:41:51,267 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 10:41:51,433 [ai_client] DEBUG: Raw AI response (164 chars): {"elements": [{"bbox": {"x_min": 476, "y_min": 178, "x_max": 516, "y_max": 205}, "label": "Gmail link", "voice_instruction": "Click the Gmail link to open Gmail"}]}
+2026-05-07 10:41:51,433 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:41:51,434 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-07 10:41:51,502 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:41:51,502 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:41:51,502 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:41:53,176 [ai_client] DEBUG: Raw AI response (172 chars): {"elements": [{"bbox": {"x_min": 73, "y_min": 112, "x_max": 197, "y_max": 140}, "label": "Gmail inbox tab", "voice_instruction": "Click the Gmail inbox bookmarks button"}]}
+2026-05-07 10:41:53,176 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:41:53,176 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-07 10:41:53,176 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-07 10:41:53,176 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-07 10:41:53,176 [grid_analyzer] DEBUG: Elected 'Gmail link' from 2 candidates
+2026-05-07 10:41:53,176 [grid_analyzer] DEBUG: Grid done: 2 raw -> 1 final
+2026-05-07 10:41:53,186 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:41:53,251 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:41:53,252 [voice] DEBUG: TTS: worker thread ready
+2026-05-07 10:41:53,253 [voice] DEBUG: TTS speak: 'Click the Gmail link to open Gmail'
+2026-05-07 10:41:53,259 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:41:53,532 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:42:00,436 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:42:03,657 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:42:03,657 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:42:08,148 [main] DEBUG: Query: 'How to zoom in'
+2026-05-07 10:42:08,148 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-07 10:42:08,157 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:42:08,183 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:42:08,272 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:42:08,319 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:42:08,334 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:42:08,366 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:42:08,382 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:42:08,420 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:42:08,436 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:42:08,436 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:42:08,436 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:42:08,436 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:42:08,436 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:42:08,436 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:42:08,436 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:42:08,452 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to zoom in'
+2026-05-07 10:42:09,602 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:42:09,602 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:42:09,602 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:42:09,671 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:42:09,671 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:42:09,671 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:42:09,964 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:42:09,965 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:42:09,966 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:42:10,127 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:42:10,127 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:42:10,127 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:42:10,441 [ai_client] DEBUG: Raw AI response (204 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 376, "y_min": 172, "x_max": 400, "y_max": 202 },
+      "label": "Zoom in button",
+      "voice_instruction": "Click the plus button to zoom in"
+    }
+  ]
+}
+2026-05-07 10:42:10,441 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:42:10,441 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:42:10,578 [ai_client] DEBUG: Raw AI response (156 chars): {"elements":[{"bbox":{"x_min":706,"y_min":171,"x_max":736,"y_max":201},"label":"Zoom in button","voice_instruction":"Click the zoom in button to zoom in"}]}
+2026-05-07 10:42:10,578 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:42:10,578 [grid_analyzer] DEBUG:   core-filtered 'Zoom in button' centre (721,186) not in core (0,0)–(640,600)
+2026-05-07 10:42:10,593 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:42:10,593 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 10:42:10,593 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 10:42:10,593 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:42:10,623 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:42:10,624 [voice] DEBUG: TTS speak: 'Click the plus button to zoom in'
+2026-05-07 10:42:10,626 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:42:10,666 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:42:14,574 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:42:44,783 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:42:44,786 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:42:51,670 [main] DEBUG: Query: 'how to scroll down'
+2026-05-07 10:42:51,670 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-07 10:42:51,670 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:42:51,701 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:42:51,787 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:42:51,834 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:42:51,878 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:42:51,894 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:42:51,910 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:42:51,946 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:42:51,972 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:42:51,973 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:42:51,975 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 10:42:51,979 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 10:42:51,979 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 10:42:51,983 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 10:42:51,984 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 10:42:51,984 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 10:42:53,122 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:42:53,122 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:42:53,122 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:42:53,800 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:42:53,800 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:42:53,800 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:42:53,848 [ai_client] DEBUG: Raw AI response (159 chars): {"elements":[{"bbox":{"x_min":718,"y_min":648,"x_max":735,"y_max":668},"label":"Scroll down button","voice_instruction":"Click the scrollbar to scroll down"}]}
+2026-05-07 10:42:53,848 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:42:53,864 [grid_analyzer] DEBUG:   core-filtered 'Scroll down button' centre (1910,658) not in core (1280,0)–(1920,600)
+2026-05-07 10:42:53,865 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:42:54,134 [ai_client] DEBUG: Raw AI response (211 chars): {
+  "elements": [
+    {
+      "bbox": {"x_min": 718, "y_min": 608, "x_max": 735, "y_max": 628},
+      "label": "Scrollbar down arrow",
+      "voice_instruction": "Click the down arrow to scroll down"
+    }
+  ]
+}
+2026-05-07 10:42:54,134 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:42:54,134 [grid_analyzer] DEBUG: Tile (1184,510): 1 elements after core filter
+2026-05-07 10:42:54,150 [ai_client] DEBUG: Raw AI response (181 chars): { "elements": [ { "bbox": { "x_min": 704, "y_min": 170, "x_max": 735, "y_max": 205 }, "label": "Scroll down button", "voice_instruction": "Click the down arrow to scroll down" } ] }
+2026-05-07 10:42:54,150 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:42:54,150 [grid_analyzer] DEBUG:   core-filtered 'Scroll down button' centre (720,188) not in core (0,0)–(640,600)
+2026-05-07 10:42:54,166 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:42:54,331 [ai_client] DEBUG: Raw AI response (216 chars): {
+  "elements": [
+    {
+      "bbox": {"x_min": 456, "y_min": 170, "x_max": 476, "y_max": 205},
+      "label": "Scroll down button",
+      "voice_instruction": "Click the down scroll arrow to scroll down"
+    }
+  ]
+}
+2026-05-07 10:42:54,332 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:42:54,332 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:42:54,335 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-07 10:42:54,336 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-07 10:42:54,339 [grid_analyzer] DEBUG: Elected 'Scrollbar down arrow' from 2 candidates
+2026-05-07 10:42:54,340 [grid_analyzer] DEBUG: Grid done: 2 raw -> 1 final
+2026-05-07 10:42:54,342 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:42:54,359 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:42:54,360 [voice] DEBUG: TTS speak: 'Click the down arrow to scroll down'
+2026-05-07 10:42:54,362 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:42:54,388 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:42:57,361 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:43:30,773 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:43:30,775 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:43:40,629 [main] DEBUG: Query: 'My grandson can't hear me how do I unmute'
+2026-05-07 10:43:40,630 [app_detector] DEBUG: Active window: 'zoom meeting'
+2026-05-07 10:43:40,630 [app_detector] DEBUG: Matched app: zoom
+2026-05-07 10:43:40,637 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:43:40,725 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:43:40,753 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:43:40,777 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:43:40,792 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:43:40,812 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:43:40,834 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:43:40,848 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:43:40,849 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:43:40,851 [ai_client] DEBUG: AI request: mode=guide app=zoom query='My grandson can't hear me how do I unmute'
+2026-05-07 10:43:40,854 [ai_client] DEBUG: AI request: mode=guide app=zoom query='My grandson can't hear me how do I unmute'
+2026-05-07 10:43:40,856 [ai_client] DEBUG: AI request: mode=guide app=zoom query='My grandson can't hear me how do I unmute'
+2026-05-07 10:43:40,858 [ai_client] DEBUG: AI request: mode=guide app=zoom query='My grandson can't hear me how do I unmute'
+2026-05-07 10:43:40,860 [ai_client] DEBUG: AI request: mode=guide app=zoom query='My grandson can't hear me how do I unmute'
+2026-05-07 10:43:40,861 [ai_client] DEBUG: AI request: mode=guide app=zoom query='My grandson can't hear me how do I unmute'
+2026-05-07 10:43:42,261 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:43:42,262 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:43:42,264 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:43:42,282 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:43:42,283 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:43:42,285 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:43:42,299 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:43:42,299 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:43:42,300 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:43:42,317 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:43:42,318 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:43:42,322 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:43:42,760 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:43:42,761 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:43:42,762 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 10:43:45,841 [ai_client] DEBUG: Raw AI response (219 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 40, "y_min": 568, "x_max": 90, "y_max": 622 },
+      "label": "Unmute mic button",
+      "voice_instruction": "Click the microphone button to unmute yourself"
+    }
+  ]
+}
+2026-05-07 10:43:45,842 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:43:45,842 [grid_analyzer] DEBUG: Tile (0,510): 1 elements after core filter
+2026-05-07 10:43:45,845 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 10:43:45,848 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 10:43:45,855 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:43:45,889 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:43:45,889 [voice] DEBUG: TTS speak: 'Click the microphone button to unmute yourself'
+2026-05-07 10:43:45,892 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:43:45,934 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:43:49,380 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:44:05,067 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:44:05,071 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:44:09,803 [main] DEBUG: Query: 'how to unmute myself'
+2026-05-07 10:44:09,805 [app_detector] DEBUG: Active window: 'zoom meeting'
+2026-05-07 10:44:09,805 [app_detector] DEBUG: Matched app: zoom
+2026-05-07 10:44:09,811 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:44:09,901 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:44:09,925 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:44:09,944 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:44:09,963 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:44:09,984 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:44:10,009 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:44:10,022 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:44:10,023 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:44:10,025 [ai_client] DEBUG: AI request: mode=guide app=zoom query='how to unmute myself'
+2026-05-07 10:44:10,027 [ai_client] DEBUG: AI request: mode=guide app=zoom query='how to unmute myself'
+2026-05-07 10:44:10,029 [ai_client] DEBUG: AI request: mode=guide app=zoom query='how to unmute myself'
+2026-05-07 10:44:10,031 [ai_client] DEBUG: AI request: mode=guide app=zoom query='how to unmute myself'
+2026-05-07 10:44:10,033 [ai_client] DEBUG: AI request: mode=guide app=zoom query='how to unmute myself'
+2026-05-07 10:44:10,034 [ai_client] DEBUG: AI request: mode=guide app=zoom query='how to unmute myself'
+2026-05-07 10:44:11,526 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:11,528 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:11,529 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:11,531 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:11,532 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:11,536 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 10:44:11,533 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:11,540 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:44:11,535 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:11,539 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:11,542 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:44:11,544 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:44:11,651 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:11,651 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:11,653 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:44:11,749 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:11,750 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:11,750 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:44:11,752 [grid_analyzer] DEBUG: Grid done: 0 raw -> 0 final
+2026-05-07 10:44:11,759 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:44:11,788 [overlay] DEBUG: Overlay: 0 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:44:14,814 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:44:41,567 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:44:41,567 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:44:46,490 [main] DEBUG: Query: 'how to get to last page'
+2026-05-07 10:44:46,491 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-07 10:44:46,492 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:44:46,513 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:44:46,581 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:44:46,617 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:44:46,644 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:44:46,660 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:44:46,680 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:44:46,712 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:44:46,740 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:44:46,743 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:44:46,743 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to get to last page'
+2026-05-07 10:44:46,743 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to get to last page'
+2026-05-07 10:44:46,751 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to get to last page'
+2026-05-07 10:44:46,751 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to get to last page'
+2026-05-07 10:44:46,751 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to get to last page'
+2026-05-07 10:44:46,759 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to get to last page'
+2026-05-07 10:44:47,892 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:47,892 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:47,901 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:44:48,114 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:48,114 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:48,124 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 10:44:48,392 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:48,393 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:48,394 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:44:48,794 [ai_client] DEBUG: Raw AI response (188 chars): { "elements": [ { "bbox": { "x_min": 706, "y_min": 170, "x_max": 736, "y_max": 202 }, "label": "Last page button", "voice_instruction": "Click the last page button to navigate there" } ] }
+2026-05-07 10:44:48,795 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:44:48,795 [grid_analyzer] DEBUG:   core-filtered 'Last page button' centre (721,186) not in core (0,0)–(640,600)
+2026-05-07 10:44:48,797 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:44:48,814 [ai_client] DEBUG: Raw AI response (164 chars): {"elements":[{"bbox":{"x_min":211,"y_min":172,"x_max":232,"y_max":202},"label":"Next page button","voice_instruction":"Click the right arrow to go forward pages"}]}
+2026-05-07 10:44:48,814 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:44:48,815 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:44:49,790 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:44:49,791 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:44:49,791 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 10:44:49,792 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 10:44:49,793 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 10:44:49,795 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:44:49,845 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:44:49,845 [voice] DEBUG: TTS speak: 'Click the right arrow to go forward pages'
+2026-05-07 10:44:49,849 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:44:49,904 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:44:58,599 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:45:15,015 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 10:45:15,015 [overlay] DEBUG: Overlay cleared
+2026-05-07 10:45:19,722 [main] DEBUG: Query: 'How to get to third page'
+2026-05-07 10:45:19,723 [app_detector] DEBUG: Active window: 'sample pdf - google chrome'
+2026-05-07 10:45:19,723 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 10:45:19,736 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 10:45:19,807 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 10:45:19,855 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 10:45:19,887 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 10:45:19,902 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 10:45:19,934 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 10:45:19,966 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 10:45:19,984 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 10:45:19,985 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 10:45:19,986 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to get to third page'
+2026-05-07 10:45:19,986 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to get to third page'
+2026-05-07 10:45:19,990 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to get to third page'
+2026-05-07 10:45:19,992 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to get to third page'
+2026-05-07 10:45:19,994 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to get to third page'
+2026-05-07 10:45:19,995 [ai_client] DEBUG: AI request: mode=guide app=chrome query='How to get to third page'
+2026-05-07 10:45:21,367 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:45:21,377 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:45:21,378 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 10:45:21,989 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 10:45:21,989 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 10:45:21,989 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 10:45:22,429 [ai_client] DEBUG: Raw AI response (177 chars): {"elements": [{"bbox": {"x_min": 706, "y_min": 172, "x_max": 736, "y_max": 201}, "label": "Page number button", "voice_instruction": "Click the page number to navigate pages"}]}
+2026-05-07 10:45:22,430 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:45:22,430 [grid_analyzer] DEBUG:   core-filtered 'Page number button' centre (721,186) not in core (0,0)–(640,600)
+2026-05-07 10:45:22,432 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 10:45:22,452 [ai_client] DEBUG: Raw AI response (228 chars): ```json
+{
+  "elements": [
+    {
+      "bbox": { "x_min": 120, "y_min": 211, "x_max": 258, "y_max": 425 },
+      "label": "Page 3 thumbnail",
+      "voice_instruction": "Click the page three thumbnail to navigate"
+    }
+  ]
+}
+```
+2026-05-07 10:45:22,452 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:45:22,452 [grid_analyzer] DEBUG: Tile (0,510): 1 elements after core filter
+2026-05-07 10:45:22,577 [ai_client] DEBUG: Raw AI response (163 chars): {"elements":[{"bbox":{"x_min":197,"y_min":172,"x_max":228,"y_max":202},"label":"Next page button","voice_instruction":"Click the next page button to go forward"}]}
+2026-05-07 10:45:22,577 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:45:22,593 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 10:45:22,896 [ai_client] DEBUG: Raw AI response (191 chars): { "elements": [ { "bbox": { "x_min": 716, "y_min": 230, "x_max": 735, "y_max": 680 }, "label": "Vertical scroll bar", "voice_instruction": "Drag the scroll bar down to reach third page" } ] }
+2026-05-07 10:45:22,896 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 10:45:22,896 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-07 10:45:22,896 [grid_analyzer] DEBUG: Label-merge: 3 -> 3
+2026-05-07 10:45:22,912 [grid_analyzer] DEBUG: Geometric-dedup: 3 -> 3
+2026-05-07 10:45:22,912 [grid_analyzer] DEBUG: Elected 'Next page button' from 3 candidates
+2026-05-07 10:45:22,912 [grid_analyzer] DEBUG: Grid done: 3 raw -> 1 final
+2026-05-07 10:45:22,912 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 10:45:22,948 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 10:45:22,949 [voice] DEBUG: TTS speak: 'Click the next page button to go forward'
+2026-05-07 10:45:22,951 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 10:45:22,998 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)

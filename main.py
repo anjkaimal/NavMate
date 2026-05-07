@@ -16,6 +16,7 @@ from loading_overlay import LoadingOverlay
 from logger import get_logger
 from overlay import OverlayWindow
 from screenshot import capture_region
+from voice import speak
 
 log = get_logger("main")
 
@@ -72,7 +73,7 @@ class NavMate:
 
         self.hotkeys.start()
         self.explain.start_mouse_tracking()
-        log.debug("NavMate ready — Ctrl+Shift+H to guide, Ctrl+Shift+E for explain mode")
+        log.debug("NavMate ready — Ctrl+Shift+H to guide")
 
     # ------------------------------------------------------------------
     # Hotkey handlers  (always on Qt main thread via queued connection)
@@ -137,6 +138,11 @@ class NavMate:
     def _on_elements_ready(self, elements: list, full_w: int, full_h: int) -> None:
         self.loading.hide_loading()
         self.overlay.show_elements(elements, full_w, full_h)
+        if elements:
+            text = (elements[0].get("voice_instruction")
+                    or elements[0].get("instruction")
+                    or elements[0].get("explanation", ""))
+            speak(text)
 
     def _on_error(self, title: str, message: str) -> None:
         self.loading.hide_loading()
