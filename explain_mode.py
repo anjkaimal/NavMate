@@ -1,3 +1,4 @@
+import threading
 from typing import Callable
 
 from pynput import mouse
@@ -12,6 +13,9 @@ log = get_logger(__name__)
 # Signature: (x, y, width, height, cursor_x, cursor_y) -> None
 ExplainCallback = Callable[[int, int, int, int, int, int], None]
 
+_DWELL_SECS      = 2.0
+_DWELL_RADIUS_SQ = 625   # 25-px movement resets the dwell timer
+
 
 class ExplainMode:
     def __init__(self, ai_callback: ExplainCallback) -> None:
@@ -25,6 +29,11 @@ class ExplainMode:
         self._dismiss_timer.timeout.connect(self._hide_tooltip)
         self._listener: mouse.Listener | None = None
 
+        self._dwell_timer: threading.Timer | None = None
+        self._dwell_ax = 0
+        self._dwell_ay = 0
+        self._is_explaining = False
+
     # ------------------------------------------------------------------
     # Lifecycle
     # ------------------------------------------------------------------
@@ -36,6 +45,7 @@ class ExplainMode:
         log.debug("Mouse tracking started")
 
     def stop(self) -> None:
+        self._cancel_dwell()
         if self._listener:
             self._listener.stop()
         self._hide_tooltip()
@@ -47,7 +57,13 @@ class ExplainMode:
     def toggle(self) -> bool:
         self._active = not self._active
         log.debug(f"Explain mode {'ON' if self._active else 'OFF'}")
-        if not self._active:
+        if self._active:
+            self._dwell_ax = self._mx
+            self._dwell_ay = self._my
+            self._is_explaining = False
+            self._restart_dwell()
+        else:
+            self._cancel_dwell()
             self._hide_tooltip()
         return self._active
 
@@ -66,6 +82,7 @@ class ExplainMode:
 
     def show_tooltip(self, text: str, mx: int, my: int) -> None:
         self._hide_tooltip()
+        self._is_explaining = False   # allow next dwell cycle
 
         self._tooltip = QLabel(text)
         self._tooltip.setWindowFlags(
@@ -104,6 +121,32 @@ class ExplainMode:
     def _on_mouse_move(self, x: int, y: int) -> None:
         self._mx = x
         self._my = y
+        if not self._active:
+            return
+        dx = x - self._dwell_ax
+        dy = y - self._dwell_ay
+        if dx * dx + dy * dy > _DWELL_RADIUS_SQ:
+            self._dwell_ax = x
+            self._dwell_ay = y
+            self._is_explaining = False
+            self._restart_dwell()
+
+    def _restart_dwell(self) -> None:
+        self._cancel_dwell()
+        t = threading.Timer(_DWELL_SECS, self._on_dwell)
+        t.daemon = True
+        t.start()
+        self._dwell_timer = t
+
+    def _cancel_dwell(self) -> None:
+        if self._dwell_timer is not None:
+            self._dwell_timer.cancel()
+            self._dwell_timer = None
+
+    def _on_dwell(self) -> None:
+        if self._active and not self._is_explaining:
+            self._is_explaining = True
+            self.explain_at_cursor()
 
     def _hide_tooltip(self) -> None:
         self._dismiss_timer.stop()

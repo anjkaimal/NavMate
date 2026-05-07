@@ -13,10 +13,11 @@ mindmap
         Input Dialog
         Tooltip Widget
     Input
-      keyboard
-        Global Hotkeys
       pynput
         Mouse Tracking
+      AssistantDock
+        Ask Button
+        Explain Toggle
     Screen Capture
       mss
         Full Screen
@@ -45,13 +46,14 @@ mindmap
 
 ```mermaid
 graph TD
-    main([main.py]) --> hotkey[hotkey.py]
+    main([main.py]) --> dock[assistant_dock.py]
     main --> input_dialog[input_dialog.py]
     main --> overlay[overlay.py]
     main --> explain_mode[explain_mode.py]
     main --> cache[cache.py]
 
-    hotkey -->|fires event| main
+    dock -->|ask_requested signal| main
+    dock -->|explain_toggled signal| main
 
     input_dialog -->|query_submitted signal| main
 
@@ -74,12 +76,12 @@ graph TD
     end
 
     subgraph Qt UI
+        dock
         input_dialog
         overlay
     end
 
     subgraph System
-        hotkey
         explain_mode
     end
 
@@ -90,7 +92,6 @@ graph TD
     config[config.py] -.->|constants| main
     config -.-> overlay
     config -.-> ai_client
-    config -.-> hotkey
 ```
 
 ---
@@ -100,7 +101,7 @@ graph TD
 ```mermaid
 sequenceDiagram
     actor User
-    participant HK as hotkey.py
+    participant DK as assistant_dock.py
     participant Main as main.py
     participant Dialog as input_dialog.py
     participant SS as screenshot.py
@@ -109,8 +110,8 @@ sequenceDiagram
     participant OV as overlay.py
     participant Cache as cache.py
 
-    User->>HK: Ctrl+Shift+H
-    HK->>Main: invoke on Qt thread
+    User->>DK: clicks "Ask a Question"
+    DK->>Main: ask_requested signal
     Main->>Dialog: show()
     User->>Dialog: types query + Enter
     Dialog->>Main: query_submitted("How do I mute?")
@@ -135,21 +136,21 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     actor User
-    participant HK as hotkey.py
+    participant DK as assistant_dock.py
     participant EM as explain_mode.py
     participant SS as screenshot.py
     participant AI as ai_client.py
     participant OV as overlay.py
 
-    User->>HK: Ctrl+Shift+E
-    HK->>EM: toggle_explain_mode()
-    EM-->>User: Status label "Explain Mode ON"
+    User->>DK: clicks "Explain Mode"
+    DK->>EM: toggle()
+    DK-->>User: button turns red, hint shown
 
     User->>EM: moves mouse over UI element
     EM->>EM: track_position(mx, my)
 
-    User->>HK: Ctrl+Shift+H (while hovering)
-    HK->>EM: explain_at_cursor()
+    Note over EM: cursor still for 2 s
+    EM->>EM: explain_at_cursor()
     EM->>SS: capture_region(mx-150, my-150, 300, 300)
     SS-->>EM: cropped base64 image
     EM->>AI: query_ai(cropped, "What does this do?", app, mode="explain")

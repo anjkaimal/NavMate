@@ -2,25 +2,25 @@ NavMate
 
 NavMate is a real-time, screen-aware AI assistant that helps users understand and navigate any interface using natural language.
 
-Press a hotkey, ask a question, and NavMate will analyze your screen and visually guide you with labeled overlays.
+A small floating dock sits in the corner of your screen at all times. Click Ask a Question, type what you need help with, and NavMate will analyze your screen and visually guide you with labeled overlays.
 
 Features
 Ask about anything on your screen
-Press a hotkey and ask questions like:
+Click the dock and ask questions like:
 “Where do I search?” or “How do I mute myself?”
 Context-aware AI guidance
 Uses Claude Vision to understand UI elements and provide step-by-step guidance
 Visual overlay system
 Highlights relevant UI components with bounding boxes and explanations
-Global hotkeys
-Trigger NavMate from anywhere (not just inside the app)
+Always-present dock
+The NavMate assistant dock stays visible in the corner of your screen — no shortcuts to remember
 App-aware prompts
 Adapts responses based on the active application (Chrome, Zoom, VS Code, etc.)
 Architecture Overview
 
 NavMate is built as a modular pipeline:
 
-User → Hotkey → Screenshot → App Detection → AI (Claude Vision) → Overlay UI
+User → Dock → Screenshot → App Detection → AI (Claude Vision) → Overlay UI
 
 Core components:
 
@@ -46,6 +46,6 @@ $env:ANTHROPIC_API_KEY="your_api_key_here"
 python main.py
 Usage
 Guide Mode
-Press: Ctrl + Shift + H
+Click "🔍 Ask a Question" in the dock
 Type a question
 NavMate analyzes your screen and shows labeled guidance

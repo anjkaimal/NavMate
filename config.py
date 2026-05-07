@@ -1,9 +1,5 @@
 import os
 
-# --- Hotkeys ---
-HOTKEY_GUIDE = "ctrl+shift+h"
-HOTKEY_EXPLAIN_TOGGLE = "ctrl+shift+e"
-
 # --- AI ---
 ANTHROPIC_API_KEY: str = os.environ.get("ANTHROPIC_API_KEY", "")
 AI_MODEL = "claude-sonnet-4-6"

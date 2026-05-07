@@ -5716,3 +5716,436 @@ ValueError: boom
 2026-05-07 12:00:00,545 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
 2026-05-07 12:00:00,594 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
 2026-05-07 12:00:00,626 [overlay] DEBUG: Overlay cleared
+2026-05-07 14:21:37,791 [explain_mode] DEBUG: Mouse tracking started
+2026-05-07 14:21:37,860 [main] DEBUG: NavMate ready — dock visible
+2026-05-07 14:21:47,592 [overlay] DEBUG: Overlay cleared
+2026-05-07 14:21:51,663 [explain_mode] DEBUG: Explain mode ON
+2026-05-07 14:21:51,663 [main] DEBUG: Explain mode: ON
+2026-05-07 14:22:10,747 [explain_mode] DEBUG: Explain at cursor (517,1177), region (367,1027,300,300)
+2026-05-07 14:22:10,764 [screenshot] DEBUG: Captured region (367,1027,300,300): (300, 300)
+2026-05-07 14:22:10,796 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:22:11,243 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:22:13,694 [ai_client] DEBUG: Raw AI response (280 chars): {"explanation": "This shows the Windows 11 taskbar with the Start button (Windows logo) and a Search bar. Clicking the Start button opens the Start menu for launching apps and accessing system settings, while the Search bar allows you to search for apps, files, and web results."}
+2026-05-07 14:22:13,805 [explain_mode] DEBUG: Tooltip shown at (535,802)
+2026-05-07 14:22:15,014 [explain_mode] DEBUG: Explain at cursor (860,1174), region (710,1024,300,300)
+2026-05-07 14:22:15,018 [screenshot] DEBUG: Captured region (710,1024,300,300): (300, 300)
+2026-05-07 14:22:15,030 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:22:15,030 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:22:17,209 [ai_client] DEBUG: Raw AI response (219 chars): {"explanation": "This is a tooltip or descriptive text overlay explaining that a Search bar allows users to search for apps, files, and web results, likely part of a tutorial or settings guide for a desktop interface."}
+2026-05-07 14:22:17,289 [explain_mode] DEBUG: Tooltip shown at (878,822)
+2026-05-07 14:22:17,385 [explain_mode] DEBUG: Explain at cursor (845,1183), region (695,1033,300,300)
+2026-05-07 14:22:17,385 [screenshot] DEBUG: Captured region (695,1033,300,300): (300, 300)
+2026-05-07 14:22:17,401 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:22:17,401 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:22:20,698 [ai_client] DEBUG: Raw AI response (337 chars): {"explanation": "This is a Windows taskbar showing several pinned or open application icons, including a gift/party app, Task View (the overlapping windows icon), Microsoft Copilot (the colorful swirl icon), and Dell's support or management application. Clicking any of these icons will open or switc
+2026-05-07 14:22:20,785 [explain_mode] DEBUG: Tooltip shown at (863,762)
+2026-05-07 14:22:21,631 [explain_mode] DEBUG: Explain at cursor (1429,1095), region (1279,945,300,300)
+2026-05-07 14:22:21,678 [screenshot] DEBUG: Captured region (1279,945,300,300): (300, 300)
+2026-05-07 14:22:21,694 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:22:21,694 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:22:24,455 [ai_client] DEBUG: Raw AI response (312 chars): {"explanation": "This is a tooltip or descriptive overlay panel that provides explanatory text about a taskbar, describing the icons visible on it such as Microsoft Copilot and other application icons. It helps users understand what the taskbar elements represent and what happens when they interact 
+2026-05-07 14:22:24,539 [explain_mode] DEBUG: Tooltip shown at (1175,782)
+2026-05-07 14:22:26,635 [explain_mode] DEBUG: Explain at cursor (511,687), region (361,537,300,300)
+2026-05-07 14:22:26,651 [screenshot] DEBUG: Captured region (361,537,300,300): (300, 300)
+2026-05-07 14:22:26,667 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:22:26,667 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:22:29,110 [ai_client] DEBUG: Raw AI response (294 chars): {"explanation": "This is the Visual Studio Code application icon on the desktop or taskbar. Clicking it launches the Visual Studio Code code editor, which is a free, lightweight source code editor that supports debugging, syntax highlighting, and extensions for various programming languages."}
+2026-05-07 14:22:29,176 [explain_mode] DEBUG: Tooltip shown at (529,705)
+2026-05-07 14:22:30,995 [explain_mode] DEBUG: Explain at cursor (250,73), region (100,0,300,300)
+2026-05-07 14:22:31,011 [screenshot] DEBUG: Captured region (100,0,300,300): (300, 300)
+2026-05-07 14:22:31,017 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:22:31,017 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:22:33,299 [ai_client] DEBUG: Raw AI response (194 chars): {"explanation": "This is a browser address/search bar in Google Chrome. It allows users to type a URL to navigate to a website or enter a search query which will be processed by Google Search."}
+2026-05-07 14:22:33,347 [explain_mode] DEBUG: Tooltip shown at (268,91)
+2026-05-07 14:22:34,242 [explain_mode] DEBUG: Explain at cursor (105,716), region (0,566,300,300)
+2026-05-07 14:22:34,258 [screenshot] DEBUG: Captured region (0,566,300,300): (300, 300)
+2026-05-07 14:22:34,258 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 14:22:34,258 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 14:22:34,258 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-07 14:22:36,607 [ai_client] DEBUG: Raw AI response (246 chars): {"explanation": "This appears to be a plain light green background or panel area with no visible interactive controls or labels. It likely serves as a decorative background, a color swatch, or an empty content area within the browser interface."}
+2026-05-07 14:22:36,687 [explain_mode] DEBUG: Tooltip shown at (123,734)
+2026-05-07 14:23:06,990 [explain_mode] DEBUG: Explain at cursor (530,640), region (380,490,300,300)
+2026-05-07 14:23:07,005 [screenshot] DEBUG: Captured region (380,490,300,300): (300, 300)
+2026-05-07 14:23:07,022 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 14:23:07,022 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 14:23:07,022 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-07 14:23:10,617 [ai_client] DEBUG: Raw AI response (318 chars): {"explanation": "This is a pinned app shortcut on the Chrome New Tab page for Visual Studio Code. The tooltip 'Visual Studio Code' is displayed on hover, and clicking it would open Visual Studio Code (likely as a web app or PWA). The 'x' button visible allows you to remove/unpin this shortcut from t
+2026-05-07 14:23:10,691 [explain_mode] DEBUG: Tooltip shown at (548,658)
+2026-05-07 14:23:12,279 [explain_mode] DEBUG: Explain at cursor (501,682), region (351,532,300,300)
+2026-05-07 14:23:12,279 [screenshot] DEBUG: Captured region (351,532,300,300): (300, 300)
+2026-05-07 14:23:12,295 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 14:23:12,295 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 14:23:12,295 [ai_client] DEBUG: AI request: mode=explain app=chrome query='What does this UI element do?'
+2026-05-07 14:23:15,065 [ai_client] DEBUG: Raw AI response (315 chars): {"explanation": "This is a bookmark or app shortcut for Visual Studio Code on the Chrome New Tab page. The 'X' button visible on hover allows you to remove/delete this shortcut from your new tab page, while clicking the shortcut itself would open Visual Studio Code's web presence or a related URL in
+2026-05-07 14:23:15,144 [explain_mode] DEBUG: Tooltip shown at (519,700)
+2026-05-07 14:23:15,839 [explain_mode] DEBUG: Explain mode OFF
+2026-05-07 14:23:15,839 [main] DEBUG: Explain mode: OFF
+2026-05-07 14:23:17,271 [overlay] DEBUG: Overlay cleared
+2026-05-07 14:23:24,615 [input_dialog] DEBUG: Voice query: 'where is where is my Gmail'
+2026-05-07 14:23:24,624 [main] DEBUG: Query: 'where is where is my Gmail'
+2026-05-07 14:23:24,625 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:23:24,729 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 14:23:24,800 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 14:23:24,819 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 14:23:24,844 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 14:23:24,859 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 14:23:24,871 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 14:23:24,890 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 14:23:24,905 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 14:23:24,907 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 14:23:24,910 [ai_client] DEBUG: AI request: mode=guide app=generic query='where is where is my Gmail'
+2026-05-07 14:23:24,910 [ai_client] DEBUG: AI request: mode=guide app=generic query='where is where is my Gmail'
+2026-05-07 14:23:24,915 [ai_client] DEBUG: AI request: mode=guide app=generic query='where is where is my Gmail'
+2026-05-07 14:23:24,915 [ai_client] DEBUG: AI request: mode=guide app=generic query='where is where is my Gmail'
+2026-05-07 14:23:24,917 [ai_client] DEBUG: AI request: mode=guide app=generic query='where is where is my Gmail'
+2026-05-07 14:23:24,919 [ai_client] DEBUG: AI request: mode=guide app=generic query='where is where is my Gmail'
+2026-05-07 14:23:26,431 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:26,431 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:26,431 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 14:23:26,463 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:26,463 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:26,463 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 14:23:26,542 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:26,542 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:26,542 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 14:23:26,702 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:26,702 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:26,702 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 14:23:26,958 [ai_client] DEBUG: Raw AI response (169 chars): {"elements": [{"bbox": {"x_min": 68, "y_min": 112, "x_max": 200, "y_max": 140}, "label": "Gmail Inbox Tab", "voice_instruction": "Click the Gmail inbox bookmark link"}]}
+2026-05-07 14:23:26,958 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 14:23:26,958 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-07 14:23:29,245 [ai_client] DEBUG: Raw AI response (214 chars): ```json
+{
+  "elements": [
+    {
+      "bbox": { "x_min": 479, "y_min": 178, "x_max": 515, "y_max": 205 },
+      "label": "Gmail link",
+      "voice_instruction": "Click the Gmail link to open Gmail"
+    }
+  ]
+}
+```
+2026-05-07 14:23:29,245 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 14:23:29,245 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-07 14:23:29,245 [grid_analyzer] DEBUG: Label-merge: 2 -> 2
+2026-05-07 14:23:29,261 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-07 14:23:29,261 [grid_analyzer] DEBUG: Elected 'Gmail link' from 2 candidates
+2026-05-07 14:23:29,261 [grid_analyzer] DEBUG: Grid done: 2 raw -> 1 final
+2026-05-07 14:23:29,261 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 14:23:29,357 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 14:23:29,357 [voice] DEBUG: TTS: worker thread ready
+2026-05-07 14:23:29,357 [voice] DEBUG: TTS speak: 'Click the Gmail link to open Gmail'
+2026-05-07 14:23:29,357 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,373 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,394 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,451 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,502 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,568 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,630 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,698 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,760 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,824 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,894 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:29,939 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,003 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,066 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,130 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,194 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,258 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,321 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,390 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,450 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,514 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,562 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,626 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,690 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,754 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,818 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,881 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:30,944 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,007 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,071 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,135 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,200 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,263 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,327 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,375 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,438 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,502 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,565 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,630 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,697 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,759 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,823 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,888 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:31,950 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,014 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,072 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,135 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,204 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,268 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,330 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,393 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,454 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,522 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,596 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,658 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,725 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,783 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,846 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,908 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:32,972 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,036 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,097 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,158 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,208 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,268 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,331 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,395 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,460 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,522 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,586 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,647 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,712 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,774 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,837 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,900 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:33,961 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,027 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,089 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,151 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,217 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,278 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,341 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,404 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,467 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,530 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,593 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,656 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,719 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,779 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,843 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,904 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:34,967 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,028 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,090 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,150 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,213 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,275 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,338 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,400 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,462 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,526 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,589 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,651 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,714 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,776 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,838 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,902 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:35,967 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,028 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,091 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,154 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,216 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,279 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,341 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,405 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,467 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,528 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,592 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,653 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,718 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,779 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,842 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,906 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:36,966 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,031 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,094 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,153 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,217 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,265 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,329 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,394 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,457 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,524 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,586 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,647 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,710 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,774 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,839 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,901 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:37,965 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,029 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,093 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,141 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,210 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,268 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,332 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,399 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,461 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,528 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,588 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,653 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,717 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,780 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,835 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,891 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:38,955 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,019 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,083 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,147 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,211 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,275 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,339 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,402 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,467 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,518 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,578 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,641 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,712 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,768 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,836 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,894 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:39,960 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:23:40,009 [overlay] DEBUG: Overlay cleared
+2026-05-07 14:23:48,415 [overlay] DEBUG: Overlay cleared
+2026-05-07 14:23:56,081 [input_dialog] DEBUG: Voice query: 'how do I delete some of my emails'
+2026-05-07 14:23:56,089 [main] DEBUG: Query: 'how do I delete some of my emails'
+2026-05-07 14:23:56,089 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:23:56,096 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 14:23:56,153 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 14:23:56,180 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 14:23:56,207 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 14:23:56,230 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 14:23:56,250 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 14:23:56,285 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 14:23:56,304 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 14:23:56,305 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 14:23:56,307 [ai_client] DEBUG: AI request: mode=guide app=generic query='how do I delete some of my emails'
+2026-05-07 14:23:56,307 [ai_client] DEBUG: AI request: mode=guide app=generic query='how do I delete some of my emails'
+2026-05-07 14:23:56,310 [ai_client] DEBUG: AI request: mode=guide app=generic query='how do I delete some of my emails'
+2026-05-07 14:23:56,313 [ai_client] DEBUG: AI request: mode=guide app=generic query='how do I delete some of my emails'
+2026-05-07 14:23:56,313 [ai_client] DEBUG: AI request: mode=guide app=generic query='how do I delete some of my emails'
+2026-05-07 14:23:56,316 [ai_client] DEBUG: AI request: mode=guide app=generic query='how do I delete some of my emails'
+2026-05-07 14:23:57,438 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:57,439 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:57,439 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 14:23:57,813 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:57,813 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:57,814 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 14:23:57,845 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:57,846 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:57,846 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 14:23:58,864 [ai_client] DEBUG: Raw AI response (187 chars): { "elements": [ { "bbox": { "x_min": 617, "y_min": 258, "x_max": 640, "y_max": 288 }, "label": "More options menu", "voice_instruction": "Click the three dots menu for more options" } ] }
+2026-05-07 14:23:58,864 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 14:23:58,864 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-07 14:23:59,019 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 14:23:59,020 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 14:23:59,021 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 14:24:00,467 [ai_client] DEBUG: Raw AI response (560 chars): I can see you're in Gmail, but there is **no visible Delete button** in this screenshot. To delete emails, you would first need to:
+
+```json
+{
+  "elements": [
+    {
+      "bbox": { "x_min": 465, "y_min": 25, "x_max": 497, "y_max": 60 },
+      "label": "Email checkbox selector",
+      "voice_instruct
+2026-05-07 14:24:00,496 [grid_analyzer] WARNING: Tile (0,510) AIResponseError: AI returned non-JSON output: Expecting value: line 1 column 1 (char 0)
+2026-05-07 14:24:00,499 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 14:24:00,503 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 14:24:00,510 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 14:24:00,559 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 14:24:00,559 [voice] DEBUG: TTS speak: 'Click the three dots menu for more options'
+2026-05-07 14:24:00,559 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:00,608 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:00,641 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:00,690 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:00,757 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:00,821 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:00,885 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:00,948 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,012 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,072 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,141 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,196 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,257 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,324 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,391 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,441 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,507 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,575 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,641 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,691 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,760 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,827 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,892 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:01,938 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,001 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,074 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,138 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,201 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,265 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,313 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,377 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,439 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,502 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,570 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,639 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,702 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,751 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,815 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,878 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:02,943 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,004 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,067 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,130 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,193 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,257 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,318 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,378 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,442 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,504 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,565 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,633 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 14:24:03,686 [overlay] DEBUG: Overlay cleared
+2026-05-07 14:25:30,415 [explain_mode] DEBUG: Explain mode ON
+2026-05-07 14:25:30,433 [main] DEBUG: Explain mode: ON
+2026-05-07 14:25:33,209 [explain_mode] DEBUG: Explain at cursor (302,418), region (152,268,300,300)
+2026-05-07 14:25:33,225 [screenshot] DEBUG: Captured region (152,268,300,300): (300, 300)
+2026-05-07 14:25:33,225 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:25:33,225 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:25:36,454 [ai_client] DEBUG: Raw AI response (264 chars): {"explanation": "This is an email navigation sidebar showing folder/label options (Inbox, Starred, Snoozed, Sent, and Categories). Clicking on any of these items navigates to that specific email folder, with the Inbox currently selected and showing 5,706 emails."}
+2026-05-07 14:25:36,522 [explain_mode] DEBUG: Tooltip shown at (320,436)
+2026-05-07 14:25:37,670 [explain_mode] DEBUG: Explain at cursor (225,432), region (75,282,300,300)
+2026-05-07 14:25:37,686 [screenshot] DEBUG: Captured region (75,282,300,300): (300, 300)
+2026-05-07 14:25:37,697 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:25:37,697 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:25:40,577 [ai_client] DEBUG: Raw AI response (272 chars): {"explanation": "This is an email navigation sidebar menu that allows users to switch between different mail folders or views, including Inbox (currently selected), Starred, Snoozed, Sent, and Categories. Clicking each item filters and displays the corresponding emails."}
+2026-05-07 14:25:40,656 [explain_mode] DEBUG: Tooltip shown at (243,450)
+2026-05-07 14:25:43,070 [explain_mode] DEBUG: Explain at cursor (240,442), region (90,292,300,300)
+2026-05-07 14:25:43,096 [screenshot] DEBUG: Captured region (90,292,300,300): (300, 300)
+2026-05-07 14:25:43,104 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:25:43,105 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:25:46,019 [ai_client] DEBUG: Raw AI response (274 chars): { "explanation": "This is an email navigation sidebar menu showing folder/label options including Inbox (with an unread count of 5,7...), Starred, Snoozed, Sent, and Categories. Clicking each item navigates to the corresponding email folder to view messages of that type." }
+2026-05-07 14:25:46,096 [explain_mode] DEBUG: Tooltip shown at (258,460)
+2026-05-07 14:25:46,143 [explain_mode] DEBUG: Explain at cursor (586,338), region (436,188,300,300)
+2026-05-07 14:25:46,159 [screenshot] DEBUG: Captured region (436,188,300,300): (300, 300)
+2026-05-07 14:25:46,169 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:25:46,169 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:25:49,172 [ai_client] DEBUG: Raw AI response (272 chars): {"explanation": "This is a Gmail inbox list showing email senders, where 'Chick-fil-A' is a selected/checked email (indicated by the bold text and checked checkbox) and 'Alison' is another email below it. The star icons allow users to mark emails as important/favorites."}
+2026-05-07 14:25:49,259 [explain_mode] DEBUG: Tooltip shown at (604,356)
+2026-05-07 14:25:51,024 [explain_mode] DEBUG: Explain at cursor (554,266), region (404,116,300,300)
+2026-05-07 14:25:51,041 [screenshot] DEBUG: Captured region (404,116,300,300): (300, 300)
+2026-05-07 14:25:51,051 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:25:51,051 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:25:55,916 [ai_client] DEBUG: Raw AI response (170 chars): {"explanation": "This is the Refresh button in Gmail. Clicking it reloads and updates the inbox to show any new emails that have arrived since the page was last loaded."}
+2026-05-07 14:25:56,002 [explain_mode] DEBUG: Tooltip shown at (572,284)
+2026-05-07 14:26:01,121 [explain_mode] DEBUG: Explain at cursor (140,1008), region (0,858,300,300)
+2026-05-07 14:26:01,143 [screenshot] DEBUG: Captured region (0,858,300,300): (300, 300)
+2026-05-07 14:26:01,149 [app_detector] DEBUG: Active window: 'python3'
+2026-05-07 14:26:01,149 [ai_client] DEBUG: AI request: mode=explain app=generic query='What does this UI element do?'
+2026-05-07 14:26:03,575 [ai_client] DEBUG: Raw AI response (266 chars): {"explanation": "This is a NavMate assistant widget with two buttons: 'Ask a Question' (blue) which allows the user to submit a question to the assistant, and 'Stop Explaining' (red) which halts any ongoing explanation or response being delivered by the assistant."}
+2026-05-07 14:26:03,639 [explain_mode] DEBUG: Tooltip shown at (158,802)
+2026-05-07 14:26:14,050 [explain_mode] DEBUG: Explain mode OFF
+2026-05-07 14:26:14,050 [main] DEBUG: Explain mode: OFF

@@ -7,10 +7,10 @@ from PyQt6.QtWidgets import QApplication, QMessageBox
 import cache
 from ai_client import AIResponseError
 from app_detector import get_active_app
+from assistant_dock import AssistantDock
 from config import ANTHROPIC_API_KEY
 from explain_mode import ExplainMode
 from grid_analyzer import analyze_grid
-from hotkey import HotkeyListener
 from input_dialog import QueryDialog
 from loading_overlay import LoadingOverlay
 from logger import get_logger
@@ -37,14 +37,14 @@ class NavMate:
         self.dialog  = QueryDialog()
         self.overlay = OverlayWindow()
         self.loading = LoadingOverlay()
-        self.hotkeys = HotkeyListener()
+        self.dock    = AssistantDock()
         self.explain = ExplainMode(ai_callback=self._explain_region_async)
 
         self._wire_signals()
 
     def _wire_signals(self) -> None:
-        self.hotkeys.bridge.guide_triggered.connect(self._on_guide_hotkey)
-        self.hotkeys.bridge.explain_toggle_triggered.connect(self._on_explain_toggle)
+        self.dock.ask_requested.connect(self._on_ask_question)
+        self.dock.explain_toggled.connect(self._on_explain_toggle)
 
         self.dialog.query_submitted.connect(self._on_query_submitted)
         self.overlay.try_again_requested.connect(self._on_try_again)
@@ -71,23 +71,21 @@ class NavMate:
             )
             sys.exit(1)
 
-        self.hotkeys.start()
         self.explain.start_mouse_tracking()
-        log.debug("NavMate ready — Ctrl+Shift+H to guide")
+        self.dock.show()
+        log.debug("NavMate ready — dock visible")
 
     # ------------------------------------------------------------------
-    # Hotkey handlers  (always on Qt main thread via queued connection)
+    # Dock handlers  (Qt main thread)
     # ------------------------------------------------------------------
 
-    def _on_guide_hotkey(self) -> None:
-        if self.explain.is_active:
-            self.explain.explain_at_cursor()
-        else:
-            self.overlay.clear()
-            self.dialog.show_centered()
+    def _on_ask_question(self) -> None:
+        self.overlay.clear()
+        self.dialog.show_centered()
 
     def _on_explain_toggle(self) -> None:
         active = self.explain.toggle()
+        self.dock.set_explain_active(active)
         log.debug(f"Explain mode: {'ON' if active else 'OFF'}")
 
     # ------------------------------------------------------------------

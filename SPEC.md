@@ -1,6 +1,6 @@
 # NavMate — Implementation Spec
 
-**Goal:** A Windows desktop app that captures the screen on a global hotkey, sends the screenshot + a user query to a multimodal AI, and renders a semi-transparent overlay with labeled bounding boxes pointing to relevant UI elements.
+**Goal:** A Windows desktop app with a persistent floating dock that lets users ask questions about their screen. It captures a screenshot, sends it with the user's query to a multimodal AI, and renders a semi-transparent overlay with labeled bounding boxes pointing to relevant UI elements.
 
 ---
 
@@ -23,8 +23,8 @@
 
 ```
 NavMate/
-├── main.py              # Entry point: starts hotkey listener + Qt app loop
-├── hotkey.py            # Global hotkey registration (Ctrl+Shift+H)
+├── main.py              # Entry point: shows dock + starts Qt app loop
+├── assistant_dock.py    # Persistent floating dock (Ask / Explain Mode buttons)
 ├── screenshot.py        # Screen capture → base64 PNG
 ├── ai_client.py         # Sends screenshot + query to AI; parses JSON response
 ├── prompts.py           # System prompts + app-specific tuning templates
@@ -34,7 +34,7 @@ NavMate/
 ├── cache.py             # In-memory cache for last screenshot + last AI result
 ├── app_detector.py      # Reads active window title → selects prompt template
 ├── logger.py            # Rotating file logger for debug output
-├── config.py            # Constants (hotkeys, API model, overlay colours, etc.)
+├── config.py            # Constants (API model, overlay colours, etc.)
 ├── requirements.txt
 └── SPEC.md              # This file
 ```
@@ -47,7 +47,7 @@ NavMate/
 |---|---|
 | `PyQt6` | Overlay window, input dialog, bounding-box painting |
 | `mss` | Fast cross-monitor screenshot capture |
-| `keyboard` | Global hotkey listener (no focus required) |
+| `keyboard` | *(optional)* Legacy hotkey support — not used in default flow |
 | `anthropic` | Claude Vision API (primary AI backend) |
 | `Pillow` | Image resizing / base64 encoding before API call |
 | `pywin32` | `win32gui.GetForegroundWindow()` → active app title |
@@ -101,7 +101,7 @@ The AI must return **only** this JSON, no markdown, no commentary:
 
 ### Step 1 — Scaffold & Config (`config.py`, `requirements.txt`)
 
-- Define all constants: hotkey combos, API model name, overlay alpha, box colour, font size, max screenshot dimension, log file path.
+- Define all constants: API model name, overlay alpha, box colour, font size, max screenshot dimension, log file path.
 - Load `ANTHROPIC_API_KEY` from environment variable (never hardcode).
 
 ### Step 2 — Logger (`logger.py`)
@@ -126,7 +126,7 @@ The AI must return **only** this JSON, no markdown, no commentary:
 ### Step 5 — Prompt Templates (`prompts.py`)
 
 - `get_system_prompt(app_key, mode)` returns a tailored string.
-  - **`mode="guide"`** (main hotkey flow): instruct the AI to identify elements relevant to the user's query and return strict JSON.
+  - **`mode="guide"`** (main guide flow): instruct the AI to identify elements relevant to the user's query and return strict JSON.
   - **`mode="explain"`** (Explain Mode): instruct the AI to describe the cropped region concisely.
 - App-specific context injected into system prompt:
   - `zoom`: "Common UI elements include: mute/unmute mic button (bottom-left), start/stop video, share screen, participants list, chat panel, end meeting (red button bottom-right)."
@@ -149,7 +149,7 @@ The AI must return **only** this JSON, no markdown, no commentary:
 
 - `QueryDialog(QWidget)`: a small frameless, always-on-top window.
   - Semi-transparent background, single `QLineEdit`, a "Go" button, and an "×" button.
-  - Appears centered on screen when the hotkey fires.
+  - Appears centered on screen when the dock's Ask button is clicked.
   - Emits a `query_submitted(str)` signal on Enter or "Go".
   - Closes itself on Escape or "×".
 - Keep it lightweight; no large chrome.
@@ -167,21 +167,24 @@ The AI must return **only** this JSON, no markdown, no commentary:
 - `show_elements(elements: list[dict])` method populates and shows the window.
 - `clear()` hides and resets it.
 
-### Step 9 — Hotkey Listener (`hotkey.py`)
+### Step 9 — Assistant Dock (`assistant_dock.py`)
 
-- Use `keyboard.add_hotkey("ctrl+shift+h", callback)` on a daemon thread.
-- The callback posts a Qt event (`QMetaObject.invokeMethod`) to the main thread — never manipulate Qt widgets from the hotkey thread.
-- Second hotkey `ctrl+shift+e` toggles Explain Mode (§7).
+- `AssistantDock(QWidget)`: frameless, always-on-top, persistent in the bottom-right corner.
+- Emits `ask_requested` when the Ask button is clicked.
+- Emits `explain_toggled` when the Explain Mode button is clicked.
+- Draggable; position persisted to `.navmate_dock_pos.json`.
+- Collapses to a slim header bar via the ▼ button.
 
 ### Step 10 — Explain Mode (`explain_mode.py`)
 
 - `pynput.mouse.Listener` tracks the current mouse position globally, stored in a thread-safe variable.
-- When Explain Mode is active and the hotkey fires:
+- When Explain Mode is active, a 2-second dwell timer fires automatically after the cursor stays still:
   1. Grab mouse position `(mx, my)`.
   2. Crop a region of ±150 px around the cursor using `screenshot.capture_region`.
   3. Call `ai_client.query_ai(cropped_b64, "What does this do?", app_key, mode="explain")`.
   4. Display a small tooltip-style `QLabel` near the cursor with the returned explanation.
-- Tooltip auto-dismisses after 6 seconds or on next keypress.
+- Moving the cursor more than 25 px resets the dwell timer.
+- Tooltip auto-dismisses after 6 seconds.
 
 ### Step 11 — Cache (`cache.py`)
 
@@ -194,11 +197,11 @@ The AI must return **only** this JSON, no markdown, no commentary:
 - Create `QApplication`.
 - Instantiate all modules.
 - Wire signals:
-  - Hotkey fires → show `QueryDialog`.
+  - `AssistantDock.ask_requested` → show `QueryDialog`.
+  - `AssistantDock.explain_toggled` → toggle `ExplainMode`, update dock appearance.
   - `QueryDialog.query_submitted` → capture screenshot → detect app → call AI → cache result → show `OverlayWindow`.
   - "Try Again" button → load cache → call AI → update overlay.
-- Start `keyboard` listener thread.
-- Start `pynput` mouse listener thread.
+- Show dock; start `pynput` mouse listener thread.
 - `app.exec()` — blocks until quit.
 
 ### Step 13 — Packaging (optional)
@@ -212,7 +215,7 @@ The AI must return **only** this JSON, no markdown, no commentary:
 
 ```
 main.py ──────────────────────── orchestrator, event wiring
-  ├── hotkey.py ──────────────── fires on Ctrl+Shift+H / Ctrl+Shift+E
+  ├── assistant_dock.py ───────── persistent floating dock (always visible)
   ├── input_dialog.py ─────────── collects user query
   ├── screenshot.py ──────────── captures full screen or region
   ├── app_detector.py ─────────── returns active app key
@@ -245,13 +248,13 @@ Future apps can be added by extending the `APP_CONTEXTS` dict in `prompts.py` �
 
 | Aspect | Detail |
 |---|---|
-| Toggle hotkey | `Ctrl+Shift+E` |
-| Visual indicator | Small status label in screen corner ("Explain Mode ON") |
-| Trigger | Point at any UI element and press `Ctrl+Shift+H` |
+| Toggle | Click "💡 Explain Mode" in the dock |
+| Visual indicator | Dock button turns red; hint "Hover 2 s over anything" appears |
+| Trigger | Hold cursor still over any UI element for 2 seconds |
 | Region captured | ±150 px bounding box around cursor |
 | AI mode | `mode="explain"` → returns single `explanation` string |
 | Display | Tooltip `QLabel` near cursor, 6-second auto-dismiss |
-| Exit | Press `Ctrl+Shift+E` again, or press `Esc` |
+| Exit | Click "🛑 Stop Explaining" in the dock |
 
 ---
 
@@ -275,7 +278,7 @@ Future apps can be added by extending the `APP_CONTEXTS` dict in `prompts.py` �
 | AI returns malformed schema | Log details, show "Could not parse AI result" message, allow Try Again |
 | Screenshot fails | Log + show "Screenshot capture failed" message |
 | Network timeout | Catch `anthropic.APIConnectionError`, show retry prompt |
-| Hotkey already registered | Log warning; attempt unregister + re-register |
+| Dock position file unreadable | Fall back to default bottom-right position silently |
 
 ---
 
