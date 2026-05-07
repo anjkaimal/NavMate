@@ -9,29 +9,30 @@ from logger import get_logger
 log = get_logger(__name__)
 
 _MESSAGES = [
-    "Capturing screen…",
-    "Analyzing UI elements…",
-    "Generating response…",
+    "Capturing your screen…",
+    "Analysing the interface…",
+    "Working out the answer…",
 ]
 
-# Colours
-_BG          = QColor(12, 18, 42, 248)
-_BORDER      = QColor(30, 111, 235, 100)
-_HEAD_DARK   = QColor(18, 52, 130)
-_HEAD_LIGHT  = QColor(26, 70, 165)
-_EYE_COLOR   = QColor(110, 195, 255)
-_PUPIL       = QColor(8, 16, 52)
-_SHINE       = QColor(255, 255, 255, 210)
-_DOT_ON      = QColor(90, 171, 255, 255)
-_DOT_OFF     = QColor(90, 171, 255, 70)
-_TEXT_COLOR  = QColor(175, 205, 255)
-_CANCEL_TEXT = QColor(100, 130, 180)
+# ── Colour palette ───────────────────────────────────────────────────────────
+_BG          = QColor(8,  10, 22, 252)
+_BORDER      = QColor(0, 207, 255,  80)
+_HEAD_DARK   = QColor(10, 28,  90)
+_HEAD_MID    = QColor(16, 42, 130)
+_HEAD_LIGHT  = QColor(22, 58, 165)
+_EYE_COLOR   = QColor(0,  207, 255)     # electric cyan
+_PUPIL       = QColor(5,  10,  38)
+_SHINE       = QColor(255, 255, 255, 220)
+_DOT_ON      = QColor(0,  207, 255, 255)
+_DOT_OFF     = QColor(0,  207, 255,  55)
+_TEXT_COLOR  = QColor(180, 220, 255)
+_CANCEL_TEXT = QColor(80, 120, 170)
 
 
 class LoadingOverlay(QWidget):
-    """Animated mascot shown while the AI is processing a query."""
+    """Animated mascot shown while the AI processes a query."""
 
-    W, H = 220, 195
+    W, H = 250, 225
 
     def __init__(self) -> None:
         super().__init__()
@@ -64,14 +65,14 @@ class LoadingOverlay(QWidget):
         self._cancel_btn.setStyleSheet("""
             QPushButton {
                 background: transparent;
-                color: rgba(90, 130, 190, 180);
+                color: rgba(70, 110, 170, 170);
                 border: none;
-                font-size: 10px;
+                font-size: 11px;
                 text-decoration: underline;
             }
-            QPushButton:hover { color: rgba(150, 180, 255, 220); }
+            QPushButton:hover { color: rgba(0, 207, 255, 200); }
         """)
-        self._cancel_btn.setGeometry(self.W // 2 - 22, self.H - 22, 44, 16)
+        self._cancel_btn.setGeometry(self.W // 2 - 24, self.H - 24, 48, 18)
         self._cancel_btn.clicked.connect(self.hide_loading)
 
     # ------------------------------------------------------------------
@@ -82,14 +83,14 @@ class LoadingOverlay(QWidget):
         screen = QApplication.primaryScreen().geometry()
         self.move(
             screen.center().x() - self.W // 2,
-            screen.height() - self.H - 55,
+            screen.height() - self.H - 60,
         )
         self._frame   = 0
         self._msg_idx = 0
         self.show()
         self.raise_()
-        self._anim_timer.start(80)     # ~12 fps — smooth blink/glow
-        self._msg_timer.start(1800)    # cycle messages every 1.8 s
+        self._anim_timer.start(50)      # 20 fps — smooth
+        self._msg_timer.start(2000)     # cycle messages every 2 s
         log.debug("Loading overlay shown")
 
     def hide_loading(self) -> None:
@@ -99,7 +100,6 @@ class LoadingOverlay(QWidget):
         log.debug("Loading overlay hidden")
 
     def advance_message(self) -> None:
-        """Manually step to the next status message (call from worker thread via signal)."""
         self._msg_idx = min(self._msg_idx + 1, len(_MESSAGES) - 1)
         self.update()
 
@@ -126,78 +126,82 @@ class LoadingOverlay(QWidget):
 
         W, H = self.W, self.H
 
-        # ── Background pill ──────────────────────────────────────────
+        # ── Background card ───────────────────────────────────────────
         p.setPen(QPen(_BORDER, 1))
         p.setBrush(_BG)
-        p.drawRoundedRect(1, 1, W - 2, H - 2, 20, 20)
+        p.drawRoundedRect(1, 1, W - 2, H - 2, 22, 22)
 
-        # ── Face geometry ────────────────────────────────────────────
-        cx, cy, cr = W // 2, 60, 30
+        # ── Face geometry ─────────────────────────────────────────────
+        cx, cy, cr = W // 2, 72, 36
 
         # Pulsing glow behind head
-        pulse = (math.sin(self._frame * 0.08) + 1) / 2          # 0–1
-        gr    = int(cr + 8 + pulse * 6)
+        pulse = (math.sin(self._frame * 0.09) + 1) / 2
+        gr    = int(cr + 10 + pulse * 8)
         p.setPen(Qt.PenStyle.NoPen)
-        p.setBrush(QColor(30, 111, 235, int(18 + pulse * 24)))
+        p.setBrush(QColor(0, 207, 255, int(14 + pulse * 22)))
         p.drawEllipse(cx - gr, cy - gr, gr * 2, gr * 2)
 
-        # Head body
+        # Head — layered circles for depth
         p.setBrush(_HEAD_DARK)
         p.drawEllipse(cx - cr, cy - cr, cr * 2, cr * 2)
+        p.setBrush(_HEAD_MID)
+        p.drawEllipse(cx - cr + 2, cy - cr + 2, (cr - 2) * 2, (cr - 2) * 2)
         p.setBrush(_HEAD_LIGHT)
-        p.drawEllipse(cx - cr + 3, cy - cr + 3, (cr - 3) * 2, (cr - 3) * 2)
+        p.drawEllipse(cx - cr + 5, cy - cr + 5, (cr - 5) * 2, (cr - 5) * 2)
 
-        # ── Eyes ─────────────────────────────────────────────────────
-        # Blink for 4 frames (~320 ms) every 75 frames (~6 s)
-        blink = (self._frame % 75) < 4
+        # ── Eyes ──────────────────────────────────────────────────────
+        blink = (self._frame % 80) < 5
 
         if blink:
             p.setPen(QPen(_EYE_COLOR, 2.5,
                           Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap))
             p.setBrush(Qt.BrushStyle.NoBrush)
-            p.drawLine(cx - 12, cy - 1, cx - 4, cy - 1)
-            p.drawLine(cx + 4,  cy - 1, cx + 12, cy - 1)
+            p.drawLine(cx - 13, cy - 1, cx - 4, cy - 1)
+            p.drawLine(cx + 4,  cy - 1, cx + 13, cy - 1)
         else:
-            drift = int(math.sin(self._frame * 0.025) * 1.5)
+            drift = int(math.sin(self._frame * 0.03) * 2)
 
             # Whites
             p.setPen(Qt.PenStyle.NoPen)
             p.setBrush(_EYE_COLOR)
-            p.drawEllipse(cx - 13, cy - 8, 10, 13)
-            p.drawEllipse(cx + 3,  cy - 8, 10, 13)
+            p.drawEllipse(cx - 14, cy - 9, 11, 14)
+            p.drawEllipse(cx + 3,  cy - 9, 11, 14)
 
             # Pupils
             p.setBrush(_PUPIL)
-            p.drawEllipse(cx - 11 + drift, cy - 6, 6, 9)
-            p.drawEllipse(cx + 5  + drift, cy - 6, 6, 9)
+            p.drawEllipse(cx - 12 + drift, cy - 7, 7, 10)
+            p.drawEllipse(cx + 5  + drift, cy - 7, 7, 10)
 
-            # Shine
+            # Shine dots
             p.setBrush(_SHINE)
-            p.drawEllipse(cx - 12 + drift, cy - 8, 3, 3)
-            p.drawEllipse(cx + 4  + drift, cy - 8, 3, 3)
+            p.drawEllipse(cx - 13 + drift, cy - 9, 3, 3)
+            p.drawEllipse(cx + 4  + drift, cy - 9, 3, 3)
 
-        # ── Mouth (arc smile) ────────────────────────────────────────
-        p.setPen(QPen(_EYE_COLOR, 2, Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap))
+        # ── Smile ─────────────────────────────────────────────────────
+        p.setPen(QPen(_EYE_COLOR, 2.2,
+                      Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap))
         p.setBrush(Qt.BrushStyle.NoBrush)
-        p.drawArc(QRect(cx - 9, cy + 6, 18, 11), 200 * 16, 140 * 16)
+        p.drawArc(QRect(cx - 10, cy + 8, 20, 12), 200 * 16, 140 * 16)
 
-        # ── Thinking dots (one lights up at a time, cycles left→right) ──
-        dot_y    = cy + cr + 14
-        dot_step = (self._frame // 8) % 3    # 0, 1, 2
+        # ── Thinking dots ─────────────────────────────────────────────
+        dot_y    = cy + cr + 18
+        dot_step = (self._frame // 10) % 3
 
         p.setPen(Qt.PenStyle.NoPen)
         for i in range(3):
             active = (dot_step == i)
-            r = 5 if active else 4
+            r = 6 if active else 4
             p.setBrush(_DOT_ON if active else _DOT_OFF)
-            dx = W // 2 - 18 + i * 18
+            dx = W // 2 - 20 + i * 20
             p.drawEllipse(dx - r, dot_y - r, r * 2, r * 2)
 
         # ── Status text ───────────────────────────────────────────────
         p.setPen(_TEXT_COLOR)
-        p.setFont(QFont("Segoe UI", 10))
-        p.drawText(QRect(8, dot_y + 14, W - 16, 24),
-                   Qt.AlignmentFlag.AlignCenter,
-                   _MESSAGES[self._msg_idx])
+        p.setFont(QFont("Segoe UI", 13))
+        p.drawText(
+            QRect(10, dot_y + 16, W - 20, 28),
+            Qt.AlignmentFlag.AlignCenter,
+            _MESSAGES[self._msg_idx],
+        )
 
         p.end()

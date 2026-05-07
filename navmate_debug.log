@@ -5190,3 +5190,529 @@ ValueError: boom
 2026-05-07 11:22:43,851 [voice] DEBUG: TTS speak: 'Click the address bar and type news'
 2026-05-07 11:22:43,854 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
 2026-05-07 11:22:43,885 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:22:50,547 [overlay] DEBUG: Overlay cleared
+2026-05-07 11:51:27,150 [grid_analyzer] DEBUG: Elected 'Zoom In Button' from 2 candidates
+2026-05-07 11:51:27,150 [grid_analyzer] DEBUG: Elected 'Zoom In' from 2 candidates
+2026-05-07 11:51:27,150 [grid_analyzer] DEBUG: Elected 'Small' from 2 candidates
+2026-05-07 11:51:27,150 [grid_analyzer] DEBUG: Elected 'PDF More Options' from 4 candidates
+2026-05-07 11:51:27,150 [grid_analyzer] DEBUG: Elected 'Zoom In Button' from 4 candidates
+2026-05-07 11:51:27,166 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 1
+2026-05-07 11:51:27,167 [grid_analyzer] DEBUG: Geometric-dedup: 2 -> 2
+2026-05-07 11:51:27,168 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 11:51:27,190 [voice_input] ERROR: Transcription error: unexpected
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\tests\..\voice_input.py", line 78, in _worker
+    text = r.recognize_google(audio)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\tests\test_voice_input.py", line 61, in recognize_google
+    raise recognize_raises
+ValueError: unexpected
+2026-05-07 11:51:27,192 [voice_input] ERROR: Transcription error: boom
+Traceback (most recent call last):
+  File "C:\Users\anjka\NavMate\tests\..\voice_input.py", line 78, in _worker
+    text = r.recognize_google(audio)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anjka\NavMate\tests\test_voice_input.py", line 61, in recognize_google
+    raise recognize_raises
+ValueError: boom
+2026-05-07 11:54:01,702 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 11:54:01,702 [overlay] DEBUG: Overlay cleared
+2026-05-07 11:54:24,721 [hotkey] DEBUG: Hotkey listener thread started
+2026-05-07 11:54:24,722 [explain_mode] DEBUG: Mouse tracking started
+2026-05-07 11:54:24,722 [main] DEBUG: NavMate ready — Ctrl+Shift+H to guide
+2026-05-07 11:54:24,819 [hotkey] DEBUG: Registered: ctrl+shift+h (guide)
+2026-05-07 11:54:24,819 [hotkey] DEBUG: Registered: ctrl+shift+e (explain toggle)
+2026-05-07 11:54:25,634 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 11:54:25,639 [overlay] DEBUG: Overlay cleared
+2026-05-07 11:54:37,880 [input_dialog] DEBUG: Voice query: 'where is the jobs tab'
+2026-05-07 11:54:37,894 [main] DEBUG: Query: 'where is the jobs tab'
+2026-05-07 11:54:37,895 [app_detector] DEBUG: Active window: 'feed | linkedin - google chrome'
+2026-05-07 11:54:37,896 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 11:54:38,010 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 11:54:38,092 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 11:54:38,134 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 11:54:38,159 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 11:54:38,178 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 11:54:38,195 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 11:54:38,231 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 11:54:38,251 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 11:54:38,253 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 11:54:38,967 [ai_client] DEBUG: AI request: mode=guide app=chrome query='where is the jobs tab'
+2026-05-07 11:54:38,974 [ai_client] DEBUG: AI request: mode=guide app=chrome query='where is the jobs tab'
+2026-05-07 11:54:38,974 [ai_client] DEBUG: AI request: mode=guide app=chrome query='where is the jobs tab'
+2026-05-07 11:54:38,978 [ai_client] DEBUG: AI request: mode=guide app=chrome query='where is the jobs tab'
+2026-05-07 11:54:38,980 [ai_client] DEBUG: AI request: mode=guide app=chrome query='where is the jobs tab'
+2026-05-07 11:54:38,980 [ai_client] DEBUG: AI request: mode=guide app=chrome query='where is the jobs tab'
+2026-05-07 11:54:40,294 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:54:40,294 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:54:40,294 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 11:54:40,470 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:54:40,470 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:54:40,470 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 11:54:40,489 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:54:40,489 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:54:40,490 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 11:54:40,572 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:54:40,572 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:54:40,572 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 11:54:41,117 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:54:41,117 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:54:41,117 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 11:54:41,834 [ai_client] DEBUG: Raw AI response (197 chars): {
+  "elements": [
+    {
+      "bbox": { "x_min": 458, "y_min": 162, "x_max": 508, "y_max": 202 },
+      "label": "Jobs tab",
+      "voice_instruction": "Click the Jobs tab to view jobs"
+    }
+  ]
+}
+2026-05-07 11:54:41,834 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:54:41,835 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 11:54:41,837 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 11:54:41,838 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 11:54:41,842 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 11:54:41,920 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 11:54:41,920 [voice] DEBUG: TTS: worker thread ready
+2026-05-07 11:54:41,920 [voice] DEBUG: TTS speak: 'Click the Jobs tab to view jobs'
+2026-05-07 11:54:41,937 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,018 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,041 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,108 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,169 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,232 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,295 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,373 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,437 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,497 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,561 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,618 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,682 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,748 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,812 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,863 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:42,937 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,001 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,060 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,139 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,205 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,265 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,329 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,388 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,466 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,532 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,585 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,649 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,704 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,770 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,842 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,905 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:43,972 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,036 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,097 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,162 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,227 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,299 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,365 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,427 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,489 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,552 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,615 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,679 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,742 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,804 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,866 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,927 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:44,990 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,051 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,115 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,179 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,239 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,301 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,366 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,428 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,491 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,554 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,615 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,679 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,741 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,805 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,866 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,928 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:45,990 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,054 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,118 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,180 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,243 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,307 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,369 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,430 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,492 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,557 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,618 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,680 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,744 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,808 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,871 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,935 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:46,997 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,059 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,121 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,184 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,248 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,310 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,372 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,436 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,497 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,560 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,623 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,683 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,746 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,808 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,870 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,932 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:47,994 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,057 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,119 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,181 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,244 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,304 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,364 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,433 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,497 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,559 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,621 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,684 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,748 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,808 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,871 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,932 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:48,996 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:49,057 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:49,123 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:54:49,163 [overlay] DEBUG: Overlay cleared
+2026-05-07 11:54:55,113 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 11:54:55,113 [overlay] DEBUG: Overlay cleared
+2026-05-07 11:55:01,473 [input_dialog] DEBUG: Voice query: 'how to scroll down'
+2026-05-07 11:55:01,485 [main] DEBUG: Query: 'how to scroll down'
+2026-05-07 11:55:01,485 [app_detector] DEBUG: Active window: 'feed | linkedin - google chrome'
+2026-05-07 11:55:01,486 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 11:55:01,505 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 11:55:01,605 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 11:55:01,641 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 11:55:01,669 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 11:55:01,691 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 11:55:01,715 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 11:55:01,749 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 11:55:01,768 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 11:55:01,769 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 11:55:01,770 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 11:55:01,772 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 11:55:01,774 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 11:55:01,775 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 11:55:01,778 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 11:55:01,780 [ai_client] DEBUG: AI request: mode=guide app=chrome query='how to scroll down'
+2026-05-07 11:55:02,791 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:55:02,791 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:55:02,791 [grid_analyzer] DEBUG: Tile (0,0): 0 elements after core filter
+2026-05-07 11:55:02,829 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:55:02,829 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:55:02,830 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 11:55:03,328 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:55:03,328 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:55:03,344 [grid_analyzer] DEBUG: Tile (544,510): 0 elements after core filter
+2026-05-07 11:55:03,800 [ai_client] DEBUG: Raw AI response (210 chars): { "elements": [
+    {
+      "bbox": { "x_min": 718, "y_min": 650, "x_max": 735, "y_max": 670 },
+      "label": "Scrollbar down arrow",
+      "voice_instruction": "Click the scrollbar to scroll down"
+    }
+  ]
+}
+2026-05-07 11:55:03,801 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:55:03,801 [grid_analyzer] DEBUG:   core-filtered 'Scrollbar down arrow' centre (1910,660) not in core (1280,0)–(1920,600)
+2026-05-07 11:55:03,802 [grid_analyzer] DEBUG: Tile (1184,0): 0 elements after core filter
+2026-05-07 11:55:04,311 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:55:04,311 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:55:04,311 [grid_analyzer] DEBUG: Tile (544,0): 0 elements after core filter
+2026-05-07 11:55:04,686 [ai_client] DEBUG: Raw AI response (180 chars): { "elements": [ { "bbox": { "x_min": 720, "y_min": 612, "x_max": 735, "y_max": 628 }, "label": "Scroll down arrow", "voice_instruction": "Click the down arrow to scroll down" } ] }
+2026-05-07 11:55:04,686 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:55:04,686 [grid_analyzer] DEBUG: Tile (1184,510): 1 elements after core filter
+2026-05-07 11:55:04,686 [grid_analyzer] DEBUG: Geometric-dedup: 1 -> 1
+2026-05-07 11:55:04,686 [grid_analyzer] DEBUG: Grid done: 1 raw -> 1 final
+2026-05-07 11:55:04,694 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 11:55:04,714 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 11:55:04,714 [voice] DEBUG: TTS speak: 'Click the down arrow to scroll down'
+2026-05-07 11:55:04,717 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:04,773 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:04,818 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:04,881 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:04,945 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,013 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,071 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,133 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,203 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,253 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,314 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,389 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,441 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,515 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,592 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,659 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,720 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,794 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,860 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,920 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:05,968 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,046 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,095 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,170 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,232 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,296 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,357 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,423 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,483 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,566 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,624 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,686 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,748 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,811 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,878 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:06,939 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,002 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,070 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,129 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,191 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,208 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,258 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,322 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,381 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,445 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,507 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,572 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,632 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,696 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,704 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,754 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,815 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,881 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:07,941 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,012 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,074 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,134 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,193 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,259 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,323 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,385 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,442 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,517 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,582 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,641 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,704 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,767 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,829 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,889 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:08,953 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,016 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,081 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,141 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,204 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,266 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,327 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,388 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,454 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,516 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,573 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,643 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,704 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,766 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,832 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,882 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:09,944 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,005 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,068 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,129 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,205 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,267 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,331 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,394 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,456 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,519 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,581 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,638 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,693 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,754 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,815 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,883 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:10,952 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,016 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,081 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,143 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,203 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,266 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,327 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,391 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,445 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,507 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,581 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,638 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,695 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,757 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,827 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,881 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:55:11,963 [overlay] DEBUG: Overlay cleared
+2026-05-07 11:59:46,535 [hotkey] DEBUG: Hotkey fired: guide
+2026-05-07 11:59:46,550 [overlay] DEBUG: Overlay cleared
+2026-05-07 11:59:51,386 [main] DEBUG: Query: 'Where is google'
+2026-05-07 11:59:51,386 [app_detector] DEBUG: Active window: 'new tab - google chrome'
+2026-05-07 11:59:51,386 [app_detector] DEBUG: Matched app: chrome
+2026-05-07 11:59:51,418 [loading_overlay] DEBUG: Loading overlay shown
+2026-05-07 11:59:51,518 [screenshot] DEBUG: Raw capture: (1920, 1200)
+2026-05-07 11:59:51,547 [screenshot] DEBUG: Tile [0,0] (0,0)–(736,690)  phys 736×690  ai 736×690
+2026-05-07 11:59:51,609 [screenshot] DEBUG: Tile [0,1] (544,0)–(1376,690)  phys 832×690  ai 832×690
+2026-05-07 11:59:51,641 [screenshot] DEBUG: Tile [0,2] (1184,0)–(1920,690)  phys 736×690  ai 736×690
+2026-05-07 11:59:51,663 [screenshot] DEBUG: Tile [1,0] (0,510)–(736,1200)  phys 736×690  ai 736×690
+2026-05-07 11:59:51,693 [screenshot] DEBUG: Tile [1,1] (544,510)–(1376,1200)  phys 832×690  ai 832×690
+2026-05-07 11:59:51,708 [screenshot] DEBUG: Tile [1,2] (1184,510)–(1920,1200)  phys 736×690  ai 736×690
+2026-05-07 11:59:51,710 [grid_analyzer] DEBUG: Grid 3×2: 6 tiles, full 1920×1200
+2026-05-07 11:59:51,712 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is google'
+2026-05-07 11:59:51,714 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is google'
+2026-05-07 11:59:51,714 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is google'
+2026-05-07 11:59:51,720 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is google'
+2026-05-07 11:59:51,723 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is google'
+2026-05-07 11:59:51,726 [ai_client] DEBUG: AI request: mode=guide app=chrome query='Where is google'
+2026-05-07 11:59:53,242 [ai_client] DEBUG: Raw AI response (18 chars): { "elements": [] }
+2026-05-07 11:59:53,242 [ai_client] DEBUG: Parsed 0 elements
+2026-05-07 11:59:53,242 [grid_analyzer] DEBUG: Tile (1184,510): 0 elements after core filter
+2026-05-07 11:59:53,465 [ai_client] DEBUG: Raw AI response (164 chars): {"elements":[{"bbox":{"x_min":0,"y_min":60,"x_max":370,"y_max":98},"label":"Chrome address bar","voice_instruction":"Click the address bar to navigate to Google"}]}
+2026-05-07 11:59:53,465 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:59:53,465 [grid_analyzer] DEBUG: Tile (1184,0): 1 elements after core filter
+2026-05-07 11:59:53,576 [ai_client] DEBUG: Raw AI response (164 chars): {"elements":[{"bbox":{"x_min":363,"y_min":654,"x_max":393,"y_max":682},"label":"Google Chrome icon","voice_instruction":"Click the Google Chrome icon in taskbar"}]}
+2026-05-07 11:59:53,576 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:59:53,576 [grid_analyzer] DEBUG: Tile (544,510): 1 elements after core filter
+2026-05-07 11:59:53,608 [ai_client] DEBUG: Raw AI response (153 chars): {"elements":[{"bbox":{"x_min":0,"y_min":497,"x_max":650,"y_max":535},"label":"Google Search Box","voice_instruction":"Click the Ask Google search box"}]}
+2026-05-07 11:59:53,608 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:59:53,608 [grid_analyzer] DEBUG: Tile (544,0): 1 elements after core filter
+2026-05-07 11:59:53,640 [ai_client] DEBUG: Raw AI response (160 chars): {"elements":[{"bbox":{"x_min":160,"y_min":62,"x_max":735,"y_max":97},"label":"Google Search Bar","voice_instruction":"Click the address bar to search Google"}]}
+2026-05-07 11:59:53,640 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:59:53,640 [grid_analyzer] DEBUG: Tile (0,0): 1 elements after core filter
+2026-05-07 11:59:53,831 [ai_client] DEBUG: Raw AI response (152 chars): {"elements":[{"bbox":{"x_min":499,"y_min":0,"x_max":733,"y_max":30},"label":"Ask Google search","voice_instruction":"Click the Ask Google search box"}]}
+2026-05-07 11:59:53,831 [ai_client] DEBUG: Parsed 1 elements
+2026-05-07 11:59:53,831 [grid_analyzer] DEBUG:   core-filtered 'Ask Google search' centre (616,525) not in core (0,600)–(640,1200)
+2026-05-07 11:59:53,831 [grid_analyzer] DEBUG: Tile (0,510): 0 elements after core filter
+2026-05-07 11:59:53,831 [grid_analyzer] DEBUG: Label-merge: 4 -> 4
+2026-05-07 11:59:53,831 [grid_analyzer] DEBUG: Geometric-dedup: 4 -> 4
+2026-05-07 11:59:53,831 [grid_analyzer] DEBUG: Elected 'Google Chrome icon' from 4 candidates
+2026-05-07 11:59:53,831 [grid_analyzer] DEBUG: Grid done: 4 raw -> 1 final
+2026-05-07 11:59:53,847 [loading_overlay] DEBUG: Loading overlay hidden
+2026-05-07 11:59:53,889 [overlay] DEBUG: Overlay: 1 elements, ai-img 1920×1200, window 1536×960
+2026-05-07 11:59:53,889 [voice] DEBUG: TTS speak: 'Click the Google Chrome icon in taskbar'
+2026-05-07 11:59:53,893 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:53,937 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:53,977 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,039 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,106 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,169 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,234 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,295 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,359 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,414 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,481 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,545 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,609 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,657 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,721 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,785 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,849 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,913 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:54,975 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,040 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,102 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,166 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,230 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,294 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,358 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,406 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,470 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,535 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,598 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,662 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,726 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,789 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,853 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,916 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:55,980 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,043 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,106 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,170 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,237 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,297 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,360 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,428 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,500 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,570 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,634 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,698 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,762 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,831 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,892 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:56,938 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,012 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,077 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,142 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,207 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,263 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,327 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,377 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,440 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,501 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,564 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,628 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,693 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,756 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,824 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,883 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:57,947 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,013 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,078 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,143 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,203 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,267 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,333 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,395 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,462 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,523 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,587 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,653 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,714 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,783 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,842 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,910 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:58,972 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,034 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,102 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,163 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,226 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,292 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,354 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,422 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,482 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,552 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,607 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,671 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,733 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,781 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,845 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,913 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 11:59:59,981 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,047 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,103 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,166 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,229 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,281 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,356 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,419 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,482 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,545 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,594 [overlay] DEBUG: Paint scale: 0.8000×0.8000  (widget 1536×960, ai-img 1920×1200)
+2026-05-07 12:00:00,626 [overlay] DEBUG: Overlay cleared

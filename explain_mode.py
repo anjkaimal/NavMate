@@ -74,16 +74,15 @@ class ExplainMode:
             | Qt.WindowType.WindowStaysOnTopHint
         )
         self._tooltip.setWordWrap(True)
-        self._tooltip.setMaximumWidth(320)
+        self._tooltip.setMaximumWidth(360)
         self._tooltip.setStyleSheet("""
             QLabel {
-                background-color: rgba(18, 18, 24, 235);
+                background-color: rgba(8, 10, 22, 245);
                 color: #FFFFFF;
-                border: 1px solid #00FF99;
-                border-radius: 8px;
-                padding: 10px 14px;
-                font-size: 13px;
-                line-height: 1.4;
+                border: 1px solid rgba(0, 207, 255, 115);
+                border-radius: 12px;
+                padding: 14px 18px;
+                font-size: 15px;
             }
         """)
         self._tooltip.adjustSize()

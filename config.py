@@ -12,33 +12,46 @@ AI_MAX_TOKENS = 1024
 # --- Screenshot ---
 SCREENSHOT_MAX_DIMENSION = 1920
 
+# --- Design tokens ---
+# Electric cyan accent used across all UI components.
+ACCENT          = "#00CFFF"
+ACCENT_DARK     = "#0099CC"
+ACCENT_DIM_RGBA = (0, 207, 255, 45)   # subtle border tint
+
 # --- Overlay ---
-# Accessible palette: dark-blue boxes, white text on opaque badge backgrounds.
-# All colour pairs meet WCAG AA contrast (≥ 4.5:1 on their respective backgrounds).
-OVERLAY_BG_ALPHA = 110                  # 0–255 dim over the screen
+OVERLAY_BG_ALPHA = 115                 # 0–255 screen dim
 
-OVERLAY_BOX_COLOR        = "#1E6FEB"   # border + corner dots
-OVERLAY_BOX_FILL         = (10, 30, 100, 55)   # rgba inner highlight
-OVERLAY_BOX_WIDTH        = 3
+# Target-element box
+OVERLAY_BOX_COLOR        = "#00CFFF"           # corner brackets + border
+OVERLAY_BOX_FILL         = (0, 175, 215, 18)   # rgba subtle fill
+OVERLAY_BOX_WIDTH        = 2
 
-OVERLAY_LABEL_BG         = "#1A4FD6"   # solid blue pill behind label text
+# Label badge above the box
+OVERLAY_LABEL_BG         = "#050A1C"           # deep dark card
+OVERLAY_LABEL_BORDER     = "#00CFFF"           # cyan pill border
 OVERLAY_LABEL_COLOR      = "#FFFFFF"
-OVERLAY_LABEL_FONT_SIZE  = 15          # +25 % over original 12 pt
+OVERLAY_LABEL_FONT_SIZE  = 16
 
-OVERLAY_EXPL_BG          = (15, 15, 40, 218)   # near-opaque dark navy pill
-OVERLAY_EXPL_BORDER      = "#1E6FEB"
+# Instruction bar at bottom of screen
+OVERLAY_EXPL_BG          = (6, 9, 22, 238)     # near-opaque dark
+OVERLAY_EXPL_BORDER      = "#00CFFF"
 OVERLAY_EXPL_COLOR       = "#FFFFFF"
-OVERLAY_EXPL_FONT_SIZE   = 14          # kept for backwards compat
-OVERLAY_INSTR_FONT_SIZE  = 16          # voice instruction bar
+OVERLAY_EXPL_FONT_SIZE   = 14                  # kept for backwards compat
+OVERLAY_INSTR_FONT_SIZE  = 20                  # large for easy reading
 
-OVERLAY_CORNER_COLOR     = "#5AABFF"   # lighter blue accent dots
-OVERLAY_BADGE_RADIUS     = 5           # px, rounded corners on badges
+OVERLAY_CORNER_COLOR     = "#00CFFF"
+OVERLAY_BADGE_RADIUS     = 8
+
+# Try Again / Esc buttons
+OVERLAY_BTN_BG           = "rgba(0, 150, 200, 18)"
+OVERLAY_BTN_BORDER       = "rgba(0, 207, 255, 100)"
+OVERLAY_BTN_COLOR        = "#00CFFF"
 
 # --- Explain Mode ---
-EXPLAIN_REGION_RADIUS = 150     # pixels around cursor for crop
-EXPLAIN_TOOLTIP_DURATION = 6000 # ms before auto-dismiss
+EXPLAIN_REGION_RADIUS    = 150     # pixels around cursor for crop
+EXPLAIN_TOOLTIP_DURATION = 6000    # ms before auto-dismiss
 
 # --- Logging ---
-LOG_FILE = "navmate_debug.log"
-LOG_MAX_BYTES = 2 * 1024 * 1024  # 2 MB
+LOG_FILE         = "navmate_debug.log"
+LOG_MAX_BYTES    = 2 * 1024 * 1024  # 2 MB
 LOG_BACKUP_COUNT = 3

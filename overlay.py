@@ -1,10 +1,13 @@
-from PyQt6.QtCore import Qt, QRect, pyqtSignal
+import math
+
+from PyQt6.QtCore import Qt, QRect, QTimer, pyqtSignal
 from PyQt6.QtGui import (
     QBrush,
     QColor,
     QFont,
     QFontMetrics,
     QKeyEvent,
+    QLinearGradient,
     QPainter,
     QPen,
 )
@@ -15,6 +18,11 @@ from logger import get_logger
 
 log = get_logger(__name__)
 
+# Pulse cycle: ~1.8 s at 50 ms intervals (20 fps)
+_PULSE_SPEED   = 0.175
+_BRACKET_LEN   = 20    # px — length of each corner bracket arm
+_BRACKET_WIDTH = 3     # px
+
 
 class OverlayWindow(QWidget):
     try_again_requested = pyqtSignal()
@@ -22,11 +30,14 @@ class OverlayWindow(QWidget):
     def __init__(self) -> None:
         super().__init__()
         self._elements: list[dict] = []
-        # Dimensions of the image the AI analysed.
-        # Scale is computed fresh in paintEvent from self.width()/height() so it
-        # always reflects the true rendered window size, not a pre-captured value.
         self._ai_img_w: int = 0
         self._ai_img_h: int = 0
+
+        self._pulse_frame = 0
+        self._pulse_timer = QTimer(self)
+        self._pulse_timer.setInterval(50)
+        self._pulse_timer.timeout.connect(self._tick)
+
         self._build_ui()
 
     def _build_ui(self) -> None:
@@ -38,32 +49,35 @@ class OverlayWindow(QWidget):
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose, False)
 
-        self._try_again_btn = QPushButton("↺  Try Again", self)
-        self._try_again_btn.setStyleSheet("""
-            QPushButton {
-                background-color: #1A4FD6;
-                color: #FFFFFF;
-                border: 2px solid #5AABFF;
-                border-radius: 8px;
-                padding: 9px 20px;
+        self._try_again_btn = QPushButton("↺   Try Again", self)
+        self._try_again_btn.setStyleSheet(f"""
+            QPushButton {{
+                background-color: rgba(0, 150, 200, 18);
+                color: #00CFFF;
+                border: 1px solid rgba(0, 207, 255, 100);
+                border-radius: 10px;
+                padding: 10px 22px;
                 font-size: 14px;
                 font-weight: bold;
-            }
-            QPushButton:hover   { background-color: #1E6FEB; border-color: #FFFFFF; }
-            QPushButton:pressed { background-color: #0F3199; }
+            }}
+            QPushButton:hover   {{
+                background-color: rgba(0, 175, 215, 38);
+                border-color: #00CFFF;
+            }}
+            QPushButton:pressed {{ background-color: rgba(0, 110, 150, 40); }}
         """)
         self._try_again_btn.clicked.connect(self.try_again_requested)
         self._try_again_btn.hide()
 
-        self._esc_hint = QPushButton("Press Esc to close", self)
+        self._esc_hint = QPushButton("Esc to close", self)
         self._esc_hint.setStyleSheet("""
             QPushButton {
-                background-color: rgba(10, 20, 60, 160);
-                color: rgba(200, 210, 255, 200);
-                border: 1px solid rgba(90, 171, 255, 80);
-                border-radius: 4px;
+                background-color: rgba(6, 9, 22, 160);
+                color: rgba(0, 207, 255, 120);
+                border: 1px solid rgba(0, 207, 255, 35);
+                border-radius: 5px;
                 font-size: 12px;
-                padding: 3px 10px;
+                padding: 4px 14px;
             }
         """)
         self._esc_hint.setEnabled(False)
@@ -83,28 +97,26 @@ class OverlayWindow(QWidget):
         self._ai_img_w = ai_img_w
         self._ai_img_h = ai_img_h
 
-        # Use the full logical screen geometry — do NOT call showFullScreen() because
-        # it can apply internal geometry offsets on Windows with DPI scaling, shifting
-        # every drawn coordinate by an unexpected amount.  Explicit setGeometry() gives
-        # us a window whose local (0,0) maps exactly to screen (0,0), and whose
-        # self.width()/height() in paintEvent match what we intend.
         screen = QApplication.primaryScreen().geometry()
         self.setGeometry(screen)
 
-        m = 16
-        bw, bh = 140, 40
+        m = 18
+        bw, bh = 150, 42
         self._try_again_btn.setGeometry(
             screen.width() - bw - m, screen.height() - bh - m, bw, bh
         )
         self._try_again_btn.show()
         self._try_again_btn.raise_()
 
-        hw = 180
+        hw = 160
         self._esc_hint.setGeometry(
-            screen.width() // 2 - hw // 2, screen.height() - 30, hw, 24
+            screen.width() // 2 - hw // 2, screen.height() - 32, hw, 22
         )
         self._esc_hint.show()
         self._esc_hint.raise_()
+
+        self._pulse_frame = 0
+        self._pulse_timer.start()
 
         self.show()
         self.raise_()
@@ -117,11 +129,20 @@ class OverlayWindow(QWidget):
         )
 
     def clear(self) -> None:
+        self._pulse_timer.stop()
         self._elements = []
         self._try_again_btn.hide()
         self._esc_hint.hide()
         self.hide()
         log.debug("Overlay cleared")
+
+    # ------------------------------------------------------------------
+    # Animation tick
+    # ------------------------------------------------------------------
+
+    def _tick(self) -> None:
+        self._pulse_frame += 1
+        self.update()
 
     # ------------------------------------------------------------------
     # Painting
@@ -132,27 +153,26 @@ class OverlayWindow(QWidget):
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         painter.setRenderHint(QPainter.RenderHint.TextAntialiasing)
 
-        # Semi-transparent dim over the whole screen
+        # Semi-transparent screen dim
         painter.fillRect(self.rect(), QColor(0, 0, 0, config.OVERLAY_BG_ALPHA))
 
         if not self._elements or self._ai_img_w <= 0 or self._ai_img_h <= 0:
             painter.end()
             return
 
-        # Compute scale here, from the widget's ACTUAL rendered dimensions.
-        # self.width()/height() is the ground truth — it reflects exactly the
-        # pixel space that QPainter uses for this widget.  Dividing by the AI
-        # image dimensions gives the correct map from AI-coordinate → screen-coordinate,
-        # handling both image resize and Windows DPI scaling in one step.
         scale_x = self.width()  / self._ai_img_w
         scale_y = self.height() / self._ai_img_h
-        log.debug(f"Paint scale: {scale_x:.4f}×{scale_y:.4f}  "
-                  f"(widget {self.width()}×{self.height()}, "
-                  f"ai-img {self._ai_img_w}×{self._ai_img_h})")
+        log.debug(
+            f"Paint scale: {scale_x:.4f}×{scale_y:.4f}  "
+            f"(widget {self.width()}×{self.height()}, "
+            f"ai-img {self._ai_img_w}×{self._ai_img_h})"
+        )
 
-        label_font = QFont("Segoe UI", config.OVERLAY_LABEL_FONT_SIZE, QFont.Weight.Bold)
-        box_color    = QColor(config.OVERLAY_BOX_COLOR)
-        corner_color = QColor(config.OVERLAY_CORNER_COLOR)
+        pulse = (math.sin(self._pulse_frame * _PULSE_SPEED) + 1) / 2   # 0–1
+
+        label_font = QFont(
+            "Segoe UI", config.OVERLAY_LABEL_FONT_SIZE, QFont.Weight.Bold
+        )
 
         instruction = ""
         for el in self._elements:
@@ -162,12 +182,14 @@ class OverlayWindow(QWidget):
             w  = round(bb["width"]  * scale_x)
             h  = round(bb["height"] * scale_y)
 
-            self._draw_box(painter, x, y, w, h, box_color, corner_color)
-            self._draw_label(painter, x, y, w, el.get("label", ""), label_font)
+            self._draw_box(painter, x, y, w, h, pulse)
+            self._draw_label(painter, x, y, w, el.get("label", ""), label_font, pulse)
             if not instruction:
-                instruction = (el.get("voice_instruction")
-                               or el.get("instruction")
-                               or el.get("explanation", ""))
+                instruction = (
+                    el.get("voice_instruction")
+                    or el.get("instruction")
+                    or el.get("explanation", "")
+                )
 
         if instruction:
             self._draw_instruction_bar(painter, instruction)
@@ -182,22 +204,47 @@ class OverlayWindow(QWidget):
         self,
         p: QPainter,
         x: int, y: int, w: int, h: int,
-        border: QColor,
-        corner: QColor,
+        pulse: float,
     ) -> None:
+        # Subtle fill
         r, g, b, a = config.OVERLAY_BOX_FILL
         p.fillRect(x, y, w, h, QColor(r, g, b, a))
 
-        p.setPen(QPen(border, config.OVERLAY_BOX_WIDTH))
-        p.setBrush(Qt.BrushStyle.NoBrush)
-        p.drawRect(x, y, w, h)
+        # Outer glow rings — fade in/out with pulse
+        glow_intensity = 0.5 + pulse * 0.5
+        for offset, base_alpha in [(5, 28), (10, 14), (16, 7)]:
+            ga = int(base_alpha * glow_intensity)
+            p.setPen(QPen(QColor(0, 207, 255, ga), 1))
+            p.setBrush(Qt.BrushStyle.NoBrush)
+            p.drawRoundedRect(x - offset, y - offset, w + offset * 2, h + offset * 2, 6, 6)
 
-        dot = 6
-        p.setPen(Qt.PenStyle.NoPen)
-        p.setBrush(QBrush(corner))
-        for cx, cy in [(x, y), (x + w, y), (x, y + h), (x + w, y + h)]:
-            p.drawEllipse(cx - dot, cy - dot, dot * 2, dot * 2)
+        # Main border
+        border_alpha = int(100 + pulse * 155)
+        p.setPen(QPen(QColor(0, 207, 255, border_alpha), config.OVERLAY_BOX_WIDTH))
         p.setBrush(Qt.BrushStyle.NoBrush)
+        p.drawRoundedRect(x, y, w, h, 4, 4)
+
+        # Corner brackets — brighter and sharper than the border
+        bracket_alpha = int(190 + pulse * 65)
+        pen = QPen(
+            QColor(0, 220, 255, bracket_alpha),
+            _BRACKET_WIDTH,
+            Qt.PenStyle.SolidLine,
+            Qt.PenCapStyle.RoundCap,
+            Qt.PenJoinStyle.RoundJoin,
+        )
+        p.setPen(pen)
+        p.setBrush(Qt.BrushStyle.NoBrush)
+        bl = _BRACKET_LEN
+
+        # Top-left
+        p.drawLine(x, y + bl, x, y);  p.drawLine(x, y, x + bl, y)
+        # Top-right
+        p.drawLine(x + w - bl, y, x + w, y);  p.drawLine(x + w, y, x + w, y + bl)
+        # Bottom-left
+        p.drawLine(x, y + h - bl, x, y + h);  p.drawLine(x, y + h, x + bl, y + h)
+        # Bottom-right
+        p.drawLine(x + w - bl, y + h, x + w, y + h);  p.drawLine(x + w, y + h, x + w, y + h - bl)
 
     def _draw_label(
         self,
@@ -205,60 +252,75 @@ class OverlayWindow(QWidget):
         x: int, y: int, box_w: int,
         text: str,
         font: QFont,
+        pulse: float,
     ) -> None:
         if not text:
             return
         p.setFont(font)
         fm = QFontMetrics(font)
 
-        pad_h, pad_v = 10, 5
+        pad_h, pad_v = 14, 6
         badge_w = fm.horizontalAdvance(text) + pad_h * 2
         badge_h = fm.height() + pad_v * 2
 
-        # Centre the label horizontally over the box; keep it on screen.
         badge_x = x + (box_w - badge_w) // 2
         badge_x = max(0, min(self.width() - badge_w, badge_x))
-        badge_y = max(0, y - badge_h - 8)
+        badge_y = max(0, y - badge_h - 10)
 
-        r, g, b = _hex_to_rgb(config.OVERLAY_LABEL_BG)
+        # Badge background
         p.setPen(Qt.PenStyle.NoPen)
-        p.setBrush(QBrush(QColor(r, g, b, 235)))
+        p.setBrush(QBrush(QColor(5, 10, 28, 240)))
         p.drawRoundedRect(
             badge_x, badge_y, badge_w, badge_h,
             config.OVERLAY_BADGE_RADIUS, config.OVERLAY_BADGE_RADIUS,
         )
 
+        # Badge border — pulses with target box
+        border_alpha = int(100 + pulse * 130)
+        p.setPen(QPen(QColor(0, 207, 255, border_alpha), 1))
+        p.setBrush(Qt.BrushStyle.NoBrush)
+        p.drawRoundedRect(
+            badge_x, badge_y, badge_w, badge_h,
+            config.OVERLAY_BADGE_RADIUS, config.OVERLAY_BADGE_RADIUS,
+        )
+
+        # Label text
         p.setPen(QColor(config.OVERLAY_LABEL_COLOR))
         p.setBrush(Qt.BrushStyle.NoBrush)
         p.drawText(badge_x + pad_h, badge_y + pad_v + fm.ascent(), text)
 
     def _draw_instruction_bar(self, p: QPainter, text: str) -> None:
-        """Render a centered voice-instruction caption near the bottom of the screen."""
         font = QFont("Segoe UI", config.OVERLAY_INSTR_FONT_SIZE)
         p.setFont(font)
         fm = QFontMetrics(font)
 
         sw, sh = self.width(), self.height()
-        max_text_w = int(sw * 0.75)
+        max_text_w = int(sw * 0.80)
         lines = _wrap_text(text, fm, max_text_w)
         if not lines:
             return
 
-        pad_h, pad_v = 20, 10
-        line_h = fm.height() + 3
+        pad_h, pad_v = 28, 14
+        line_h = fm.height() + 4
         text_w = max(fm.horizontalAdvance(ln) for ln in lines)
-        bar_w = text_w + pad_h * 2
-        bar_h = len(lines) * line_h + pad_v * 2
+        bar_w  = text_w + pad_h * 2
+        bar_h  = len(lines) * line_h + pad_v * 2
 
-        # Sits above the Esc hint (30px) with an 18px gap, horizontally centered.
         bar_x = (sw - bar_w) // 2
-        bar_y = sh - 30 - 18 - bar_h
+        bar_y = sh - 42 - bar_h   # sits above Esc hint
 
+        # Background
         r, g, b, a = config.OVERLAY_EXPL_BG
-        p.setPen(QPen(QColor(config.OVERLAY_EXPL_BORDER), 1))
+        p.setPen(Qt.PenStyle.NoPen)
         p.setBrush(QBrush(QColor(r, g, b, a)))
-        p.drawRoundedRect(bar_x, bar_y, bar_w, bar_h, 10, 10)
+        p.drawRoundedRect(bar_x, bar_y, bar_w, bar_h, 12, 12)
 
+        # Border
+        p.setPen(QPen(QColor(config.OVERLAY_EXPL_BORDER), 1))
+        p.setBrush(Qt.BrushStyle.NoBrush)
+        p.drawRoundedRect(bar_x, bar_y, bar_w, bar_h, 12, 12)
+
+        # Text
         p.setPen(QColor(config.OVERLAY_EXPL_COLOR))
         p.setBrush(Qt.BrushStyle.NoBrush)
         ty = bar_y + pad_v + fm.ascent()
@@ -293,7 +355,7 @@ class OverlayWindow(QWidget):
                 round(bb["height"] * scale_y),
             )
             if rect.contains(pos):
-                return  # click inside a labelled box — keep overlay open
+                return
         self.clear()
 
 
@@ -315,8 +377,3 @@ def _wrap_text(text: str, fm: QFontMetrics, max_width: int) -> list[str]:
     if current:
         lines.append(current)
     return lines
-
-
-def _hex_to_rgb(hex_color: str) -> tuple[int, int, int]:
-    h = hex_color.lstrip("#")
-    return int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)

@@ -1,7 +1,8 @@
 from PyQt6.QtCore import Qt, QObject, QTimer, pyqtSignal
-from PyQt6.QtGui import QKeyEvent
+from PyQt6.QtGui import QColor, QKeyEvent
 from PyQt6.QtWidgets import (
     QApplication,
+    QGraphicsDropShadowEffect,
     QHBoxLayout,
     QLabel,
     QLineEdit,
@@ -15,24 +16,27 @@ from logger import get_logger
 
 log = get_logger(__name__)
 
-_HINT_DEFAULT = "NavMate  ·  What do you want to do?"
+_HINT_DEFAULT = "What would you like to do?"
 
 _MIC_IDLE_SS = ""   # reset to class stylesheet
 
-# Pulsing red styles alternated by QTimer while recording
 _MIC_PULSE_A = """QPushButton {
-    background-color: rgba(210, 40, 40, 220);
+    background-color: rgba(220, 45, 45, 215);
     color: #FFFFFF;
-    border: 2px solid #FF6060;
-    border-radius: 7px;
-    font-size: 16px;
+    border: 2px solid rgba(255, 80, 80, 200);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 20px;
 }"""
 _MIC_PULSE_B = """QPushButton {
-    background-color: rgba(150, 20, 20, 180);
-    color: #FF9999;
-    border: 1px solid #993333;
-    border-radius: 7px;
-    font-size: 16px;
+    background-color: rgba(145, 18, 18, 175);
+    color: rgba(255, 160, 160, 220);
+    border: 1px solid rgba(180, 40, 40, 160);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 20px;
 }"""
 
 
@@ -48,10 +52,10 @@ class QueryDialog(QWidget):
 
     def __init__(self) -> None:
         super().__init__()
-        self._mic_bridge = _MicBridge()
-        self._pulse_timer = QTimer(self)
+        self._mic_bridge   = _MicBridge()
+        self._pulse_timer  = QTimer(self)
         self._pulse_timer.setInterval(450)
-        self._pulse_state = False
+        self._pulse_state  = False
         self._build_ui()
         self._wire_signals()
 
@@ -68,113 +72,155 @@ class QueryDialog(QWidget):
             | Qt.WindowType.Tool
         )
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
-        self.setFixedWidth(520)
+        self.setFixedWidth(560)
 
-        self.setStyleSheet("""
+        # ── Outer card ────────────────────────────────────────────────
+        outer = QWidget(self)
+        outer.setObjectName("outer")
+        outer.setStyleSheet("""
             QWidget#outer {
-                background-color: rgba(22, 22, 28, 230);
-                border: 1px solid rgba(0, 255, 153, 80);
-                border-radius: 12px;
-            }
-            QLabel#hint {
-                color: #888888;
-                font-size: 11px;
-                background: transparent;
-            }
-            QLineEdit {
-                background-color: rgba(255, 255, 255, 12);
-                color: #FFFFFF;
-                border: 1px solid #444444;
-                border-radius: 7px;
-                padding: 9px 12px;
-                font-size: 14px;
-                selection-background-color: #00CC77;
-            }
-            QLineEdit:focus { border: 1px solid #00CC77; }
-            QPushButton#go_btn {
-                background-color: #00CC77;
-                color: #000000;
-                border: none;
-                border-radius: 7px;
-                padding: 9px 20px;
-                font-size: 13px;
-                font-weight: bold;
-            }
-            QPushButton#go_btn:hover   { background-color: #00FF99; }
-            QPushButton#go_btn:pressed { background-color: #009955; }
-            QPushButton#close_btn {
-                background-color: transparent;
-                color: #555555;
-                border: none;
-                font-size: 18px;
-                padding: 0px 8px;
-            }
-            QPushButton#close_btn:hover { color: #CCCCCC; }
-            QPushButton#mic_btn {
-                background-color: rgba(255, 255, 255, 8);
-                color: #888888;
-                border: 1px solid #444444;
-                border-radius: 7px;
-                font-size: 16px;
-            }
-            QPushButton#mic_btn:hover {
-                background-color: rgba(255, 255, 255, 18);
-                color: #FFFFFF;
-                border-color: #888888;
-            }
-            QPushButton#mic_btn:disabled {
-                color: #333333;
-                border-color: #2a2a2a;
+                background-color: rgba(9, 11, 26, 252);
+                border: 1px solid rgba(0, 207, 255, 60);
+                border-radius: 18px;
             }
         """)
 
-        outer = QWidget(self)
-        outer.setObjectName("outer")
-        outer_layout = QVBoxLayout(outer)
-        outer_layout.setContentsMargins(16, 12, 16, 12)
-        outer_layout.setSpacing(8)
+        # Cyan glow halo around card
+        glow = QGraphicsDropShadowEffect()
+        glow.setBlurRadius(38)
+        glow.setColor(QColor(0, 207, 255, 55))
+        glow.setOffset(0, 0)
+        outer.setGraphicsEffect(glow)
 
+        outer_layout = QVBoxLayout(outer)
+        outer_layout.setContentsMargins(22, 18, 22, 20)
+        outer_layout.setSpacing(10)
+
+        # ── Header row: logo dot + title + close ──────────────────────
+        header = QHBoxLayout()
+        header.setContentsMargins(0, 0, 0, 0)
+        header.setSpacing(8)
+
+        logo_dot = QLabel()
+        logo_dot.setFixedSize(12, 12)
+        logo_dot.setStyleSheet(
+            "background-color: #00CFFF; border-radius: 6px;"
+        )
+        header.addWidget(logo_dot)
+
+        title = QLabel("NavMate")
+        title.setStyleSheet(
+            "color: #00CFFF; font-size: 15px; font-weight: bold; background: transparent;"
+        )
+        header.addWidget(title)
+        header.addStretch()
+
+        close_btn = QPushButton("×")
+        close_btn.setObjectName("close_btn")
+        close_btn.setFixedSize(28, 28)
+        close_btn.setStyleSheet("""
+            QPushButton {
+                background: transparent;
+                color: rgba(100, 130, 190, 180);
+                border: none;
+                font-size: 20px;
+                border-radius: 6px;
+            }
+            QPushButton:hover {
+                color: #FFFFFF;
+                background-color: rgba(255, 70, 70, 40);
+            }
+        """)
+        close_btn.clicked.connect(self.hide)
+        header.addWidget(close_btn)
+        outer_layout.addLayout(header)
+
+        # ── Hint label ────────────────────────────────────────────────
         self._hint = QLabel(_HINT_DEFAULT)
-        self._hint.setObjectName("hint")
+        self._hint.setStyleSheet(
+            "color: rgba(160, 200, 255, 200); font-size: 14px; background: transparent;"
+        )
         outer_layout.addWidget(self._hint)
 
-        # Input row: [🎤 mic button] [text field]
-        input_row = QHBoxLayout()
-        input_row.setContentsMargins(0, 0, 0, 0)
-        input_row.setSpacing(6)
-
-        self.mic_btn = QPushButton("🎤")
-        self.mic_btn.setObjectName("mic_btn")
-        self.mic_btn.setFixedSize(38, 38)
-        self.mic_btn.setToolTip("Speak your query")
-        self.mic_btn.clicked.connect(self._on_mic_clicked)
-        input_row.addWidget(self.mic_btn)
-
+        # ── Input field ───────────────────────────────────────────────
         self.input = QLineEdit()
-        self.input.setPlaceholderText('e.g. "How do I mute myself in Zoom?"')
+        self.input.setPlaceholderText('e.g.  "How do I mute myself in Zoom?"')
+        self.input.setFixedHeight(52)
+        self.input.setStyleSheet("""
+            QLineEdit {
+                background-color: rgba(255, 255, 255, 7);
+                color: #FFFFFF;
+                border: 1px solid rgba(0, 207, 255, 50);
+                border-radius: 10px;
+                padding: 0px 16px;
+                font-size: 16px;
+                selection-background-color: #00CFFF;
+                selection-color: #000000;
+            }
+            QLineEdit:focus {
+                border: 1px solid rgba(0, 207, 255, 190);
+                background-color: rgba(0, 175, 215, 10);
+            }
+        """)
         self.input.returnPressed.connect(self._submit)
-        input_row.addWidget(self.input)
+        outer_layout.addWidget(self.input)
 
-        outer_layout.addLayout(input_row)
-
+        # ── Button row: [Speak]  [Go] ──────────────────────────────────
         btn_row = QHBoxLayout()
-        btn_row.setContentsMargins(0, 0, 0, 0)
-        btn_row.addStretch()
+        btn_row.setContentsMargins(0, 4, 0, 0)
+        btn_row.setSpacing(12)
 
-        self.go_btn = QPushButton("Go")
+        self.mic_btn = QPushButton("🎤   Speak")
+        self.mic_btn.setObjectName("mic_btn")
+        self.mic_btn.setFixedHeight(46)
+        self.mic_btn.setStyleSheet("""
+            QPushButton#mic_btn {
+                background-color: rgba(0, 175, 215, 12);
+                color: rgba(0, 207, 255, 210);
+                border: 1px solid rgba(0, 207, 255, 80);
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 0px 20px;
+            }
+            QPushButton#mic_btn:hover {
+                background-color: rgba(0, 175, 215, 28);
+                border-color: rgba(0, 207, 255, 190);
+                color: #00CFFF;
+            }
+            QPushButton#mic_btn:disabled {
+                color: rgba(60, 80, 110, 180);
+                border-color: rgba(40, 60, 90, 120);
+            }
+        """)
+        self.mic_btn.setToolTip("Click to speak your query")
+        self.mic_btn.clicked.connect(self._on_mic_clicked)
+        btn_row.addWidget(self.mic_btn, 1)
+
+        self.go_btn = QPushButton("Go  →")
         self.go_btn.setObjectName("go_btn")
+        self.go_btn.setFixedHeight(46)
+        self.go_btn.setStyleSheet("""
+            QPushButton#go_btn {
+                background-color: #00CFFF;
+                color: #020408;
+                border: none;
+                border-radius: 10px;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 0px 28px;
+            }
+            QPushButton#go_btn:hover   { background-color: #33DAFF; }
+            QPushButton#go_btn:pressed { background-color: #009BBF; }
+        """)
         self.go_btn.clicked.connect(self._submit)
+        btn_row.addWidget(self.go_btn, 1)
 
-        self.close_btn = QPushButton("×")
-        self.close_btn.setObjectName("close_btn")
-        self.close_btn.clicked.connect(self.hide)
-
-        btn_row.addWidget(self.go_btn)
-        btn_row.addWidget(self.close_btn)
         outer_layout.addLayout(btn_row)
 
+        # ── Root layout with margins for glow to show ─────────────────
         root_layout = QVBoxLayout(self)
-        root_layout.setContentsMargins(0, 0, 0, 0)
+        root_layout.setContentsMargins(22, 22, 22, 22)
         root_layout.addWidget(outer)
         self.adjustSize()
 
@@ -184,7 +230,7 @@ class QueryDialog(QWidget):
 
     def _on_mic_clicked(self) -> None:
         self.mic_btn.setEnabled(False)
-        self._hint.setText("Calibrating mic…")
+        self._hint.setText("Calibrating microphone…")
         voice_input.start_listening(
             on_ready=self._mic_bridge.ready.emit,
             on_result=self._mic_bridge.result.emit,
@@ -192,7 +238,7 @@ class QueryDialog(QWidget):
         )
 
     def _on_mic_ready(self) -> None:
-        self._hint.setText("🔴  Listening — speak now")
+        self._hint.setText("🔴  Listening — speak your question now")
         self._pulse_state = False
         self._pulse_timer.start()
 
@@ -200,12 +246,12 @@ class QueryDialog(QWidget):
         self._reset_mic_ui()
         log.debug(f"Voice query: {text!r}")
         self.input.setText(text)
-        self._submit()   # voice input goes straight through; typing requires explicit Go
+        self._submit()
 
     def _on_mic_error(self, msg: str) -> None:
         self._reset_mic_ui()
-        self._hint.setText(f"⚠  {msg}")
-        QTimer.singleShot(2500, lambda: self._hint.setText(_HINT_DEFAULT))
+        self._hint.setText(f"⚠   {msg}")
+        QTimer.singleShot(2800, lambda: self._hint.setText(_HINT_DEFAULT))
 
     def _reset_mic_ui(self) -> None:
         self._pulse_timer.stop()
